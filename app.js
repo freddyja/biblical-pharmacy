@@ -229,10 +229,12 @@
         return;
       }
       const n = counts[letter] || 0;
-      btn.disabled = n === 0;
-      btn.hidden = n === 0;
-      btn.title = n ? `${n} plant${n === 1 ? "" : "s"}` : "No plants";
+      // Keep letters visible even if count lookup fails; only soft-disable empties
+      btn.disabled = false;
+      btn.hidden = false;
+      btn.title = n ? `${n} plant${n === 1 ? "" : "s"}` : "No plants for this letter";
       btn.classList.toggle("is-empty", n === 0);
+      btn.style.opacity = n ? "" : "0.45";
     });
   }
 
@@ -430,6 +432,18 @@
     if (catalogSection.classList.contains("is-open")) renderCatalog(q);
   });
 
+
+  // Event delegation for A–Z (reliable even if older cached bind logic fails)
+  if (azIndex) {
+    azIndex.addEventListener("click", (event) => {
+      const btn = event.target.closest("button.az-btn");
+      if (!btn || btn.disabled) return;
+      const letter = btn.getAttribute("data-letter");
+      if (!letter) return;
+      setLetterFilter(letter);
+    });
+  }
+
   buildAzIndex();
   renderFeatured();
   renderCatalog();
@@ -440,3 +454,4 @@
   }
 
 })();
+
