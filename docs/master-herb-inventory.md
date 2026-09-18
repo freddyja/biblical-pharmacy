@@ -1,0 +1,270 @@
+# Biblical Pharmacy — Master Herb Inventory
+
+Source direction: herb *names* from Freddy’s reference-book table of contents.
+Content: original educational monographs (Hyssop-page depth). **Do not copy book text.**
+
+Status: `done` = full monograph on main | `todo` = needed | `skip-note` = special handling
+
+## Already on main (full monographs)
+- Aloe / Aloes (Aloe vera + biblical aloes notes)
+- Balm of Gilead
+- Cedar of Lebanon
+- Coriander
+- Cumin
+- Dill
+- Fig
+- Frankincense / Boswellia
+- Garlic
+- Hyssop
+- Mint
+- Mustard
+- Myrrh
+- Olive / Olive Oil
+- Pomegranate
+- Spikenard
+
+## From TOC — A–C
+- Almond — todo
+- Aloe Vera — done (as Aloes)
+- Anise — todo
+- Apple Cider Vinegar — todo (food/ferment)
+- Arnica — todo
+- Arugula — todo
+- Ashwagandha — todo
+- Asparagus — todo
+- Astragalus — todo
+- Avocado — todo
+- Balsamic Vinegar — todo
+- Basil — todo
+- Bay Laurel — todo
+- Bee Balm — todo
+- Beet — todo
+- Bilberry — todo
+- Black Cohosh — todo
+- Black Lentils — todo
+- Black Pepper — todo
+- Black Seeds (Nigella) — todo
+- Blueberry — todo
+- Boswellia — done (Frankincense)
+- Brazil Nut — todo
+- Broccoli — todo
+- Burdock — todo
+- Butcher's Broom — todo
+- Butterfly Pea — todo
+- Calamus — todo (safety: β-asarone)
+- Calendula — todo
+- Caraway — todo
+- Cardamom — todo
+- Cascara sagrada — todo (stimulant laxative caution)
+- Cat's claw — todo
+- Cauliflower — todo
+- Cayenne pepper — todo
+- Celery seed — todo
+- Chamomile — todo
+- Cherry — todo
+- Chia Seeds — todo
+- Cinnamon — todo
+- Clove — todo
+- Coconut Oil — todo
+- Coffee — todo
+- Comfrey — todo (internal use caution / PA toxicity)
+- Corn / Yu Mi Shu — todo
+- Cramp bark — todo
+- Cranberry — todo
+
+## From TOC — D–G
+- Dandelion — todo
+- Dark Chocolate — todo
+- Deadly Nightshade — todo (TOXIC — educational/historical only)
+- Devil's Claw — todo
+- Dong Quai — todo
+- Dried Rose / Rose Petals — todo
+- Echinacea — todo
+- Elderflower — todo
+- Elecampane — todo
+- Ephedra / Ma Huang — todo (RESTRICTED / serious safety)
+- Eucalyptus — todo
+- Evening Primrose — todo
+- Fennel — todo
+- Fenugreek — todo
+- Feverfew — todo
+- Flaxseed — todo
+- Galangal — todo
+- Gentian — todo
+- Ginger — todo
+- Ginkgo biloba — todo
+- Ginseng / Ren Shen — todo
+- Goji Berry — todo
+- Goldenseal — todo
+- Gotu Kola — todo
+- Grapes — todo
+- Green Tea — todo
+
+## From TOC — H–M
+- Hawthorn — todo
+- Hemp Seeds — todo
+- Holy basil — todo
+- Hops — todo
+- Horehound — todo
+- Horse Chestnut — todo
+- Horseradish — todo
+- Hyssop — done
+- Indian Sandalwood — todo
+- Juniper Berry — todo
+- Kava — todo (liver safety caution)
+- Kefir — todo
+- Kombucha — todo
+- Kudzu — todo
+- Lavender — todo
+- Lemon — todo
+- Lemon balm — todo
+- Lemongrass — todo
+- Licorice — todo
+- Lime — todo
+- Linden Flower — todo
+- Lion's Mane Mushroom — todo
+- Lobelia — todo (narrow therapeutic index / caution)
+- Maca — todo
+- Macadamia Nuts — todo
+- Marshmallow — todo
+- Milk thistle — todo
+- Moringa — todo
+- Motherwort — todo
+- Mugwort — todo
+- Mullein — todo
+- Mustard — done
+- Myrrh — done
+
+## From TOC — N–S
+- Neem — todo
+- Nettle — todo
+- Nutmeg — todo
+- Olive Oil — done
+- Onion — todo
+- Oregano — todo
+- Passionflower — todo
+- Peppermint — todo (related to Mint — can deepen/cross-link)
+- Pineapple — todo
+- Plantain — todo
+- Pomegranate — done
+- Psyllium — todo
+- Purslane — todo
+- Raspberries — todo
+- Raw Honey — todo
+- Red clover — todo
+- Reishi mushroom — todo
+- Rhodiola rosea — todo
+- Rooibos — todo
+- Roselle — todo
+- Rosemary — todo
+- Saffron — todo
+- Sage — todo
+- Sarsaparilla — todo
+- Saw Palmetto — todo
+- Senna — todo (stimulant laxative caution)
+- Shallot — todo
+- Shiitake and Maitake Mushrooms — todo
+- Skullcap — todo
+- Slippery Elm — todo
+- Spirulina — todo
+- St. John's wort — todo (drug interactions)
+- Strawberry — todo
+- Sumac — todo
+- Sunflower Seeds — todo
+
+## From TOC — T–Y + extras
+- Tea Tree — todo
+- Thyme — todo
+- Tribulus Terrestris — todo
+- Turkey Tail Mushroom — todo
+- Turmeric — todo
+- Uva Ursi — todo
+- Valerian — todo
+- Vervain — todo
+- Visnaga — todo
+- Walnut — todo
+- Watercress — todo
+- White Peony — todo
+- White willow — todo
+- Wild Yam — todo
+- Witch Hazel — todo
+- Wormwood — todo (thujone caution; biblical wormwood notes)
+- Yarrow — todo
+- Yogurt — todo
+- Yucca — todo
+
+## Additional TOC names (later sections)
+- Activated Charcoal — todo
+- African Wormwood — todo
+- Amargo / Bitter-wood — todo
+- Andrographis — todo
+- Annatto — todo
+- Arjun — todo
+- Asthma Plant — todo
+- Baobab — todo
+- Barberry — todo
+- Boldo — todo
+- Borage — todo (PA caution)
+- Brahmi — todo
+- Buchu — todo
+- Bupleurum — todo
+- California Poppy — todo
+- Castor Bean — todo (TOXIC seeds — oil vs seed distinction)
+- Chasteberry — todo
+- Chervil — todo
+- Chickweed — todo
+- Chinese Rhubarb — todo
+- Cinchona — todo
+- Codonopsis / Dang Shen — todo
+- Coleus — todo
+- Common Hepatica / Liverwort — todo
+- Cornflower — todo
+- Corydalis — todo
+- Damiana — todo
+- Dan Shen / Chinese Sage — todo
+- Diatomaceous Earth — todo
+- Epazote — todo
+- Epsom Salts — todo
+- Fo Ti / He Shou Wu — todo
+- Foxglove — todo (TOXIC — cardiac glycosides; educational only)
+- Fumitory — todo
+- Ground Ivy — todo
+- Guggul — todo
+- Henbane — todo (TOXIC — educational only)
+- Honeybush — todo
+- Horsetail — todo
+- Jamaica Dogwood — todo
+- Jasmine — todo
+- Ju Hua / Florists' Chrysanthemum — todo
+- Laurustinus — todo
+- Leonotis / Lion's Ear — todo
+- Meadowsweet — todo
+- Mistletoe — todo (safety caution)
+- Noni — todo
+- Pau d'Arco — todo
+- Pelargonium / Umckaloabo — todo
+- Platycodon / Balloon Flower — todo
+- Prickly Ash — todo
+- Rehmannia / Di Huang — todo
+- Robert Geranium / Herb Robert — todo
+- Schisandra — todo
+- Sea Buckthorn — todo
+- Shepherd's Purse — todo
+- Siberian Ginseng / Eleuthero — todo
+- Snowdrop — todo (TOXIC alkaloids — educational only)
+- Sweet Annie / Qing Hao — todo
+- Varuna — todo
+- White Snakeroot — todo (TOXIC — educational only)
+- Wild Pansy — todo
+- Yohimbe — todo (serious safety / interaction caution)
+- Ziziphus / Jujube — todo
+
+## Vitamins / nutrients (optional later — not plant monographs)
+Calcium, CoQ10, Fiber, Glucosamine/Chondroitin, Iron, Magnesium, Melatonin, Omega-3, Probiotics, B12, C, D, E, Zinc — defer unless Freddy asks.
+
+## Recipes section
+Historical/traditional recipes (Kyphi, Four Thieves Vinegar, etc.) — separate track after herb monographs unless prioritized.
+
+## Batch plan
+- Batch 1 (next): Almond, Anise, Arnica, Ashwagandha, Astragalus, Basil, Bay Laurel, Bilberry, Black Cohosh, Black Pepper, Black Seeds, Calendula, Chamomile, Cinnamon
+- Continue alphabetically thereafter; toxic entries get strong educational warnings and no DIY dosing.
