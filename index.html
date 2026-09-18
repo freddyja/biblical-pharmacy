@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Biblical Pharmacy — an educational look at healing herbs and plants mentioned in Scripture. Not medical advice."
+    />
+    <title>Biblical Pharmacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" role="banner" aria-label="Garden of healing herbs">
+      <span class="visually-hidden">Biblical Pharmacy</span>
+    </header>
+
+    <main>
+      <section class="panel" aria-labelledby="brand-title">
+        <div class="panel-inner">
+          <h1 id="brand-title" class="brand">Biblical Pharmacy</h1>
+          <p class="tagline">
+            God placed these healing herbs on earth with a purpose.
+          </p>
+          <p class="tagline-accent">The Bible tells us so.</p>
+
+          <div class="search-wrap">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <label class="visually-hidden" for="search">Search herbs</label>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search by name or benefit…"
+              autocomplete="off"
+            />
+          </div>
+
+          <ul class="herb-grid" id="featured-grid" aria-label="Featured herbs"></ul>
+          <p class="no-results" id="featured-empty">No featured herbs match your search.</p>
+
+          <button
+            type="button"
+            class="cta-leaf"
+            id="reveal-cta"
+            aria-expanded="false"
+            aria-controls="full-catalog"
+          >
+            Reveal the Full Biblical Pharmacy
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="catalog"
+        id="full-catalog"
+        aria-labelledby="catalog-title"
+        hidden
+      >
+        <h2 id="catalog-title">Full Biblical Pharmacy</h2>
+        <p class="catalog-lead">
+          More plants and aromatics woven through Scripture—shared for learning
+          and wonder, never as a prescription.
+        </p>
+        <ul class="catalog-grid" id="catalog-grid"></ul>
+        <p class="no-results" id="catalog-empty">No catalog herbs match your search.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <strong>Educational resource only.</strong> This site does not diagnose,
+        treat, or prescribe. Never stop or change medicines without your
+        clinician.
+      </p>
+      <p>© Biblical Pharmacy — Scripture references for reflection &amp; study.</p>
+    </footer>
+
+    <!-- Detail modal -->
+    <div
+      class="modal-backdrop"
+      id="modal-backdrop"
+      role="presentation"
+      hidden
+    >
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        id="herb-modal"
+      >
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close">
+          ×
+        </button>
+        <div class="modal-badge" id="modal-badge"></div>
+        <h2 id="modal-title"></h2>
+        <p class="verse-ref" id="modal-verse"></p>
+        <blockquote id="modal-verse-text"></blockquote>
+        <h3>Traditional uses</h3>
+        <p id="modal-uses"></p>
+        <h3>Preparation note</h3>
+        <p id="modal-prep"></p>
+        <div class="disclaimer">
+          <strong>Important disclaimer</strong>
+          This information is for educational and historical interest only. It is
+          not medical advice, diagnosis, or treatment. Do not use herbs to replace
+          prescribed care, and do not stop medications because of anything on this
+          site. Consult a qualified health professional before using any plant
+          preparation, especially if you are pregnant, nursing, or have a health
+          condition.
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+
+    <script src="herbs.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
