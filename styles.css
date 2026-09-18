@@ -504,6 +504,86 @@ a {
   overflow: hidden;
 }
 
+
+/* Reference links under catalog lead */
+.ref-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+  margin: -0.75rem 0 1.25rem;
+}
+
+.ref-link {
+  display: inline-block;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(229, 209, 157, 0.4);
+  background: rgba(240, 226, 176, 0.1);
+  color: var(--gold-bright);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.ref-link:hover,
+.ref-link:focus-visible {
+  background: rgba(240, 226, 176, 0.22);
+  color: #fff;
+  outline: none;
+}
+
+/* A–Z letter index */
+.az-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  max-width: 42rem;
+}
+
+.az-btn {
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.4rem;
+  border-radius: 8px;
+  border: 1px solid rgba(229, 209, 157, 0.28);
+  background: var(--forest-mid);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.az-btn:hover,
+.az-btn:focus-visible {
+  border-color: var(--gold-dim);
+  background: #164830;
+  color: var(--gold-bright);
+  outline: none;
+}
+
+.az-btn.is-active {
+  background: rgba(240, 226, 176, 0.22);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.az-btn[data-letter="all"] {
+  padding: 0 0.7rem;
+  min-width: auto;
+}
+
+.az-label {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 1rem;
+}
+
 /* Modal */
 .modal-backdrop {
   position: fixed;
