@@ -13,6 +13,12 @@
   const azIndex = document.getElementById("az-index");
   const azLabel = document.getElementById("az-label");
   let activeLetter = "all";
+  const getHerbList = () =>
+    typeof getAllHerbs === "function"
+      ? getHerbList()
+      : typeof window !== "undefined" && typeof window.getAllHerbs === "function"
+        ? window.getHerbList()
+        : [];
   const backdrop = document.getElementById("modal-backdrop");
   const modalEl = document.getElementById("herb-modal");
   const modalClose = document.getElementById("modal-close");
@@ -189,6 +195,7 @@
   }
 
 
+
   function herbLetter(herb) {
     const ch = (herb.name || "?").trim().charAt(0).toUpperCase();
     return /[A-Z]/.test(ch) ? ch : "#";
@@ -197,29 +204,33 @@
   function buildAzIndex() {
     if (!azIndex) return;
     const counts = {};
-    getAllHerbs().forEach((h) => {
-      const L = herbLetter(h);
-      counts[L] = (counts[L] || 0) + 1;
-    });
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").filter((L) => counts[L]);
-    // Keep All button; rebuild letter buttons
-    azIndex.querySelectorAll(".az-btn[data-letter]:not([data-letter='all'])").forEach((b) => b.remove());
-    letters.forEach((L) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "az-btn";
-      btn.dataset.letter = L;
-      btn.setAttribute("aria-pressed", "false");
-      btn.textContent = L;
-      btn.title = `${counts[L]} plant${counts[L] === 1 ? "" : "s"}`;
-      btn.addEventListener("click", () => setLetterFilter(L));
-      azIndex.appendChild(btn);
-    });
-    const allBtn = azIndex.querySelector("[data-letter='all']");
-    if (allBtn && !allBtn.dataset.bound) {
-      allBtn.dataset.bound = "1";
-      allBtn.addEventListener("click", () => setLetterFilter("all"));
+    try {
+      getHerbList().forEach((h) => {
+        const L = herbLetter(h);
+        counts[L] = (counts[L] || 0) + 1;
+      });
+    } catch (err) {
+      console.error("Biblical Pharmacy: could not read herbs for A–Z index", err);
     }
+
+    azIndex.querySelectorAll(".az-btn").forEach((btn) => {
+      const letter = btn.dataset.letter;
+      if (!btn.dataset.bound) {
+        btn.dataset.bound = "1";
+        btn.addEventListener("click", () => setLetterFilter(letter));
+      }
+      if (letter === "all") {
+        btn.disabled = false;
+        btn.hidden = false;
+        btn.title = "Show all plants";
+        return;
+      }
+      const n = counts[letter] || 0;
+      btn.disabled = n === 0;
+      btn.hidden = n === 0;
+      btn.title = n ? `${n} plant${n === 1 ? "" : "s"}` : "No plants";
+      btn.classList.toggle("is-empty", n === 0);
+    });
   }
 
   function setLetterFilter(letter) {
@@ -251,7 +262,7 @@
     const q = (filter || "").trim().toLowerCase();
     catalogGrid.innerHTML = "";
     let shown = 0;
-    const list = getAllHerbs()
+    const list = getHerbList()
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
     list.forEach((herb) => {
@@ -416,12 +427,12 @@
     if (catalogSection.classList.contains("is-open")) renderCatalog(q);
   });
 
+  buildAzIndex();
   renderFeatured();
   renderCatalog();
+  setCatalogOpen(true);
 
-  if (location.hash === "#full-catalog") {
-    setCatalogOpen(true);
-    renderCatalog(searchInput.value);
+  if (window.location.hash === "#full-catalog") {
     catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
