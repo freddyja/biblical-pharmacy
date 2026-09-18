@@ -244,6 +244,7 @@
       setCatalogOpen(true);
     }
     renderCatalog(searchInput.value);
+    catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function renderCatalog(filter) {
