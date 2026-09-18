@@ -11,50 +11,57 @@ const HERBS = {
       verseText:
         "And they came unto the brook of Eshcol, and cut down from thence a branch with one cluster of grapes… and they brought of the pomegranates, and of the figs.",
       scientificName: "*Punica granatum* L. (Lythraceae; formerly Punicaceae)",
-      commonName: "Pomegranate; grenade fruit; “rimmon” (Hebrew)",
-      benefits:
-        "Fruit of abundance & temple beauty — traditional antioxidant & circulatory folk ally",
+      scientificNote:
+        "Hebrew *rimmon* is securely identified with the cultivated pomegranate. The same fruit appears among the seven species of the Promised Land (Deuteronomy 8:8), on the high priest’s robe, and in Solomon’s temple ornament—food, symbol, and sacred craft together.",
+      commonName: "Pomegranate; rimmon (Hebrew); granada",
+      benefits: "Fruit of abundance — traditional food of vitality & richly pigmented arils",
       botanicalSummary:
-        "A deciduous shrub or small tree, often 10–20 feet tall, with glossy leaves, scarlet tubular flowers, and distinctive leathery-skinned fruit packed with juicy, ruby arils around hard seeds. The rind (pericarp), flowers, leaves, and bark have all been used in folk medicine; the edible arils and pressed juice are the everyday food forms. Characteristic constituents include ellagitannins (notably punicalagins), anthocyanins, and other polyphenols that give the fruit its deep color and laboratory antioxidant interest.",
+        "A large deciduous shrub or small tree with glossy leaves, scarlet funnel-shaped flowers, and a leathery-skinned fruit packed with jewel-like arils (seed-covered pulp). The rind is thick and tannin-rich; the juice is tart-sweet and deeply red from polyphenols. Fresh arils pop with juice; dried peel is astringent and bitter.",
       intro:
-        "From the spies’ report of Canaan’s fruitfulness (Numbers 13:23) to the pomegranates embroidered on the high priest’s robe and carved on Solomon’s Temple pillars (Exodus 28:33–34; 1 Kings 7:18–20), Scripture presents this fruit as a sign of blessing, beauty, and abundance. God filled the land with plants that nourish body and imagination; traditional Near Eastern and Mediterranean healers also valued rind and juice for digestion and vitality. Approach it as food first—warm, practical stewardship of a gift, not a miracle cure.",
+        "When the spies returned from Canaan, they carried pomegranates as proof that the land was rich (Numbers 13:23). God named the pomegranate among the gifts of the Promised Land (Deuteronomy 8:8), and Israel wove its shape into priestly garments and temple capitals—fruit as both food and holy art. Traditional kitchens prized the arils and juice; folk practice sometimes used the astringent rind for diarrhea and sore-throat gargles. Modern interest centers on **punicalagins**, **ellagic acid**, and other polyphenols studied for antioxidant and heart-health markers. A fruit of abundance—not a capsule to replace medical care.",
       region:
-        "Native to the region from Iran through the western Himalayas and long cultivated across the Mediterranean, Middle East, North Africa, South Asia, and warmer parts of the Americas. Prefers hot, dry summers and well-drained soil.",
+        "Native to the region from Iran through the Himalayan foothills; long cultivated across the Mediterranean, Levant, North Africa, and warm-temperate gardens worldwide. Biblical-era orchards of Israel and the wider Near East prized the fruit.",
+      identityNotes: [
+        "**Hebrew rimmon:** Standard botanical identification is *Punica granatum*—not a later English substitution.",
+        "**Promised Land fruit:** Listed with wheat, barley, vines, figs, olives, and honey in Deuteronomy 8:8.",
+        "**Sacred ornament:** Pomegranates of blue, purple, and scarlet decorated the high priest’s robe (Exodus 28:33–34; 39:24–26) and the bronze capitals of Solomon’s temple (1 Kings 7:18–20).",
+      ],
       ancientUses: [
-        "**Spies of Canaan:** Grapes, pomegranates, and figs brought back from the brook of Eshcol as evidence of the land’s goodness (Numbers 13:23; cf. Deuteronomy 8:8 listing pomegranate among Israel’s promised produce).",
-        "**Temple & priestly motifs:** Pomegranate ornaments on Aaron’s robe hem (Exodus 28:33–34; 39:24–26) and carved pomegranates on the Temple’s bronze pillars (1 Kings 7:18–20; 2 Chronicles 3:16; 4:13)—symbols of fruitfulness in sacred space.",
-        "**Poetry & prophecy:** Song of Songs repeatedly uses pomegranate imagery for beauty and delight (e.g., 4:3, 13; 6:7, 11; 7:12; 8:2); Joel 1:12 and Haggai 2:19 include pomegranates among crops that wither or are restored.",
-        "**Near Eastern & classical folk medicine:** Fruit, rind, and bark traditionally used for diarrhea, dysentery, intestinal parasites, sore throat, and as astringent gargles or washes (Egyptian, Greek, Persian, and later Islamic herbal traditions).",
-        "**Culinary:** Fresh arils, juice, molasses (*dibs rumman*), and dried seeds as spice (anardana) across Levantine and Persian kitchens.",
+        "**Spies’ evidence:** Clusters of grapes, pomegranates, and figs brought from Eshcol as signs of Canaan’s fruitfulness (Numbers 13:23).",
+        "**Priestly robe & temple:** Pomegranate motifs on Aaron’s hem and on temple pillars—beauty and abundance in worship.",
+        "**Song of Songs:** The fruit and orchard of pomegranates appear in love poetry of the ancient Near East (e.g., Song of Songs 4:3, 13; 6:7, 11; 8:2).",
+        "**Food of the land:** Fresh arils, juice, and later thickened molasses (*dibs rumman*) in Levantine kitchens.",
+        "**Classical folk medicine:** Dioscorides and later writers note the astringent rind and fruit for digestive complaints, worms, and mouth rinses—historical practice, not a modern protocol.",
+        "**Symbol:** Across the Near East, a sign of fertility, blessing, and plenty—read in Scripture as God’s provision, not a charm.",
       ],
       modernResearch: [
-        "NCCIH notes traditional use for parasites, diarrhea, and sore throat; modern human studies focus mainly on **juice or extracts**.",
-        "Meta-analyses and reviews suggest **possible modest reductions in blood pressure** and **small effects on blood glucose**; cholesterol/lipid results have been **inconsistent / unclear**.",
-        "Rich polyphenol content (punicalagins, anthocyanins) drives antioxidant and anti-inflammatory laboratory interest—**preclinical findings are not the same as proven cures**.",
-        "Evidence is **insufficient** to conclude benefit for most other promoted conditions; juice studies do not automatically apply to peel, root, or high-dose supplements.",
+        "NCCIH notes **limited but interesting** human research, often using **juice** rather than peel or capsules; many claims remain unproven.",
+        "Some trials suggest pomegranate juice may modestly affect **blood-pressure** or other cardiovascular markers; evidence is mixed and **not** a substitute for heart treatment.",
+        "Laboratory and review interest focuses on polyphenols (punicalagins, ellagic acid) and antioxidant activity—this does **not** equal a proven clinical “cure.”",
+        "Traditional uses for parasites, diarrhea, or wounds have **not** been established as modern medical treatments.",
+        "Juice as food is the best-studied form; concentrated peel, bark, or root preparations are a different (and potentially harsher) material.",
       ],
       sideEffects:
-        "Fruit and juice are generally considered food-safe for most people; occasional digestive upset or **allergic reactions** (itching, swelling, breathing difficulty) can occur. **Large amounts of root, stem, or peel** may be unsafe due to potentially toxic constituents—do not improvise “bark teas” or high-dose peel remedies. Concentrated extracts may affect blood pressure or interact with medicines—talk with a clinician if you take antihypertensives or other prescriptions; stop supplements before elective surgery if advised. Food amounts of fruit/juice are often considered acceptable in pregnancy and breastfeeding; **medicinal extracts and non-fruit plant parts lack adequate safety data**—prefer food forms. This is educational information, not a treatment plan.",
+        "Fruit and juice are generally well tolerated as food. Juice is acidic and may bother reflux or sensitive teeth. Digestive upset and, rarely, allergy can occur. NCCIH cautions that **root, stem, and peel** may be unsafe in large amounts because they contain harsher constituents. Talk with a clinician before regular medicinal juice or extracts if you take **warfarin**, blood-pressure medicines, or other prescriptions—interaction reports exist though they are not all confirmed. This is educational food history, not a treatment plan.",
       partsUsed:
-        "Edible arils and juice (primary); traditionally also dried peel/rind, flowers, leaves, and (historically) bark/root—**bark/root not recommended for casual use**.",
+        "Arils (pulp-covered seeds) and expressed juice as food; dried rind/peel in traditional astringent preparations (use caution). Flowers appear in some folk uses. Avoid casual use of root or bark.",
       preparations: [
-        "**Fresh fruit / arils:** Eat as food; sprinkle on salads, yogurt, or grain dishes.",
-        "**Juice:** Fresh-pressed or commercial; dilute if very tart; food use first.",
-        "**Dried peel tea (folk):** Occasional traditional astringent infusion—use culinary-grade peel sparingly; not a parasite “cleanse” protocol.",
-        "**Molasses / concentrate:** Culinary flavoring in Middle Eastern cooking.",
-        "**Storage:** Whole fruit cool and dry; juice refrigerated; dried peel airtight, cool, and dark.",
+        "**Fresh fruit:** Score the rind, break open, and eat the arils (seeds may be swallowed with the pulp).",
+        "**Juice:** Press or blend arils and strain; dilute with water if the flavor is intense. Prefer food-grade juice without unlisted concentrates.",
+        "**Culinary molasses:** Traditional Levantine pomegranate molasses for dressing and stews—food, not medicine.",
+        "**Dried peel tea (historical):** A strongly astringent folk infusion of rinsed dried rind—educational tradition only; do not treat as a parasite or diarrhea remedy.",
+        "**Storage:** Whole fruit cool and dry; juice refrigerated and used promptly; dried peel in airtight jars away from light.",
       ],
       dosage: [
-        "Educational / food-forward ranges (adults; not prescriptions):",
-        "**Fruit / juice:** Enjoy as food—often about **4–8 oz (120–240 mL)** juice daily in dietary studies contexts, or a serving of fresh arils with meals. There is no single “therapeutic” dose.",
-        "**Extracts / capsules:** Follow reputable product labels only under clinician guidance; potencies vary widely.",
-        "**Peel / bark preparations:** Avoid high-dose or prolonged self-experimentation.",
-        "Prefer food forms; discontinue if allergy or distress appears; seek care for persistent symptoms.",
+        "**Food:** A serving of arils or about **4–8 oz (120–240 mL)** juice with meals is a common food-level amount in studies and kitchens—not a prescribed “dose.”",
+        "**Peel / bark / root:** **Do not** self-dose large amounts; these parts are not equivalent to eating the fruit.",
+        "**Extracts & capsules:** Follow a reputable label and clinician advice; they are **not** proven treatments for heart disease, cancer, or infection.",
+        "Do not use pomegranate products to replace prescribed cardiac, blood-pressure, or cancer care.",
       ],
       traditionalUses:
         "Celebrated across the ancient Near East as a symbol of abundance and vitality. Traditionally valued for its richly pigmented arils and rind, long associated with supporting general wellness and circulation in folk herbal practice.",
       prepNote:
-        "Enjoy fresh arils, pressed juice diluted with water, or dried peel tea. Seeds may be eaten whole. Store fruit in a cool place.",
+        "Enjoy fresh arils, pressed juice diluted with water, or—only as historical education—modest dried-peel tea. Seeds may be eaten with the aril. Store fruit in a cool place.",
       emoji: "🍎",
       icon: "pomegranate",
     },
@@ -64,52 +71,58 @@ const HERBS = {
       verse: "Exodus 16:31",
       verseText:
         "And the house of Israel called the name thereof Manna: and it was like coriander seed, white; and the taste of it was like wafers made with honey.",
-      scientificName: "*Coriandrum sativum* L. (Apiaceae / carrot family)",
-      commonName:
-        "Coriander (seeds/fruit); cilantro or Chinese parsley (fresh leaves); dhania",
-      benefits: "Manna’s likeness — traditional digestive & kitchen spice",
+      scientificName: "*Coriandrum sativum* L. (Apiaceae / parsley family)",
+      scientificNote:
+        "Hebrew *gad* in Exodus 16:31 and Numbers 11:7 is the usual identification for coriander seed—the pale, round fruit to which manna was compared. Leaf (cilantro) and seed are the same species at different stages, not two different biblical plants.",
+      commonName: "Coriander; cilantro (fresh leaf); Chinese parsley; dhanyaka (Ayurvedic name for the fruit)",
+      benefits: "Seed of manna’s likeness — traditional kitchen spice & after-meal ease",
       botanicalSummary:
-        "An annual herb with delicate, parsley-like lower leaves (cilantro), finely divided upper leaves, and umbels of small white to pale pink flowers that ripen into round, ridged, aromatic schizocarp “seeds.” Fresh leaf aroma is bright and polarizing; dried seeds are warm, citrusy, and sweet-spicy. Major seed volatiles include **linalool** and related monoterpenes, along with fatty acids (notably petroselinic acid) in the fruit oil.",
+        "An annual herb with lacy lower leaves (cilantro) and more thread-like upper leaves; umbels of small white to pale-pink flowers yield round, ridged, pale-tan fruits commonly called seeds. The seed scent is warm-citrus and spicy; the leaf is bright and citrusy—or soapy to people with a well-known odor-receptor variant. Crushing the seed releases a **linalool**-rich aroma.",
       intro:
-        "When Israel named the wilderness bread “manna,” Scripture likened it to **coriander seed**—white, and tasting like honey wafers (Exodus 16:31; cf. Numbers 11:7). That small comparison places a common kitchen spice inside the story of God’s daily provision. Traditional Mediterranean, Ayurvedic, and Middle Eastern kitchens have long crushed coriander seeds to season food and ease after-meal heaviness. God filled gardens with fragrant umbels for flavor and gentle comfort—best used with gratitude and restraint.",
+        "When Israel described manna, they reached for coriander seed—white, round, and familiar from the kitchen (Exodus 16:31; Numbers 11:7). God fed His people in the wilderness with bread they could only compare to a common spice. Coriander has seasoned Egyptian, Levantine, and Mediterranean food for millennia. Folk herbalism used the **carminative** seeds for after-meal “wind” and unsettled digestion. That heritage is culinary and traditional—not a proven “detox,” heavy-metal cleanse, or cure. A humble spice of Scripture, best met first on the plate.",
       region:
-        "Likely originated in the Mediterranean / Near East / western Asia; now cultivated worldwide in temperate and subtropical climates. Prefers full sun and well-drained soil; bolts quickly in heat.",
+        "Native to the eastern Mediterranean and western Asia; now grown worldwide. Biblical-era kitchens of Egypt and Canaan knew the seed well; it remains a staple from the Levant to India and Latin America (as cilantro leaf).",
+      identityNotes: [
+        "**Manna’s likeness:** Exodus and Numbers compare manna to coriander seed in appearance (and, in Exodus, imply a known household spice).",
+        "**One plant, two foods:** Fresh aerial parts are cilantro; ripe dried fruits are coriander seed.",
+        "**Not a mystery botanical:** Standard identification is *Coriandrum sativum*, not a lost desert shrub.",
+      ],
       ancientUses: [
-        "**Manna comparison:** Exodus 16:31 and Numbers 11:7 compare manna’s appearance to coriander seed—evidence the spice was familiar in the ancient Near East.",
-        "**Biblical-era kitchens:** Seeds used as condiment and trade spice across Egypt, Israel, Greece, and Rome.",
-        "**Classical herbalism:** Dioscorides and later writers describe coriander for digestion, “wind,” and as an aromatic; seeds sometimes used to correct the taste of purgatives.",
-        "**Ayurveda & Unani:** Seed and leaf traditionally for digestive fire, appetite, and cooling or carminative formulas.",
-        "**Culinary continuity:** Essential in curry blends, pickling spices, sausages, breads, and fresh herb sauces (chutneys, salsas).",
+        "**Scripture’s comparison:** Manna “like coriander seed, white,” with a taste like honey wafers (Exodus 16:31); “as coriander seed” in Numbers 11:7.",
+        "**Egyptian & Near Eastern spice:** Seeds recovered from ancient Mediterranean contexts; a seasoning of breads, stews, and pickles.",
+        "**Greek & Roman herbalism:** Dioscorides and later writers list coriander among aromatic, digestive kitchen remedies.",
+        "**Ayurveda, Unani & Chinese folk use:** Seeds as a traditional digestive (*deepana* / carminative) spice; leaves in cooling culinary preparations.",
+        "**Medieval Europe:** Seed in sausages, breads, and gripe-type folk teas—food first, physic second.",
       ],
       modernResearch: [
-        "Reviews describe antioxidant, antimicrobial, and metabolic laboratory themes; **human evidence for most medicinal claims remains limited**.",
-        "Small clinical studies have explored coriander seed powder for **glycemic and lipid markers** in type 2 diabetes contexts—interesting but not definitive treatment evidence.",
-        "Traditional carminative (gas-easing) and digestive uses remain the most plausible folk applications recognized in herbal education.",
-        "Essential-oil research (linalool-rich) is largely preclinical—**not a license to ingest the oil**.",
+        "Culinary coriander is widely eaten; **clinical evidence for disease treatment is limited** despite many traditional claims.",
+        "Reviews describe laboratory antimicrobial, antioxidant, and digestive-smooth-muscle findings—mostly preclinical.",
+        "Small human studies have explored lipids, blood sugar, or digestive comfort; results are preliminary and **not conclusive**.",
+        "Cilantro “heavy-metal detox” or chelation claims are **not** established medical fact and should not replace clinical care for poisoning.",
+        "Essential-oil chemistry (often **linalool**-rich in seed) is well described; that is flavor chemistry, not a license to swallow oil.",
       ],
       sideEffects:
-        "Culinary amounts of leaf and seed are generally well tolerated. Larger medicinal amounts may cause **allergy** (including oral allergy, hives, or asthma—more reported in spice workers), skin irritation from oil, or, theoretically, additive effects with blood-sugar or blood-pressure medicines. Use caution if you have low blood pressure or diabetes and take related drugs. **Medicinal doses in pregnancy:** safety not firmly established—stick to food amounts unless a clinician advises otherwise. **Coriander essential oil: do not ingest** casually. Stop use if rash, breathing difficulty, or unusual symptoms appear.",
+        "Food amounts of seed and leaf are generally well tolerated. True allergy can occur, especially in people sensitive to other Apiaceae (celery, fennel, caraway, dill). Occupational spice allergy (asthma, hives) is reported. Cilantro’s soapy taste is usually genetic, not an allergy. Concentrated extracts may lower blood sugar or blood pressure in some experimental settings—talk with a clinician if you use medicines for those conditions. **Pregnancy and breastfeeding: stay with food amounts** unless a clinician advises otherwise; concentrated extracts are not well studied. **Coriander essential oil is not for ingestion.** Educational use only.",
       partsUsed:
-        "Dried ripe fruits (“seeds”); fresh leaves (cilantro); occasionally root in some cuisines; essential oil from fruit (aromatic/external only for educational safety).",
+        "Ripe dried fruit (seed); fresh leaves and young stems (cilantro); occasionally root in some cuisines. Essential oil distilled from the fruit.",
       preparations: [
-        "**Culinary seed:** Lightly toast and crush for curries, stews, breads, and pickles.",
-        "**Infusion:** Crush 1 teaspoon seeds; steep covered in hot water 10 minutes; strain.",
-        "**Fresh leaf:** Add at the end of cooking or raw in salads and sauces.",
-        "**Powder / capsules:** Commercial seed powder—follow labels if used beyond food.",
-        "**Essential oil:** Fragrance or highly diluted topical use only—**never swallow without qualified supervision**.",
-        "**Storage:** Whole seeds keep aroma longer than powder; cool, dark, airtight.",
+        "**Culinary seed:** Toast lightly, crush or grind, and add to stews, breads, pickles, and spice blends.",
+        "**Fresh leaf:** Chop into salads, salsas, and finishing dishes; heat dulls the aroma—add late.",
+        "**Mild seed tea:** Crush **about 1 teaspoon** of seeds, warm them briefly to open the aroma, and steep covered in hot water **5–10 minutes**; strain.",
+        "**Storage:** Whole seeds in airtight jars, cool and dark (they keep aroma longer than powder); leaves refrigerated briefly or used fresh.",
+        "**Essential oil:** Flavoring or diluted external aroma only when professionally appropriate—**never swallow** as a home remedy.",
       ],
       dosage: [
-        "Educational traditional ranges (adults):",
-        "**Tea:** about **1–2 g** crushed seed (roughly ½–1 teaspoon) per cup, up to **2–3 cups** daily short-term as a digestive cup.",
-        "**Powder (studied supplement ballpark):** on the order of **1 g/day** in some small trials—**not a prescription**; food seasoning is the safer default.",
-        "**Essential oil:** **Do not ingest.** Dilute heavily for adult external fragrance only if appropriate.",
-        "Prefer kitchen use; seek professional advice for ongoing digestive or metabolic symptoms.",
+        "**Culinary:** Use freely as a kitchen spice and herb in meals.",
+        "**Seed infusion (traditional educational range):** about **1 teaspoon** (roughly **2 g**) crushed seed per cup, **1–2 cups** after meals when used short-term.",
+        "**Powdered seed in traditional herbal literature:** sometimes **1–5 g** up to three times daily—**not** a prescription; prefer food-level use unless guided by a qualified practitioner.",
+        "**Essential oil:** **Do not ingest.** Food-flavoring amounts in commercial products are not the same as dropping oil into a cup.",
+        "Do not use coriander as a detox protocol, diabetes treatment, or substitute for prescribed care.",
       ],
       traditionalUses:
         "Coriander seed and leaf (cilantro) have been used in biblical-era kitchens and folk traditions to season food and ease after-meal discomfort. Seeds were likened to manna in Scripture.",
       prepNote:
-        "Crush seeds lightly and steep as a mild tea, or use fresh leaves in meals. Warm seeds gently to release aroma before brewing.",
+        "Crush seeds lightly and steep as a mild tea, or use fresh leaves in meals. Warm seeds gently to release aroma before brewing. Educational tasting only—not a cleanse.",
       emoji: "🌿",
       icon: "coriander",
     },
@@ -119,54 +132,61 @@ const HERBS = {
       verse: "Matthew 23:23",
       verseText:
         "Woe unto you, scribes and Pharisees, hypocrites! for ye pay tithe of mint and anise and cummin…",
-      scientificName: "*Anethum graveolens* L. (Apiaceae)",
+      scientificName: "*Anethum graveolens* L. (Apiaceae / parsley family)",
       scientificNote:
-        "Matthew 23:23 (KJV) lists “mint and **anise** and cummin.” The Greek word is **ἄνηθον** (*anēthon*), which modern lexicons and most translations identify as **dill**, not true anise (*Pimpinella anisum*). True anise was less established in first-century Judea; dill grew as a garden herb and was tithed (cf. Mishnah *Ma‘aserot*). This monograph covers *Anethum graveolens* while noting the older English “anise” rendering.",
-      commonName:
-        "Dill; dill weed; garden dill; (KJV) “anise” in Matthew 23:23",
-      benefits:
-        "Tithed garden herb of the Gospels — traditional carminative for gentle digestive ease",
+        "Greek *anēthon* in Matthew 23:23 is widely identified as dill, though the KJV rendered it “anise.” Garden anise is *Pimpinella anisum*—a related but different spice. This monograph follows the dill identification common among botanists of the Gospels.",
+      commonName: "Dill; dill weed; dill seed; biblical “anise” (KJV of *anēthon*)",
+      benefits: "Tithed garden herb — traditional digestive comfort & gentle aroma",
       botanicalSummary:
-        "An annual (sometimes biennial) umbellifer with hollow stems, finely dissected blue-green fronds, and flat yellow flower umbels that yield flat, oval, ridged fruits (“seeds”). Leaf and seed share a warm, slightly sweet, anise-like aroma from essential-oil constituents such as **carvone**, limonene, and related monoterpenes.",
+        "A slender annual with blue-green, finely divided, feathery leaves and flat umbels of tiny yellow flowers that ripen into flattened, aromatic fruits (seeds). The scent is fresh, slightly sweet, and anise-like—hence the historic translation overlap. Seed aroma is rich in **carvone**; the green herb also carries **limonene**, **phellandrene**, and related monoterpenes.",
       intro:
-        "Jesus rebuked leaders who meticulously tithed garden herbs—mint, dill, and cumin—while neglecting justice, mercy, and faithfulness (Matthew 23:23). The point is moral, not botanical—but the verse freezes a real kitchen plant in the Gospel record. Traditional households steeped dill seed for colicky infants and after-meal comfort (“dill water” in European folk practice). God tucked helpful aromatics into ordinary gardens; use them with the same humility the verse demands—herbs never replace weightier matters of the heart.",
+        "Jesus named dill among the garden herbs meticulously tithed while justice, mercy, and faith were neglected (Matthew 23:23). The plant was ordinary enough to grow beside mint and cumin, yet carefully counted in religious accounting—even stems and leaves, according to later rabbinic discussion. Mediterranean folk kitchens have long used dill fronds and seeds to season fish, bread, and pickles, and to steep a mild cup for “wind” after meals. A small garden mercy: calming in the cup, not a sedative drug, and never a homemade medicine for infants.",
       region:
-        "Native to the Mediterranean and western Asia; naturalized and cultivated widely in Europe, North America, and temperate zones. Likes sun and well-drained soil; self-sows readily.",
+        "Native to the Mediterranean and western Asia; cultivated and sometimes wild in the Levant. Now a temperate garden and pickling herb worldwide. Prefers sun and well-drained soil.",
+      identityNotes: [
+        "**Matthew 23:23 anēthon:** Best read as dill (*Anethum graveolens*), not sweet anise.",
+        "**KJV “anise”:** Reflects later English spice names; keep cumin and mint as the companion tithed herbs in the same verse.",
+        "**Luke 11:42:** A parallel woe lists mint, rue, and garden herbs—same lesson, slightly different kitchen list.",
+        "**Isaiah “dill” in some versions:** Hebrew *qetsach* is usually nigella (black cumin), not this plant.",
+      ],
       ancientUses: [
-        "**Gospel tithing:** Dill (*anēthon*) among herbs tithed by Pharisees (Matthew 23:23)—paralleled in Jewish agricultural law recognizing dill as tithable produce.",
-        "**Classical medicine:** Greek and Roman writers used dill seed as a carminative and culinary aromatic; “dill water” became a long-standing European domestic remedy for gas and infant colic (historical practice—modern infant dosing needs clinician guidance).",
-        "**Culinary:** Leaves for fish, potatoes, pickles, and yogurt sauces; seeds in breads, soups, and pickling brine across Scandinavia, Eastern Europe, and the Near East.",
-        "**Folk Europe:** Infusions for digestion, mild sleep support, and nursing mothers’ folklore (evidence mixed; safety notes below).",
+        "**Gospel tithe:** Mint, dill (*anēthon*), and cumin counted to the last sprig while weightier matters of the law were left undone (Matthew 23:23).",
+        "**Levantine kitchen:** Fresh fronds and seed heads in fish, bread, and preserved vegetables—everyday flavor of the region.",
+        "**Greek & Roman herbalism:** Aromatic, carminative seed; Dioscorides-type kitchen medicine for digestion and “wind.”",
+        "**Pickling & spice:** Flowering umbels and ripe fruits to flavor cucumbers, vinegar, and breads across the Mediterranean and later Europe.",
+        "**Folk “gripe water” tradition:** Dill water historically given for infant colic in some cultures—**do not** dose babies from this page; seek pediatric care.",
+        "**Ayurveda:** Seed as a traditional digestive and diuretic spice (*shatapushpa* / related dill uses)—historical, not a diagnosis.",
       ],
       modernResearch: [
-        "German Commission E traditionally approved **dill seed** as a carminative (digestive gas support)—based on long use more than large modern trials.",
-        "Laboratory work explores antimicrobial and antioxidant themes; **robust clinical evidence for disease treatment is limited**.",
-        "Some obstetric research has examined dill seed related to **labor**—results are not a green light for self-medication in pregnancy (see Side Effects).",
-        "Essential-oil chemistry is well described; concentrated oil is **not** a casual internal remedy.",
+        "Dill herb and seed are **GRAS** as foods in the United States; that speaks to culinary safety, not proven drug effects.",
+        "Traditional carminative and spasmolytic uses have some laboratory and limited clinical exploration; **human evidence for treating disease remains modest**.",
+        "Essential-oil studies report antimicrobial or antioxidant findings in vitro—interesting chemistry, **not** a home infection treatment.",
+        "Do not confuse food seasoning with concentrated oil or extracts used in experiments.",
+        "No high-quality evidence supports dill as a treatment for anxiety disorders, infection, or infant colic in place of medical care.",
       ],
       sideEffects:
-        "Culinary dill leaf and seed are generally safe as food. Medicinal amounts may cause allergy (Apiaceae cross-reactivity possible) or, rarely, **photosensitivity**. **Pregnancy:** avoid medicinal doses and dill essential oil—traditional sources warn of menstrual-stimulating potential and insufficient safety data; **food amounts of the herb as seasoning are the prudent default**. Breastfeeding and infant “gripe water” traditions vary—ask a pediatric clinician before giving herbal preparations to babies. **Dill essential oil: do not ingest.** Seek care for severe allergic symptoms.",
+        "Culinary amounts of leaf and seed are generally food-like. Strong teas or the essential oil may irritate mouth or stomach. Allergy is possible, especially with other Apiaceae (celery-carrot-spice family). **Dill essential oil is not for ingestion** as a home remedy. Medicinal (not food) amounts in pregnancy or while breastfeeding: ask a clinician; ordinary cooking is different from concentrated extracts. **Never give herbal preparations to infants** based on this site. Educational information only—not a treatment plan.",
       partsUsed:
-        "Fresh and dried leaves (herb); ripe fruits (seeds); essential oil (aromatic/external caution).",
+        "Fresh and dried leaves (dill weed); ripe fruits (dill seed); flowering umbels. Essential oils separately distilled from herb or seed.",
       preparations: [
-        "**Culinary fronds:** Chop fresh into salads, fish, eggs, and sauces; add late to preserve aroma.",
-        "**Seed tea:** Crush lightly; steep 1 teaspoon in covered hot water 10 minutes.",
-        "**Pickling:** Flowering heads and seeds in brine.",
-        "**Traditional “dill water”:** Mild seed infusion historically used for gas—educational history, not a dosing protocol for infants without professional advice.",
-        "**Essential oil:** Diluted topical or aroma only—**never oral** without qualified supervision.",
-        "**Storage:** Freeze or dry leaves promptly; keep seeds whole until use.",
+        "**Culinary:** Chop fresh fronds into fish, yogurt, potatoes, and salads; add late to keep aroma.",
+        "**Infusion (tea):** Steep **1–2 teaspoons** fresh or dried fronds, or **about 1 teaspoon** lightly crushed seed, in hot water **5–8 minutes**, covered; strain. Pair with meals.",
+        "**Pickling:** Whole umbels and seeds in vinegar brines—food preservation, not medicine.",
+        "**Harvesting:** Cut leafy stems before full seed-set for “weed”; let umbels brown for seed; dry in shade.",
+        "**Storage:** Airtight jars, cool and dark; freeze extra fresh fronds if needed.",
+        "**Essential oil:** Flavoring or diluted scent only—**not for oral use** as a homemade dose.",
       ],
       dosage: [
-        "Educational traditional ranges (adults):",
-        "**Dried seed (Commission E–style ballpark):** about **3 g** seed daily as tea or culinary equivalent, divided—or roughly **1 teaspoon** crushed seed per cup, **1–3 cups** short-term.",
-        "**Leaf:** culinary handfuls as food; tea from 1–2 teaspoons dried herb per cup.",
-        "**Essential oil:** **Do not ingest.**",
-        "Pregnancy: **food seasoning only** unless a clinician directs otherwise.",
+        "**Culinary:** Season food freely with leaf and seed.",
+        "**Tea (traditional educational range for adults):** **1–2 teaspoons** dried herb or **about 1 teaspoon** crushed seed per cup, up to **2–3 cups** daily short-term with meals.",
+        "**Essential oil:** **Never a homemade internal dose.** Commercial food flavoring is not the same as swallowing drops.",
+        "Infants and young children: **do not** administer dill preparations from this guide.",
+        "Prefer culinary-grade herb; discontinue if you feel unwell; seek professional advice for ongoing digestive symptoms.",
       ],
       traditionalUses:
         "Dill (often linked with anise/dill of the Gospels) was among the garden herbs tithed in Jesus’ day. Folk use centers on its feathery fronds and seeds for gentle digestive comfort and a calming cup.",
       prepNote:
-        "Steep fresh or dried fronds and seeds in hot water for 5–8 minutes. Pair with meals; avoid overly strong decoctions.",
+        "Steep fresh or dried fronds and seeds in hot water for 5–8 minutes. Pair with meals; avoid overly strong decoctions. Not for infant dosing.",
       emoji: "🌱",
       icon: "dill",
     },
@@ -177,51 +197,61 @@ const HERBS = {
       verseText:
         "Then took Mary a pound of ointment of spikenard, very costly, and anointed the feet of Jesus, and wiped his feet with her hair: and the house was filled with the odour of the ointment.",
       scientificName:
-        "*Nardostachys jatamansi* (D.Don) DC. (Caprifoliaceae; formerly Valerianaceae / Nardostachyaceae)",
+        "*Nardostachys jatamansi* (D.Don) DC. (Caprifoliaceae; formerly placed in Valerianaceae)",
+      scientificNote:
+        "Greek *nardos pistikē* (“pure” or “genuine” nard) in John 12:3 and Mark 14:3 is the costly imported ointment of the Gospels. Hebrew *nerd* in Song of Songs belongs to the same perfume tradition. The plant is Himalayan—not native to Israel—which is why a pound of ointment was “very costly.” Later English “spikenard” has also been misapplied to spike lavender; that is a different plant.",
       commonName:
-        "Spikenard; nard; Indian spikenard; jatamansi; muskroot",
-      benefits:
-        "Costly ointment of devotion — precious Himalayan rhizome for fragrance & calm tradition",
+        "Spikenard; nard; Indian nard; jatamansi; muskroot (trade names vary; quality and identity often mixed)",
+      benefits: "Costly ointment of devotion — traditional perfume & calming aromatic",
       botanicalSummary:
-        "A small perennial alpine herb of the Himalayas with elongated rhizomes crowned by fibrous, aromatic root remains that look somewhat like a “spike” of matted fibers—hence “spike-nard.” Pink to pale mauve flowers rise in dense clusters. Distilled oil and ointment from the rhizome are earthy, sweet-woody, and deeply balsamic, rich in **sesquiterpenes** (including jatamansone / valeranone and related compounds). Wild populations are under severe harvest pressure; the species is **IUCN critically endangered** and listed under **CITES Appendix II**—ethical, cultivated, or verified sustainable sources matter.",
+        "A small perennial of high Himalayan slopes, with clusters of pink to pale-purple flowers and an aromatic rhizome sheathed in fibrous leaf bases. Distilled oil is amber, thick, and warm-earthy or musky-sweet. Characteristic constituents include **sesquiterpenes** such as jatamansone (valeranone). The wild plant is conservation-sensitive; genuine nard has long been imitated with cheaper valerians and lavenders.",
       intro:
-        "When Mary of Bethany poured a pound of pure nard on Jesus’ feet, the house filled with fragrance (John 12:3; cf. Mark 14:3). Song of Songs likewise treasures nard among royal perfumes (1:12; 4:13–14). Scripture frames spikenard as costly love, not casual commodity. Ayurvedic and classical traditions also valued the rhizome for calming the mind and scenting oils. God placed rare alpine fragrance on high slopes—receive it with reverence, conservation, and no rush to swallow essential oils.",
+        "Mary of Bethany poured a pound of very costly spikenard on Jesus’ feet; the house filled with fragrance (John 12:3; cf. Mark 14:3). Judas objected to the price; Jesus received the act as devotion preparing Him for burial. Song of Songs already knew nard as love’s perfume (1:12; 4:13–14). This is a plant of worship and worth—Himalayan roots carried by incense and spice routes to the Levant. Traditional Ayurvedic practice (*jatamansi*) used the rhizome as a calming aromatic. Scripture’s lesson is costly love, not a protocol to ingest essential oils or to treat disease.",
       region:
-        "Alpine Himalayas of India, Nepal, Bhutan, and adjacent China/Tibet, typically at high elevations on steep, moist, rocky slopes. Ancient trade carried the ointment west to the Levant, Egypt, Greece, and Rome.",
+        "Alpine Himalaya (India, Nepal, Bhutan, and adjacent highlands of China/Tibet), typically at high elevation on rocky slopes. Ancient trade—not local Israeli gardens—brought the processed ointment westward into Egypt, Rome, and Judea.",
+      identityNotes: [
+        "**Gospels:** *nardos pistikē*—genuine nard ointment in an alabaster (or similar) flask; Mark notes it could have been sold for more than three hundred denarii (Mark 14:3–5).",
+        "**Song of Songs:** Hebrew *nerd* as luxury perfume, not a field herb of Canaan.",
+        "**Not spike lavender:** *Lavandula latifolia* and some valerians have been sold as “spikenard”; biblical nard is the Himalayan *Nardostachys* tradition.",
+        "**Conservation:** *N. jatamansi* is threatened by overharvest in parts of its range and is listed on **CITES Appendix II**; prefer not to drive wild collection for curiosity.",
+      ],
       ancientUses: [
-        "**Anointing of Jesus:** Mary’s costly spikenard ointment (John 12:3; Mark 14:3–5)—devotion measured in scent and sacrifice; Judas objected to the price.",
-        "**Song of Songs:** Nard as luxury perfume and love imagery (Song of Songs 1:12; 4:13–14).",
-        "**Classical luxury:** Pliny and other writers describe nard as an expensive imported ointment ingredient for perfume and status.",
-        "**Ayurveda & Unani:** Rhizome traditionally as a bitter tonic, calming/nervine herb, and aromatic for insomnia, agitation, headaches, and digestive discomfort (traditional indications—not proven modern diagnoses).",
-        "**Hair & skin oils:** Historical use in medicinal oils said to darken or support hair—folk cosmetic tradition.",
+        "**Anointing of Jesus:** Mary’s pound of ointment poured in Bethany (John 12:3; Mark 14:3)—fragrance filling the house as an act of worship.",
+        "**Song of Songs:** Nard among the precious scents of love poetry (Song of Songs 1:12; 4:13–14).",
+        "**Roman luxury:** Pliny and perfume-makers knew costly nard (*nardinum*); cheaper substitutes were already a problem in antiquity.",
+        "**Classical herbalism:** Dioscorides describes nard as a warming aromatic used in perfume and folk recipes for the stomach and other complaints—historical lists, not home protocols.",
+        "**Ayurveda & Himalayan tradition:** Rhizome (*jatamansi*) as a traditional nervine, incense, and hair/perfume material—practitioner-guided in its home systems.",
+        "**Temple & trade:** An imported luxury of the incense routes, akin in costliness to other Gospel aromatics.",
       ],
       modernResearch: [
-        "Scientific literature is dominated by **phytochemistry and animal / laboratory studies** (neuroprotective, calming, antimicrobial themes); **robust human clinical trials are lacking** for most claims.",
-        "Constituents such as jatamansone and nardosinone attract pharmacological interest—**interesting ≠ proven treatment**.",
-        "Essential-oil antimicrobial findings are mostly in vitro.",
-        "Conservation science underscores overharvest risk—prefer **ethical sources**; education should not drive endangered wild digging.",
+        "Laboratory and review papers describe antioxidant, calming, and neuropharmacological interest in *N. jatamansi*—**mostly preclinical**.",
+        "Small human studies of jatamansi preparations for sleep or stress markers exist; they are **preliminary** and do not establish a treatment for anxiety, insomnia, or neurological disease.",
+        "Essential-oil chemistry (sesquiterpenes, including jatamansone) is documented; commercial “nard” is **frequently adulterated**.",
+        "There is **no** high-quality evidence that spikenard prevents or treats medical conditions, and it must never replace mental-health or medical care.",
+        "Conservation science is part of the modern story: demand for oil has pressured wild Himalayan populations.",
       ],
       sideEffects:
-        "Safety data in humans are limited. Possible effects include skin irritation, allergy, headache, nausea, dizziness, or sedation. Theoretical interactions with **sedatives, blood-pressure, or antiplatelet medicines**—consult a clinician. **Avoid medicinal use in pregnancy, breastfeeding, and in young children.** **Spikenard essential oil is not for ingestion.** Patch-test diluted oil; keep away from eyes. Discontinue if rash or breathing difficulty occurs. Educational fragrance and devotion—not a substitute for mental-health or neurological care.",
+        "Diluted topical or aromatic use may cause skin irritation or allergy—patch-test a high dilution first. **Never ingest spikenard essential oil.** Internal use of the rhizome is not a kitchen experiment; identity and strength of “nard” products vary widely. Pregnancy, breastfeeding, epilepsy, liver disease, or regular medicines: avoid concentrated nard unless a qualified clinician and aromatherapy professional agree. Keep oils away from children and pets. Because the species is conservation-sensitive, skip casual purchasing of wild-harvested oil. This is educational history of a Gospel perfume—not a sedative prescription.",
       partsUsed:
-        "Rhizomes and roots; essential oil / ointment distilled or extracted from rhizome.",
+        "Rhizome and roots; traditional fatty ointments (roots macerated in oil—more likely what filled Mary’s flask than modern steam-distilled essential oil); distilled essential oil in contemporary trade.",
       preparations: [
-        "**Diluted anointing / perfume oil:** One drop essential oil in a teaspoon of carrier (olive, jojoba)—external fragrance and symbolic anointing only.",
-        "**Incense / aromatic:** Traditional scenting of spaces (ventilate).",
-        "**Ayurvedic powders / decoctions:** Historical internal use exists—**do not self-prescribe** endangered wild material; only under qualified practitioners with legal, quality-assured products.",
-        "**Storage:** Dark glass for oils; cool and dry for dried rhizome; minimize waste of a threatened species.",
+        "**Historical ointment:** Roots infused in a carrier oil or perfume base for anointing and fragrance—the probable form of New Testament “ointment of spikenard.”",
+        "**Diluted aroma today:** If a legally sourced oil is used at all, **1 drop in a teaspoon of carrier oil** for adult external scent only; never undiluted on skin.",
+        "**Incense (traditional):** Dried rhizome in some Himalayan and temple practices—ventilate; not for children’s rooms.",
+        "**Storage:** Dark glass, tightly capped, cool and away from light.",
+        "**Stewardship:** Consider that many readers can honor the Gospel story **without buying** an endangered plant product.",
       ],
       dosage: [
-        "Educational caution (adults):",
-        "**Aromatic / topical:** 1 drop essential oil diluted in ≥1 teaspoon carrier for adult external scent; diffuse sparingly.",
-        "**Internal traditional preparations:** Only with a qualified practitioner; there is **no safe DIY essential-oil oral dose**.",
-        "**Essential oil:** **Never swallow.**",
-        "Choose CITES-compliant, preferably cultivated material; let Scripture’s story of costly love guide restraint.",
+        "**Fragrance / symbolic anointing:** a highly diluted drop for adult external aroma is a cautious ceiling—not a “dose” for disease.",
+        "**Essential oil:** **Do not ingest. Do not use undiluted on skin.**",
+        "**Internal Ayurvedic preparations:** only under practitioners who can identify genuine *jatamansi* and who accept responsibility for safety—**not DIY from this site**.",
+        "Do not use nard as a treatment for anxiety, insomnia, heart disease, or any diagnosis.",
+        "If you do not have a clearly legal, traceable source, the educational choice is **not to purchase** the oil.",
       ],
       traditionalUses:
         "A costly aromatic ointment of the New Testament, poured in devotion. Historically prized as a precious perfume oil associated with calm, reverence, and anointing.",
       prepNote:
-        "Traditionally used as a diluted aromatic oil for scent and anointing—never ingest essential oils without qualified guidance. A drop diluted in carrier oil for fragrance only.",
+        "Traditionally used as a diluted aromatic oil for scent and anointing—never ingest essential oils. A drop diluted in carrier oil for fragrance only, and only from a clearly legal source. Conservation-sensitive species.",
       emoji: "💧",
       icon: "spikenard",
     },
@@ -471,53 +501,60 @@ const HERBS = {
       verseText:
         "But woe unto you, Pharisees! for ye tithe mint and rue and all manner of herbs…",
       scientificName:
-        "*Mentha* spp. — biblical “mint” likely a Near Eastern garden mint (e.g., *Mentha longifolia*, *M. spicata*, or related); modern herbal education often uses **peppermint** (*Mentha × piperita* L.) and **spearmint** (*M. spicata* L.) (Lamiaceae)",
+        "*Mentha* spp. (Lamiaceae / mint family) — Levantine horse mint *Mentha longifolia* (L.) L. is the species most often named for Gospel gardens; spearmint (*M. spicata*) and peppermint (*M. × piperita*) are later kitchen stand-ins.",
+      scientificNote:
+        "Greek *hēduosmon* (“sweet-smelling”) in Matthew 23:23 and Luke 11:42 is garden mint, not a single modern cultivar. Exact first-century species cannot be pinned with certainty. **Pennyroyal** (*Mentha pulegium*) is a different, harsher mint and is **not** a tea to experiment with.",
       commonName:
-        "Mint; garden mint; peppermint; spearmint; (Hebrew contexts) various local mints",
+        "Mint; garden mint; horse mint; spearmint; peppermint (modern culinary hybrids)",
       benefits:
-        "Tithed herb of mercy’s contrast — traditional digestive & cooling cup",
+        "Tithed garden herb — traditional cooling leaf for meals, breath & after-dinner ease",
       botanicalSummary:
-        "Aromatic perennial herbs with square stems, opposite leaves, and spikes or whorls of small lilac to pink flowers. Peppermint is a sterile hybrid rich in **menthol** and menthone; spearmint is sweeter, higher in **carvone**. Crushed leaves release a sharp, cooling fragrance that has flavored food and folk teas for millennia.",
+        "Perennial herbs of damp ground, with square stems, opposite aromatic leaves, and spikes or whorls of small lilac to pink flowers. Bruising the leaf releases a volatile oil; peppermint is rich in **menthol**, spearmint more in **carvone**. Several Near Eastern mints look and smell enough alike that one garden patch could supply the “mint” of the Gospels.",
       intro:
-        "Mint appears beside dill and cumin in Jesus’ warning about tithing herbs while neglecting justice, mercy, and faith (Matthew 23:23; Luke 11:42 lists mint among tithed herbs). The plant is ordinary—easy to grow, easy to count out for a tenth—yet Scripture uses it to expose misplaced priorities. Traditional medicine from Egypt to Greece to medieval Europe steeped mint for digestion and feverish discomfort. God made common leaves that soothe a meal; keep the herb common and the heart attentive to weightier things.",
+        "Jesus named mint among the tiny garden dues paid with scrupulous care while justice and the love of God were neglected (Luke 11:42; Matthew 23:23). The plant was ordinary—strewn on floors, chopped into food, steeped after meals—yet counted in religious accounting. God filled wet ditches with a leaf that cools the tongue. Traditional kitchens still use mint as a carminative condiment. That heritage is culinary, not a proven treatment for irritable bowel, infection, or headache, and concentrated peppermint oil is not the same as a handful of leaves in a cup.",
       region:
-        "Mints are native across Europe, Asia, and Africa and naturalized worldwide near moist soils. Peppermint thrives in temperate gardens; Near Eastern wild and garden mints suit Mediterranean climates.",
+        "Native and naturalized across the Mediterranean, Levant, and temperate Eurasia; prefers moist soils, stream banks, and irrigated gardens. Horse mint is among the common wild mints of Bible lands; spearmint and peppermint are now grown worldwide.",
+      identityNotes: [
+        "**Gospel mint:** Greek *hēduosmon* in Matthew 23:23 and Luke 11:42—tithed with dill (or “anise”) and cumin.",
+        "**Likely botany:** *Mentha longifolia* (horse mint) is a frequent scholarly identification; other local *Mentha* species could equally have filled a first-century garden.",
+        "**Not pennyroyal:** Do not treat *M. pulegium* as the same kitchen mint; it has a separate, more toxic reputation.",
+      ],
       ancientUses: [
-        "**Gospel tithing:** Mint among herbs carefully tithed (Matthew 23:23; Luke 11:42).",
-        "**Egypt, Greece & Rome:** Culinary herb and digestive aromatic; Hippocrates’ era and later physicians used mint for stomach complaints.",
-        "**Medieval & folk Europe:** Teas for indigestion, colds, and “settling” the stomach; strewing herb for freshness.",
-        "**Culinary:** Sauces (mint with lamb), teas, candies, salads, and Middle Eastern salads (*tabbouleh*-family dishes often use related herbs).",
-        "**Islamic & Ayurvedic kitchens:** Cooling digestive teas and flavoring.",
+        "**Gospel tithe:** Mint measured to the last sprig while weightier matters of the law were left undone (Matthew 23:23; Luke 11:42).",
+        "**Household fragrance:** Classical and rabbinic notices of mint strewn on floors and in gathering places for its sweet scent.",
+        "**Kitchen condiment:** Fresh leaf with meats, salads, yogurt, and cooling drinks across the eastern Mediterranean.",
+        "**Greek & Roman herbalism:** Pliny and Dioscorides list mint among warming, digestive, and aromatic kitchen remedies.",
+        "**Folk infusions:** Mild leaf teas for after-meal “wind,” breath, and a comforting cup—historical practice, not a diagnosis.",
       ],
       modernResearch: [
-        "**EMA / ESCOP traditional use:** Peppermint **leaf** preparations for symptomatic relief of digestive discomfort (dyspepsia, flatulence)—based on long-standing use.",
-        "**NCCIH on peppermint oil:** Enteric-coated peppermint oil has evidence for helping **IBS symptoms** in adults in multiple trials, with mild side effects (often heartburn) more common than placebo.",
-        "Leaf tea research is thinner than oil-capsule data; laboratory antispasmodic themes support traditional digestive use.",
-        "Topical diluted peppermint preparations have been studied for breastfeeding nipple comfort—**wipe off before nursing; never apply menthol near infants’ faces**.",
+        "Culinary mint is widely eaten; **disease-treatment evidence depends on the preparation** and is often limited.",
+        "Enteric-coated **peppermint oil** has been studied for irritable-bowel-type discomfort in some trials; that is a specialized product, **not** proof that garden tea treats IBS.",
+        "Laboratory work on mint oils describes antimicrobial and antispasmodic findings—preclinical chemistry, not a home infection protocol.",
+        "Peppermint may relax the lower esophageal sphincter and worsen **reflux** in some people.",
+        "Do not confuse food-level leaf with swallowing essential oil, which has caused serious harm, especially in young children.",
       ],
       sideEffects:
-        "Leaf tea is usually well tolerated; may **worsen heartburn / GERD** in susceptible people. Caution with **gallstones or bile-duct problems**. Peppermint oil capsules can cause heartburn, nausea, dry mouth, or allergy. **Menthol around infants’ noses/faces can impair breathing—dangerous.** Medicinal leaf/oil amounts in **pregnancy and lactation** lack firm safety data—food amounts are generally considered fine; avoid concentrated oils unless advised. Drug interactions are uncommon for leaf tea but discuss supplements with a clinician. **Peppermint essential oil: do not casually ingest** outside enteric-coated, labeled products used as directed.",
+        "Culinary amounts of garden mint are generally food-like. Strong teas or peppermint oil may cause heartburn, mouth or stomach irritation, or allergy. **Do not put peppermint (or other mint) essential oil on an infant’s face or chest**—breathing distress has been reported. People with reflux may feel worse after peppermint. **Pennyroyal is not a substitute kitchen mint** and has a history of severe toxicity. Pregnancy: stay with food amounts of ordinary culinary mint unless a clinician advises otherwise. **Never ingest essential oil.** Educational use only.",
       partsUsed:
-        "Leaves (fresh or dried); flowering tops; essential oil from aerial parts.",
+        "Fresh and dried leaves (and flowering tops). Essential oil distilled from the herb is a separate, concentrated material.",
       preparations: [
-        "**Infusion:** 1–2 teaspoons dried leaf (or a small handful fresh) in hot water, covered 5–10 minutes.",
-        "**Culinary:** Fresh leaves in salads, drinks, and sauces.",
-        "**Enteric-coated oil capsules:** Modern studied form for IBS—use only labeled products as directed by a clinician.",
-        "**Aromatic steam / diluted topical:** Adult use with care; keep away from young children’s faces.",
-        "**Storage:** Dry quickly out of sun; airtight jars; freeze fresh leaves if desired.",
+        "**Culinary:** Chop fresh leaves into salads, yogurt, lamb, and fruit; add late to keep aroma.",
+        "**Infusion (tea):** Steep **a small handful of fresh leaves** or **1–2 teaspoons dried** in hot water **about 5 minutes**, covered; strain.",
+        "**Garnish / breath:** A sprig after meals as food, not medicine.",
+        "**Storage:** Use fresh promptly, or dry in shade and keep airtight, cool, and dark.",
+        "**Essential oil:** Flavoring or highly diluted scent only—**not a homemade internal dose.**",
       ],
       dosage: [
-        "Educational ranges (adults; EMA-style leaf tea):",
-        "**Dried peppermint leaf tea:** about **1.5–3 g** per cup, up to **three times daily** (roughly 4.5–9 g/day total in divided doses).",
-        "**Children:** traditional monographs often restrict under age 4; older children at reduced leaf-tea amounts only with professional advice.",
-        "**Enteric-coated peppermint oil:** follow product label / clinician (trial doses vary; not DIY oil swallowing).",
-        "**Essential oil:** **Not for casual oral use**; never undiluted on skin; never near infants’ nostrils.",
-        "Stop and seek care if symptoms persist beyond about two weeks.",
+        "**Culinary:** Use freely as a kitchen herb.",
+        "**Tea (traditional educational range for adults):** **1–2 teaspoons** dried leaf (or a few fresh sprigs) per cup, **1–3 cups** with meals when used short-term.",
+        "**Peppermint oil capsules:** only if labeled enteric-coated and used under product directions plus clinician advice—**not** the same as steeping leaves.",
+        "**Essential oil:** **Do not ingest. Keep away from infants.**",
+        "Do not use mint preparations to replace care for digestive disease, reflux, or infection.",
       ],
       traditionalUses:
         "Garden mint was among herbs tithed in the Gospels. Universally used in food and tea for a cooling, refreshing cup after meals.",
       prepNote:
-        "Steep fresh leaves 5 minutes. Excellent culinary herb; enjoy as tea or garnish.",
+        "Steep fresh leaves about 5 minutes. Excellent culinary herb; enjoy as tea or garnish. Not pennyroyal; never give essential oil to infants.",
       emoji: "🌿",
     },
     {
@@ -526,51 +563,58 @@ const HERBS = {
       verse: "Numbers 11:5",
       verseText:
         "We remember the fish, which we did eat in Egypt freely; the cucumbers, and the melons, and the leeks, and the onions, and the garlick.",
-      scientificName: "*Allium sativum* L. (Amaryllidaceae / allium family)",
-      commonName: "Garlic; cultivated garlic; (Hebrew) *shum*",
+      scientificName: "*Allium sativum* L. (Amaryllidaceae; onion family)",
+      scientificNote:
+        "Hebrew *shum* in Numbers 11:5 is garlic—the pungent bulb of Egyptian kitchens. It appears only there in the Hebrew Bible, listed with leeks and onions as food the people missed in the wilderness, not as a prescribed medicine.",
+      commonName: "Garlic; cultivated garlic; shum (Hebrew)",
       benefits:
-        "Longed-for flavor of Egypt — traditional antimicrobial & heart-wise kitchen bulb",
+        "Pungent bulb of Egypt — traditional kitchen staple & folk ally of vitality",
       botanicalSummary:
-        "A perennial bulb composed of cloves wrapped in papery skin, with flat leaves and an umbel of small flowers (often not fully developed in cultivated strains). Crushing cloves releases **allicin** and related sulfur compounds formed from alliin via the enzyme alliinase—the source of garlic’s pungent aroma and much of its studied bioactivity. Aged garlic extracts and garlic oils differ chemically from fresh crushed clove.",
+        "A perennial grown as an annual crop, with a composite bulb of cloves wrapped in papery skins, flat leaves, and, in bolting types, a tall scape with a round flower umbel. Crushing a clove starts an enzymatic reaction that forms **allicin** and related sulfur compounds—the smell of garlic and the focus of much modern research. Cooked garlic is milder; raw is sharper on breath and stomach.",
       intro:
-        "In the wilderness, Israel remembered the foods of Egypt—including **garlic**—with craving (Numbers 11:5). The verse is about discontent, yet it also witnesses how ordinary alliums flavored ancient diets from the Nile to the Levant. Traditional medicine across cultures used garlic for infections, digestion, and “blood” vitality. God gave strong-flavored bulbs to humble tables; modern research explores heart and immune themes without turning garlic into a substitute for medical care.",
+        "In the wilderness Israel remembered garlic with the free fish and garden food of Egypt (Numbers 11:5). The complaint was about manna’s sameness; the botanical note is that garlic was ordinary slave-and-laborer fare along the Nile, not a luxury spice. Egyptian, Greek, and later folk medicine loaded the same bulb with hopes for the chest, digestion, and “blood.” NCCIH and evidence reviews describe **modest, mixed** findings for cholesterol and blood pressure with **supplements**—never a reason to stop prescribed heart medicines. God gave a kitchen bulb. Meals are the biblical pattern; capsules are a modern extra.",
       region:
-        "Central Asian origin, cultivated for millennia across the Mediterranean, Middle East, Europe, Asia, and worldwide. Prefers full sun and fertile, well-drained soil.",
+        "Long cultivated from Central Asia through Egypt and the Mediterranean; now grown worldwide. Biblical-era Egypt produced garlic in quantity; it remains a staple of Levantine and Mediterranean cooking.",
+      identityNotes: [
+        "**Numbers 11:5:** Hebrew *shum*—garlic among the remembered foods of Egypt, with cucumbers, melons, leeks, and onions.",
+        "**Culinary, not a prescription:** Scripture names it as food missed in the desert, not as a temple drug or healing rite.",
+        "**Related alliums:** Leeks and onions in the same verse are sister kitchen plants, not substitutes in every recipe or study.",
+      ],
       ancientUses: [
-        "**Numbers 11:5:** Garlic listed with leeks and onions among the Egyptian foods Israel missed in the desert.",
-        "**Egypt:** Workers’ and general diet staple; herbal and magical-medical papyri also mention alliums.",
-        "**Greece & Rome:** Soldiers’ and laborers’ food; Dioscorides and Galen discuss garlic for various folk indications (digestive, respiratory, external).",
-        "**Ayurveda, Chinese & European folk medicine:** Warming antimicrobial and circulatory kitchen medicine; used in syrups, vinegars, and poultices.",
-        "**Culinary sacredness of the everyday:** Flavor base for countless savory dishes across biblical lands’ successors.",
+        "**Wilderness complaint:** Garlic listed with Nile fish and garden vegetables as food Israel ate “freely” in Egypt (Numbers 11:5).",
+        "**Egyptian diet:** Classical writers and later travelers note garlic and onions as laborer staples of the Nile—the same food-world the verse assumes.",
+        "**Greek & Roman folk use:** Dioscorides, Pliny, and others describe garlic for the chest, digestion, and as a pungent food-medicine.",
+        "**Ayurveda, Unani & later kitchens:** A warming culinary bulb used in stews, pickles, and folk preparations across the Near East and India.",
+        "**Traditional vitality:** Folk reputation as a strengthening food in winter kitchens—historical diet, not a proven immune “cure.”",
       ],
       modernResearch: [
-        "**NCCIH and major reviews:** Garlic supplements have been studied for **blood pressure and cholesterol**; effects are often **modest**, and product quality varies (allicin yield depends on preparation).",
-        "Traditional and laboratory antimicrobial interest is strong; **clinical use for infections is not a replacement for antibiotics when those are needed**.",
-        "Evidence quality varies widely between raw garlic, powders, aged extracts, and oils—do not over-read any single study.",
-        "Antiplatelet effects are a consistent safety theme in modern assessments.",
+        "NCCIH: garlic **supplements** may reduce total and LDL cholesterol **to a small extent** in some people with high cholesterol; results vary by product.",
+        "Blood-pressure findings are **inconsistent**; garlic is **not** a replacement for antihypertensive drugs.",
+        "Cancer-prevention claims (diet or supplements) remain **unproven** as a reason to self-treat; food-pattern studies are not the same as a garlic protocol.",
+        "Allicin forms when raw clove is crushed; cooking and aging change the chemistry—**products are not interchangeable**.",
+        "Laboratory antimicrobial findings do **not** make raw garlic a treatment for infection.",
       ],
       sideEffects:
-        "Breath and body odor, heartburn, gas, nausea, and diarrhea are common with larger amounts. **Bleeding risk:** garlic can thin blood—use caution with warfarin, aspirin, other anticoagulants/antiplatelets, bleeding disorders; **stop supplements about 7–14 days before surgery** as commonly advised by clinicians/EMA-style guidance. Allergy possible (including rare severe reactions). Topical raw garlic can **burn the skin**. **Pregnancy:** food amounts are generally fine; high-dose supplements lack clear endorsement—ask your obstetric clinician. Breastfeeding: strong flavors may fuss some infants. This guide does not prescribe garlic for blood pressure or lipids.",
+        "Food amounts are generally tolerated; raw garlic more often causes breath and body odor, heartburn, gas, nausea, or allergy. **Raw garlic on skin can burn**—do not make poultices from this page. **Supplements may increase bleeding risk**, especially with warfarin, aspirin, or before surgery—tell your clinician. Garlic can interact with some medicines. Large medicinal amounts in pregnancy: prefer ordinary food unless advised otherwise. This is kitchen history, not a reason to change prescriptions.",
       partsUsed:
-        "Fresh bulbs/cloves; dried powder; aged extracts; oil macerates; essential oil (irritant—external caution only).",
+        "Fresh cloves (bulb); dried, powdered, and aged extracts in modern supplements; green garlic and scapes as vegetables. Garlic “essential oil” is a concentrated distillate—not everyday food.",
       preparations: [
-        "**Culinary fresh:** Crush or chop; rest ~10 minutes before cooking to allow allicin formation; add toward end of cooking for stronger character.",
-        "**Honey / vinegar macerates:** Traditional folk preparations—food-like, not sterile medicine.",
-        "**Standardized supplements:** Powders or aged garlic extracts—choose reputable brands; clinician-guided if you take medicines.",
-        "**Topical:** Avoid raw clove plasters (burn risk).",
-        "**Storage:** Cool, dry, ventilated bulbs; refrigerate peeled cloves briefly; oils carefully (botulism risk in homemade garlic-in-oil unless acidified/refrigerated and short-term—prefer commercial safe products).",
+        "**Culinary:** Crush or chop cloves and **let them rest a few minutes** before cooking if you want more developed aroma; then sauté or stew in meals.",
+        "**Raw (food):** A small amount in dressings or sauces if your stomach allows—not a medical “shot.”",
+        "**Storage:** Whole bulbs cool, dry, and airy; do not store chopped garlic in oil at room temperature (botulism risk in homemade oil infusions).",
+        "**Supplements:** Aged extracts, powders, and oils differ widely—read labels; this site does not recommend self-treating with them.",
+        "**Topical:** **Do not** apply crushed raw garlic to skin as a home remedy.",
       ],
       dosage: [
-        "Educational ranges (adults; food first):",
-        "**Food:** 1–2 cloves (roughly 3–5 g) fresh garlic with meals is a common culinary amount.",
-        "**Supplements:** Product labels often provide powder equivalent to a few cloves or standardized allicin/alliin yields—**follow the label and your clinician**, especially if on blood thinners.",
-        "**Essential oil:** **Do not ingest**; highly irritating.",
-        "Prefer food use; seek medical care for infections, chest pain, or uncontrolled blood pressure.",
+        "**Food:** **1–2 cloves** cooked in a meal is a common kitchen amount—not a prescribed dose.",
+        "**Supplements:** Follow a reputable label and clinician; studied products vary (often on the order of several hundred milligrams of extract, or fresh-garlic equivalents). **Do not** match internet “mega-doses.”",
+        "**Essential oil / oil macerates:** **Do not ingest** concentrated oil; homemade garlic-in-oil must be refrigerated and used promptly if made at all.",
+        "Do not use garlic to replace prescribed cholesterol, blood-pressure, diabetes, or blood-thinning therapy, and do not stop those medicines because of this page.",
       ],
       traditionalUses:
         "Recalled fondly by Israel in the wilderness as food of Egypt. A foundational culinary bulb in Mediterranean and Near Eastern cooking and folk kitchens.",
       prepNote:
-        "Crush and rest cloves before cooking to develop flavor. Culinary use in meals is the traditional approach.",
+        "Crush and rest cloves before cooking to develop flavor. Culinary use in meals is the traditional approach. Do not put raw garlic on skin or replace prescribed medicines.",
       emoji: "🧄",
     },
     {
@@ -579,51 +623,59 @@ const HERBS = {
       verse: "Isaiah 38:21",
       verseText:
         "For Isaiah had said, Let them take a lump of figs, and lay it for a plaister upon the boil, and he shall recover.",
-      scientificName: "*Ficus carica* L. (Moraceae)",
-      commonName: "Common fig; edible fig; (Hebrew) *te’enah*",
+      scientificName: "*Ficus carica* L. (Moraceae / mulberry family)",
+      scientificNote:
+        "Hebrew *te’enah* is the common fig. Isaiah 38:21 and 2 Kings 20:7 describe a **cake of pressed figs** (*debelah*) laid on Hezekiah’s boil—fruit pulp, not milky tree latex. Figs are among the seven species of the Promised Land (Deuteronomy 8:8).",
+      commonName: "Common fig; te’enah (Hebrew); dried fig / fig cake",
       benefits:
-        "Hezekiah’s poultice fruit — traditional demulcent food & gentle laxative ally",
+        "Fruit of the land — traditional sweet fiber food; Scripture’s poultice is history, not a home protocol",
       botanicalSummary:
-        "A deciduous Mediterranean tree or large shrub with lobed leaves, milky latex in green parts, and unique hollow “fruit” (syconium) lined with tiny flowers that ripen into the familiar sweet fig. Fresh and dried figs are rich in sugars, fiber, minerals (notably potassium), and polyphenols. Leaf and latex contain furanocoumarins that can sensitize skin to sunlight.",
+        "A spreading deciduous tree with large lobed leaves and milky latex in stems and unripe fruit. The “fruit” is a **syconium**—a fleshy hollow receptacle lined with tiny flowers. Ripe figs may be green, brown, or purple; dried cakes travel well. Latex contains the enzyme **ficin** and can irritate skin, especially in sun.",
       intro:
-        "Isaiah records that a cake (poultice) of figs was laid on Hezekiah’s boil at the prophet’s word—and he recovered (Isaiah 38:21; cf. 2 Kings 20:7). Scripture elsewhere celebrates figs as covenant blessing, shade (Micah 4:4), and Jesus’ teaching tree (Matthew 21:19; Luke 13:6–9; Mark 11:13–14). God gave a fruit that feeds, shades, and—in this one narrative—serves as a simple applied remedy under prophetic direction. Honor the story without turning dried figs into a do-it-yourself treatment for serious infections.",
+        "From Eden’s covering leaves (Genesis 3:7) to the quiet picture of every one under his vine and fig tree (Micah 4:4), Scripture treats the fig as ordinary blessing. God listed it among the Promised Land’s gifts (Deuteronomy 8:8). When Hezekiah was sick, Isaiah directed a lump of figs onto the boil (Isaiah 38:21; 2 Kings 20:7)—a prophet’s instruction in a story of prayer and mercy, **not** a standing recipe for skin disease. Traditional diets prized fresh and dried figs as sweet, fiber-rich food. Eat the fruit. Do not turn a king’s healing into self-treatment, and do not put fig-tree sap on skin because a verse mentions figs.",
       region:
-        "Native to the Mediterranean and western Asia; cultivated in biblical Israel and throughout warm-temperate zones worldwide. Prefers sun, heat, and well-drained soil.",
+        "Native to the Mediterranean and western Asia; cultivated since deep antiquity in the Levant, Egypt, Greece, and Rome. Prefers hot, relatively dry summers and well-drained soil. Now grown in warm-temperate orchards worldwide.",
+      identityNotes: [
+        "**Hebrew te’enah:** The common edible fig *Ficus carica*, not the rubber-fig houseplant *F. benjamina*.",
+        "**Hezekiah’s poultice:** A pressed **fig cake** (*debelah*), parallel in 2 Kings 20:7—food fruit applied outwardly in that narrative.",
+        "**Promised Land fruit:** Deuteronomy 8:8 lists figs with wheat, barley, vines, pomegranates, olives, and honey.",
+      ],
       ancientUses: [
-        "**Hezekiah’s poultice:** Fig cake applied to the boil (Isaiah 38:21; 2 Kings 20:7)—a rare explicit herbal-medical detail in the prophetic narrative.",
-        "**Covenant produce:** Figs among the blessings of the land (Deuteronomy 8:8); symbolic peace “under vine and fig tree” (1 Kings 4:25; Micah 4:4; Zechariah 3:10).",
-        "**Jesus’ teaching:** Barren fig tree parable and enacted sign (Luke 13:6–9; Matthew 21:18–22; Mark 11:12–14, 20–21); Nathaniel under the fig tree (John 1:48–50).",
-        "**Classical medicine:** Fresh/dried fruit as mild laxative and demulcent food; latex sometimes used externally (irritant—caution).",
-        "**Culinary:** Fresh fruit, sun-dried figs, cakes, and sweetmeats across the ancient Near East.",
+        "**Promised Land food:** Figs among the seven species; spies also brought figs from Eshcol (Numbers 13:23).",
+        "**Hezekiah:** Isaiah’s fig-cake poultice on a boil, in a passage where healing is attributed to the Lord’s word and the king’s prayer (Isaiah 38; 2 Kings 20).",
+        "**Peace & plenty:** “Vine and fig tree” as a picture of security (e.g., 1 Kings 4:25; Micah 4:4; Zechariah 3:10).",
+        "**Jesus & the fig:** The barren fig tree (Mark 11:12–14, 20–21) and the lesson of tender branches (Matthew 24:32)—spiritual teaching, not horticultural medicine.",
+        "**Classical food-medicine:** Greeks and Romans ate fresh and dried figs; writers mention fig preparations for the bowels and, historically, for drawing skin sores—folk lists, not modern protocols.",
+        "**Travel food:** Pressed fig cakes as portable sweetness (cf. 1 Samuel 25:18; 30:12).",
       ],
       modernResearch: [
-        "Nutritional science emphasizes figs as a **fiber-rich** fruit that may support regularity.",
-        "Laboratory and small studies explore antioxidant, antimicrobial, and wound-related themes of fruit or leaf extracts—**evidence is preliminary**, not a protocol for abscesses or anthrax (historical speculation should not drive home treatment).",
-        "Leaf tea and extracts appear in metabolic research with mixed, limited human data.",
-        "Clinical takeaway: food figs are well studied as nutrition; **medicinal leaf/latex uses need caution**.",
+        "Ripe figs are a **food** source of fiber, potassium, and various polyphenols; that is nutrition, not a drug monograph.",
+        "Laboratory studies of fig extracts describe antioxidant or antimicrobial findings—**not** evidence to treat boils, cancer, or diabetes with figs.",
+        "Dried figs can help with **dietary fiber** toward ordinary regularity; they are not a stimulant-laxative drug and are not appropriate as sole care for bowel obstruction or unexplained pain.",
+        "Fig **latex** is a different material from the ripe fruit and is irritating; do not use sap as a wart or wound medicine from this site.",
+        "Hezekiah’s recovery is a **biblical narrative of God’s mercy**, not a clinical trial of fig poultices.",
       ],
       sideEffects:
-        "Dried and fresh fruit may cause gas or loose stools if overeaten (fiber/sugar). **Latex and leaf sap** can irritate skin and cause severe **phytophotodermatitis** (blistering burn-like rash after sun/UVA exposure)—do not apply fig leaf/sap as a “tan” or casual poultice. Leaf tea may lower blood sugar in theory—caution with diabetes medicines. **Pregnancy:** fruit as food is fine; avoid medicinal leaf/latex preparations. Allergies possible. Never use a fig poultice in place of urgent care for serious skin infection, high fever, or spreading redness.",
+        "Ripe fruit is generally food-like; large amounts of dried figs may loosen stools or bother those sensitive to sugar alcohols and fiber. **Latex and unripe sap can blister skin**, especially with sunlight (phytophotodermatitis). Fig allergy occurs and may cross-react with other *Ficus* or latex-related fruits in some people. Do not put fig cakes or sap on infected, deep, or undiagnosed sores. This page does not instruct anyone to treat boils at home. Educational history only.",
       partsUsed:
-        "Fresh and dried fruit (primary); leaves (traditional teas—caution); latex (irritant—generally avoid casual use).",
+        "Ripe fresh fruit; dried fruit and pressed cakes. Leaves appear in some traditional cuisines. Latex from stems/unripe fruit is **not** recommended for home use.",
       preparations: [
-        "**Food:** Fresh figs in season; dried figs soaked or eaten as snacks; fig cakes as in historical cookery.",
-        "**Mild laxative food use:** Several dried figs with water—food-level, not forceful purging.",
-        "**Poultice (historical education only):** Isaiah’s narrative is descriptive under prophetic authority—not a license to self-treat boils; seek medical care for skin infections.",
-        "**Leaf tea:** Only with informed caution; patch-test handling leaves; wash skin after contact; avoid sun exposure on exposed sap.",
-        "**Storage:** Dried figs cool and airtight; protect from pests.",
+        "**Fresh fruit:** Eat fully ripe figs as food; wash first.",
+        "**Dried figs:** A traditional traveling sweet; soak if very dry. Culinary use in stews, breads, and breakfasts.",
+        "**Fig cake (historical):** Pressed dried figs as in biblical food stores—food, not a skin-treatment kit.",
+        "**Harvest note:** Some people get a rash from pruning or picking—wear sleeves if you are sensitive; rinse sap off skin and keep that skin out of strong sun.",
+        "**Storage:** Fresh figs refrigerate and spoil quickly; dried fruit airtight, cool, and dry.",
       ],
       dosage: [
-        "Educational food ranges (adults):",
-        "**Dried figs:** about **2–5 figs** (roughly 40–80 g) as a snack or fiber support with adequate water.",
-        "**Fresh figs:** a few fruits with meals as desired.",
-        "**Leaf / latex:** **no casual medicinal dose recommended** here due to phototoxicity and limited safety data.",
-        "Prefer fruit as food; escalate skin problems to a clinician, not a kitchen poultice.",
+        "**Food:** A few fresh figs or **2–4 dried figs** with a meal is a common serving—not a medical dose.",
+        "**Poultice:** **Do not** reproduce Hezekiah’s plaster as home care for boils, ulcers, or infections—seek medical care.",
+        "**Latex / sap:** **Do not** apply as a remedy.",
+        "Do not use figs to replace prescribed care for skin infection, diabetes, or digestive disease.",
       ],
       traditionalUses:
         "Figs appear throughout Scripture—from Eden imagery to Hezekiah’s poultice. Dried figs remain a nourishing fruit of the biblical lands.",
       prepNote:
-        "Eat fresh or dried as food. Historical poultice references are educational, not treatment instructions.",
+        "Eat fresh or dried as food. Historical poultice references are educational, not treatment instructions. Avoid milky sap on skin.",
       emoji: "🫒",
     },
     {
@@ -633,46 +685,55 @@ const HERBS = {
       verseText:
         "Is any sick among you? let him call for the elders of the church; and let them pray over him, anointing him with oil in the name of the Lord.",
       scientificName: "*Olea europaea* L. (Oleaceae)",
+      scientificNote:
+        "The oil of Scripture is pressed fruit of the olive tree, a Promised Land species (Deuteronomy 8:8). James 5:14 joins **prayer** with anointing; the accent of the passage is the Lord and the prayer of faith, not oil as a drug. Lamp oil, food oil, and sacred anointing oil share the same orchard.",
       commonName:
-        "Olive; olive oil; extra-virgin olive oil (EVOO); olive leaf",
+        "Olive; olive oil; extra-virgin olive oil; zayit / shemen (Hebrew)",
       benefits:
-        "Oil of anointing & gladness — biblical staple for food, light, and care of the sick",
+        "Oil of light, table & anointing — traditional food fat of the Mediterranean orchard",
       botanicalSummary:
-        "An evergreen tree of Mediterranean drylands with silvery-green lanceolate leaves and stone fruits that yield golden to green oil when pressed. Fruit oil is rich in **monounsaturated oleic acid** and minor phenolics (e.g., oleocanthal, hydroxytyrosol in quality EVOO). Leaves contain secoiridoids such as **oleuropein**, studied separately from culinary oil.",
+        "A long-lived evergreen tree with narrow silvery leaves, gnarled trunk, and drupes that ripen from green to violet-black. Fruit is crushed and pressed; **virgin** oils are mechanical, not solvent-extracted. The fat is mostly **oleic acid** (a monounsaturated oil); extra-virgin grades also carry **polyphenols** (e.g., hydroxytyrosol, oleuropein-related compounds) that give peppery bitterness. Leaf extracts sold as supplements are not the same as table oil.",
       intro:
-        "From the dove’s olive leaf (Genesis 8:11) to the garden of Gethsemane—“oil press”—the olive saturates biblical imagination. Oil fueled lamps (Exodus 27:20), anointed priests and kings, and, in James 5:14, accompanies prayer for the sick by church elders. Psalm 104:15 celebrates oil that makes the face shine. God gave a tree that feeds, lights, heals symbolically, and flavors the table—an emblem of shalom best received as food, worship aid, and pastoral care, not as a cure-all bottle.",
+        "Olive oil runs through biblical life: the lamp of the tabernacle, the widow’s cruse, the Good Samaritan’s dressing of wounds (Luke 10:34), the horn of anointing, and the elders’ oil in James 5:14. God planted a tree that feeds, lights, and marks people as set apart. Extra-virgin oil remains the signature fat of Mediterranean tables. Modern diet research associates olive-oil-rich patterns with heart-health markers—**as food in a pattern**, not as a bottle that replaces cardiology. Anointing is a practice of faith and prayer. It is not a protocol to stop medicines or to treat disease with salad oil.",
       region:
-        "Native to the Mediterranean basin; cultivated across biblical Israel, Greece, Italy, Spain, North Africa, and similar climates worldwide (California, Australia, Chile, etc.).",
+        "Native to the Mediterranean basin; cultivated from Israel and the Levant across Greece, Italy, Spain, North Africa, and now California, Australia, and other warm-summer climates. Ancient terraces of the hill country still speak of the crop’s endurance.",
+      identityNotes: [
+        "**Promised Land tree:** Olives listed with the seven species (Deuteronomy 8:8).",
+        "**James 5:14:** Anointing **in the name of the Lord** with prayer—faith practice, not a pharmacy label.",
+        "**Not olive-leaf capsules:** Food oil from the fruit is the biblical kitchen material; concentrated leaf extracts are a modern supplement category.",
+        "**Not “essential oil”:** Olive oil is a fatty pressed oil. Do not confuse it with steam-distilled essential oils of other plants.",
+      ],
       ancientUses: [
-        "**James 5:14:** Elders pray over the sick and anoint with oil in the name of the Lord—pastoral, faith-filled care (interpretations vary: symbolic consecration, ordinary medical kindness, or sacramental practice).",
-        "**Tabernacle & worship:** Pure beaten olive oil for the lampstand (Exodus 27:20–21); oil in grain offerings and anointing.",
-        "**Daily life:** Food, skin care, lamp fuel, soap-making precursor, and hospitality (cf. Luke 10:34—the Samaritan’s oil and wine on wounds).",
-        "**Symbolism:** Olive leaf of hope after the flood (Genesis 8:11); “oil of gladness” (Psalm 45:7; Isaiah 61:3); cultivated olive as covenant agriculture (Deuteronomy 8:8).",
-        "**Classical medicine:** Oil as base for liniments, wound dressings, and gentle laxative food oil; leaf and fruit in Mediterranean folk practice.",
+        "**Food of the land:** Oil, olives, and cakes of oil as daily nourishment and offering (e.g., Deuteronomy 8:8; 1 Kings 17:12–16).",
+        "**Light:** Beaten olive oil for the lampstand (Exodus 27:20; Leviticus 24:2).",
+        "**Sacred anointing:** Kings, priests, and furnishings set apart with oil (e.g., Exodus 30:22–33; 1 Samuel 16:13).",
+        "**James 5:14–15:** Elders pray and anoint the sick; **the Lord** raises up—oil is accompaniment, not a substitute for the gospel or for ordinary care.",
+        "**Mercy on the road:** The Samaritan poured oil and wine on wounds (Luke 10:34)—first-century first aid in a parable of neighbor-love.",
+        "**Cosmetics & hospitality:** Oil for the head and skin in a dry climate (e.g., Psalm 23:5; Luke 7:46).",
       ],
       modernResearch: [
-        "Extra-virgin olive oil as a cornerstone of the **Mediterranean diet** is linked in observational and clinical nutrition research with **cardiovascular and metabolic benefits** when it replaces less healthy fats—as part of overall diet pattern, not magic.",
-        "Umbrella reviews and trials explore EVOO phenolics and markers of inflammation and heart health—**promising nutrition science, not drug claims**.",
-        "**Olive leaf extracts** have been studied for blood pressure and antioxidant themes with mixed/limited evidence—distinct from simply using culinary oil.",
-        "Topical oil remains a traditional emollient; evidence for specific dermatologic cures varies.",
+        "Extra-virgin olive oil is a well-studied **food fat**; Mediterranean-style patterns that use it in place of some saturated fats are associated with better cardiovascular markers in observational and some trial literature.",
+        "Phenolic compounds and oleic acid are research focuses; **this does not make olive oil a medicine that treats heart disease, cancer, or diabetes.**",
+        "Refined (“light”) olive oil has fewer of the peppery phenolics of extra-virgin grades; food quality varies.",
+        "Olive-leaf extracts are a separate supplement literature—limited and not a biblical food equivalent.",
+        "Topical olive oil is a traditional emollient; evidence for specific dermatologic diseases is mixed, and it is **not** sterile wound care for serious injury.",
       ],
       sideEffects:
-        "Culinary olive oil is among the best-tolerated food fats; large sudden amounts may loosen stools or cause nausea. May contribute to lower blood pressure—monitor if you take antihypertensives. Rare delayed contact allergy to olive products. **Olive leaf extracts** can cause dizziness, headache, or stomach upset and may interact with blood-pressure or diabetes medicines. **Pregnancy:** food oil is fine; high-dose leaf extracts need clinician approval. Oil-anointing for prayer is not a substitute for emergency or ongoing medical care. Do not pour oil into ears or deep wounds without clinical guidance.",
+        "Food amounts are generally well tolerated. Oil is calorie-dense; large extra servings may bother gallbladder or reflux in some people. Rare allergy to olive fruit or pollen exists. Do not pour oil into ears or deep wounds as a home treatment. **Anointing oil is not a reason to delay emergency care or to stop prescribed medicines.** If you have pancreatitis, fat-malabsorption, or take medicines that require dietary consistency, ask a clinician about fat intake. Educational and historical only.",
       partsUsed:
-        "Ripe fruit (table olives); pressed fruit oil; leaves (tea/extracts); historically wood and leaf for other crafts.",
+        "Pressed fruit oil; table olives (cured fruit); wood historically for craft. Leaves used in some folk teas and in modern extracts—not the main biblical food use.",
       preparations: [
-        "**Extra-virgin olive oil (food):** Primary culinary fat for dressings, low-to-medium heat cooking, and dipping.",
-        "**Anointing oil (pastoral):** Small amount on forehead or hands with prayer—per James 5 practice in faith communities.",
-        "**Emollient:** Small amount on dry skin; patch-test if sensitive.",
-        "**Olive leaf tea / extracts:** Follow reputable labels if used; not required for “biblical olive” appreciation.",
-        "**Storage:** Oil in dark, cool cupboards tightly capped; avoid rancidity; refrigerate only if you accept clouding.",
+        "**Table oil:** Use extra-virgin olive oil in salads, vegetables, and moderate cooking according to kitchen tradition.",
+        "**Cured olives:** Food from the same tree, after proper curing (raw uncured olives are very bitter).",
+        "**Lamp / anointing:** Historical and congregational uses as Scripture and church practice direct—not a medical dose.",
+        "**Storage:** Dark glass or tin, cool and away from light; rancid oil smells like crayons or putty—discard.",
+        "**Leaf tea / capsules:** Optional modern products—follow labels and clinicians; they are not required by James 5.",
       ],
       dosage: [
-        "Educational food ranges (adults):",
-        "**Culinary EVOO:** about **1–4 tablespoons (15–60 mL)** daily within meals is a common Mediterranean-pattern range—adjust to energy needs.",
-        "**Anointing:** symbolic drops—not a milliliter “dose.”",
-        "**Olive leaf extract:** follow product labeling and clinician advice only; no single universal DIY dose.",
-        "Prefer oil as food and prayerful care; seek medical treatment for serious illness alongside (not instead of) spiritual support.",
+        "**Food:** A tablespoon or two (about **15–30 mL**) as part of meals is a common culinary amount in Mediterranean-style eating—not a prescription.",
+        "**Anointing:** A small amount for prayerful practice as a congregation understands James 5—**not** measured as milligrams of drug.",
+        "**Supplements (leaf, etc.):** Only with labeled products and professional advice.",
+        "Do not use olive oil to replace prescribed cardiac, diabetic, or infection care, and do not delay calling elders **or** clinicians when seriously ill.",
       ],
       traditionalUses:
         "Olive oil saturates biblical life—light, food, and sacred anointing. Extra-virgin oil remains a cornerstone of Mediterranean nourishment.",
@@ -686,51 +747,58 @@ const HERBS = {
       verse: "Isaiah 28:25",
       verseText:
         "When he hath made plain the face thereof, doth he not cast abroad the fitches, and scatter the cummin…",
-      scientificName: "*Cuminum cyminum* L. (Apiaceae)",
-      commonName: "Cumin; cummin (biblical spelling); (Hebrew) *kammon*",
+      scientificName: "*Cuminum cyminum* L. (Apiaceae / parsley family)",
+      scientificNote:
+        "Hebrew *kammon* (Isaiah 28:25, 27) and Greek *kyminon* (Matthew 23:23) are culinary cumin. Isaiah’s parable distinguishes its gentle threshing from heavy sledges used on grain. Black cumin / nigella (*Nigella sativa*; Hebrew *qetsach*, the “fitches” of some translations) is a **different** seed in the same chapter.",
+      commonName: "Cumin; cummin (KJV spelling); kammon (Hebrew)",
       benefits:
-        "Carefully tilled seed of Isaiah & the Gospels — traditional digestive spice",
+        "Carefully sown field spice — traditional warm seed for breads, stews & after-meal ease",
       botanicalSummary:
-        "A small annual umbellifer with finely divided leaves, slender stems, and umbels of tiny white or pink flowers producing elongated, ridged, aromatic fruits (“seeds”) that are a staple of spice racks. Flavor is earthy, warm, and slightly bitter from essential-oil constituents including **cuminaldehyde** and related terpenes.",
+        "A slender annual with finely cut leaves and umbels of tiny white to rose flowers. The “seeds” are elongated, ridged, yellowish-brown fruits (schizocarps) with a warm, earthy, slightly bitter aroma from an essential oil rich in **cuminaldehyde**. Plants are low and easily bruised in harvest—the agronomic fact behind Isaiah’s threshing lesson.",
       intro:
-        "Isaiah describes the farmer’s wisdom in sowing and threshing cumin with care (Isaiah 28:25, 27)—agriculture as taught intelligence. Jesus later names cumin among herbs tithed to the last seed while mercy was neglected (Matthew 23:23). Between prophet and Gospel, cumin stands for ordinary faithfulness in field and kitchen. Traditional herbalism used it much like other carminative seeds: to warm digestion and season beans and breads. God instructs even the sowing of small seeds; receive cumin as spice with purpose, not as a spectacle.",
+        "Isaiah pictures a farmer who knows how to treat each crop: cumin is scattered, then beaten lightly with a rod, not crushed under a cart (Isaiah 28:25–29). The wisdom is the Lord’s, even in the field. Jesus later named cumin among herbs tithed to the gram while justice, mercy, and faith were neglected (Matthew 23:23). Near Eastern and Indian kitchens still toast the seed for stews and bread. Folk herbalism calls it carminative. That is spice-lore, not a proven treatment for diabetes, iron deficiency, or infection.",
       region:
-        "Likely eastern Mediterranean to Central Asia; major modern production in India, Iran, the Levant, North Africa, and Latin America. Needs a long warm season and well-drained soil.",
+        "Native to the eastern Mediterranean and nearby West Asia; long grown in Egypt, the Levant, Iran, India, and North Africa. Prefers a hot, dry ripening season. Now a global spice crop.",
+      identityNotes: [
+        "**Isaiah 28:** *kammon* = cumin, threshed with a staff; *qetsach* (fitches / black cumin / nigella in many notes) is the companion small seed, not this plant.",
+        "**Matthew 23:23:** Greek *kyminon* tithed with mint and dill.",
+        "**Not caraway:** *Carum carvi* looks related but is a different kitchen spice.",
+      ],
       ancientUses: [
-        "**Isaiah’s parable of the farmer:** Cumin sown and beaten out with a rod—not a heavy threshing sledge (Isaiah 28:25–27)—image of measured, appropriate action.",
-        "**Gospel tithing:** Cumin tithed alongside mint and dill (Matthew 23:23).",
-        "**Classical & Near Eastern kitchens:** Bread spice, pulse seasoning, and digestive aromatic from Egypt through Rome.",
-        "**Ayurveda & Unani:** Seed for digestive fire, gas, and appetite in traditional formulas.",
-        "**European herbalism:** Carminative teas and culinary use parallel to caraway and fennel.",
+        "**Isaiah’s parable:** Cumin sown and threshed according to its delicate nature—an image of God’s fitting instruction (Isaiah 28:23–29).",
+        "**Gospel tithe:** Counted with mint and dill while weightier matters were omitted (Matthew 23:23).",
+        "**Egyptian & Levantine spice:** Seeds in breads, legumes, and meat dishes of the ancient eastern Mediterranean.",
+        "**Greek & Roman kitchen-medicine:** Cumin among digestive, warming condiments in classical lists.",
+        "**Later Jewish practice:** Rabbinic discussion of tithing garden spices, which the Gospel woe assumes.",
       ],
       modernResearch: [
-        "Reviews describe traditional digestive use and laboratory antioxidant/antimicrobial themes.",
-        "Small human studies have explored cumin powder or oil for **metabolic and lipid markers**—results are mixed and **not conclusive treatments**.",
-        "Essential-oil research is largely preclinical.",
-        "Strongest educational claim remains: **culinary carminative spice with a long safety-as-food history**.",
+        "Cumin is **GRAS** as a food spice; medicinal claims rest on much thinner evidence.",
+        "Small trials and traditional use explore digestion, lipids, or blood-sugar markers; results are **preliminary** and products vary.",
+        "Laboratory antimicrobial and antioxidant findings do **not** equal a clinical therapy.",
+        "Essential-oil chemistry (cuminaldehyde and related compounds) explains aroma, not a license to swallow oil.",
+        "Do not use cumin capsules as a substitute for diabetes, anemia, or infection care.",
       ],
       sideEffects:
-        "Food amounts are generally safe. Medicinal amounts may cause heartburn, burping, or allergy (Apiaceae). Possible additive effects with **diabetes medicines** (blood-sugar lowering) or **blood thinners**—use caution. **Pregnancy:** stick to culinary amounts; medicinal doses and cumin essential oil are often discouraged (insufficient safety / traditional caution). **Surgery:** stop high-dose supplements ahead of time if advised. **Cumin essential oil: do not ingest** casually. Seek care for allergic reactions.",
+        "Culinary amounts are generally food-like. Large medicinal doses may cause heartburn or belching. Allergy is possible, including in people sensitive to other Apiaceae (celery, carrot, coriander). **Cumin essential oil is not for ingestion** as a home remedy. Pregnancy: ordinary cooking is the cautious path; concentrated extracts are not well studied. This is spice education, not a treatment plan.",
       partsUsed:
-        "Dried ripe fruits (seeds); powder; essential oil (aromatic caution).",
+        "Ripe dried fruits (“seeds”). Essential oil distilled from the fruit is a concentrated flavoring, not a tea ingredient.",
       preparations: [
-        "**Culinary:** Toast whole seeds lightly; grind fresh for curries, chili, falafels, breads, and stews.",
-        "**Tea:** Crush ½–1 teaspoon seeds; steep covered 10 minutes.",
-        "**Spice blends:** Essential in many baharat, taco, and curry mixes.",
-        "**Essential oil:** Diluted fragrance only—**not for oral DIY use**.",
-        "**Storage:** Whole seeds retain quality longer than pre-ground powder.",
+        "**Culinary:** Toast seeds lightly in a dry pan until fragrant, then grind or add whole to stews, beans, breads, and spice blends.",
+        "**Mild seed tea (folk):** Crush **about 1 teaspoon** of seeds and steep covered **5–10 minutes**; strain. Educational tasting with meals.",
+        "**Storage:** Whole seeds in airtight jars, cool and dark; grind as needed.",
+        "**Essential oil:** Food-flavoring amounts in commercial products only—**do not** drop oil into water as a “dose.”",
       ],
       dosage: [
-        "Educational ranges (adults):",
-        "**Culinary:** ¼–1 teaspoon (about 0.5–2 g) powder or seed per dish as flavor.",
-        "**Tea / traditional digestive use:** about **1.5–3 g** seed daily in divided cups short-term (ballpark from modern educational sources)—food use preferred.",
-        "**Essential oil:** **Do not ingest** without qualified supervision.",
-        "Prefer seasoning amounts; consult a clinician for metabolic conditions rather than self-dosing spice as medicine.",
+        "**Culinary:** **½–1 teaspoon** (about **1–3 g**) of seed in a dish is a usual cooking amount.",
+        "**Tea (traditional educational range):** about **1 teaspoon** crushed seed per cup, **1–2 cups** with food short-term.",
+        "**Supplements:** Follow labels and a clinician if used at all; they are **not** proven medicines.",
+        "**Essential oil:** **Do not ingest.**",
+        "Do not use cumin to replace prescribed metabolic, digestive, or infection care.",
       ],
       traditionalUses:
         "A carefully sown field spice in Isaiah’s agricultural parable and among New Testament tithed herbs. Warm, earthy seeds flavor breads and stews.",
       prepNote:
-        "Toast seeds lightly before grinding. Use as a culinary spice in everyday cooking.",
+        "Toast seeds lightly before grinding. Use as a culinary spice in everyday cooking. Not the same seed as nigella (“fitches”) in Isaiah 28.",
       emoji: "🌾",
     },
     {
@@ -740,59 +808,60 @@ const HERBS = {
       verseText:
         "The kingdom of heaven is like to a grain of mustard seed, which a man took, and sowed in his field…",
       scientificName:
-        "*Brassica nigra* (L.) W.D.J.Koch — or closely related *Sinapis* / *Brassica* mustard species. Garden white mustard is *Sinapis alba*.",
+        "*Brassica nigra* (L.) W.D.J.Koch (black mustard; Brassicaceae) — the plant most often identified with Gospel *sinapi*; white mustard (*Sinapis alba*) is a close kitchen relative.",
       scientificNote:
-        "Greek *σινάπι* (*sinapi*) in Matthew 13:31–32; Mark 4:30–32; Luke 13:18–19. Most botanical commentators identify **black mustard**, *Brassica nigra*, as the parable plant. A minority older suggestion—*Salvadora persica* (“mustard tree”)—is generally **rejected** because it fits the Gospel’s herb-to-large-plant imagery and agricultural context less well.",
+        "Greek *sinapi* in the mustard-seed parables (Matthew 13:31–32; Mark 4:30–32; Luke 13:18–19) and the “faith as a grain of mustard seed” sayings (Matthew 17:20; Luke 17:6) is proverbially tiny seed that becomes a large garden herb. **Black mustard** fits Galilean fields: minute seeds, rapid growth, plants tall enough for small birds to perch. *Salvadora persica* (toothbrush tree), sometimes nicknamed mustard by later Arabic usage, is unlikely—it is not a sown garden annual and its fruits are not “least of seeds.” “Smallest of all seeds” is popular hyperbole, not a botany exam.",
       commonName:
-        "Mustard; black mustard; mustard seed; (biblical) mustard plant of the parables",
+        "Mustard; black mustard; white/yellow mustard; sinapi (Greek)",
       benefits:
-        "Smallest seed, great growth — parable plant & traditional pungent spice / rubefacient",
+        "Tiny seed of the parables — traditional pungent condiment & pot herb",
       botanicalSummary:
-        "Annual brassicas with yellow cross-shaped flowers, lobed leaves, and small round seeds that yield a sharp flavor when crushed with liquid (myrosinase enzyme converts glucosinolates to pungent isothiocyanates). Black mustard can grow surprisingly tall—often several feet, occasionally higher in rich soil—so a “tree-like” shrub sheltering birds is hyperbolic but agriculturally intelligible in parable speech.",
+        "Annuals of the cabbage family with lobed lower leaves, clusters of four-petaled yellow flowers, and slender pods (siliques) packed with tiny round seeds. Black mustard seed is dark and sharp; white mustard paler and milder. Crushed seed mixed with liquid yields the familiar condiment; greens are eaten as a bitter pot herb. In rich Jordan-valley soil the herb can shoot up several feet in a season—an annual that behaves, in parable speech, like a “tree.”",
       intro:
-        "Jesus’ mustard-seed parables teach the surprising growth of the Kingdom from tiny beginnings (Matthew 13:31–32 and parallels) and faith like a mustard seed (Matthew 17:20). The point is theological; the plant is still a real crop of Galilean fields and later spice trade. Traditional medicine used mustard plasters as counter-irritants for chest congestion and aches—effective at reddening skin, risky at blistering it. God chose a common weed-crop to picture His reign’s expansion—approach the spice with parable-humility and plaster-caution.",
+        "Jesus compared the kingdom to mustard seed: sown small, then unexpectedly large, with birds lodging in its branches (Matthew 13:31–32). He also used the seed as a picture of faith that looks tiny and moves what seems immovable (Matthew 17:20). The lesson is the reign of God, not a gardening manual and not a mustard plaster. Mediterranean tables have long used the seed as a warming condiment and the leaves as food. Allyl isothiocyanates give the sinus-clearing bite. Enjoy mustard as a food. Do not swallow mustard essential oil, and do not treat chest colds or tumors with poultices from this page.",
       region:
-        "Black mustard native to Eurasia/Mediterranean; naturalized widely. Grown historically in Palestine; today cultivated across Europe, Asia, and the Americas.",
+        "Black mustard is widespread in the Mediterranean and West Asia and was both wild and cultivated in Galilee. It favors disturbed, fertile ground. White mustard and related species are now global crops for seed and greens.",
       identityNotes: [
-        "**Gospel *sinapi*:** Most commentators identify black mustard (*Brassica nigra*) or a closely related mustard that grows tall in Palestine.",
-        "**Rejected minority view:** *Salvadora persica* (“mustard tree”) generally does not fit the herb-to-large-plant imagery as well.",
-        "**Garden white mustard:** *Sinapis alba*—a related culinary species, not the primary parable identification.",
+        "**Parable plant:** *sinapi* as a sown herb of field or garden, not a desert shrub.",
+        "**Best fit:** *Brassica nigra* (black mustard); *Sinapis alba* remains a kitchen cousin.",
+        "**Unlikely:** *Salvadora persica*—wrong habit, habitat, and seed size for the parable’s image.",
+        "**Proverb of smallness:** Talmud and later speech also use mustard seed for something tiny; Jesus speaks in that idiom.",
       ],
       ancientUses: [
-        "**Kingdom parables:** Mustard seed sown in the field becomes a plant large enough for birds to nest in its shade (Matthew 13:31–32; Mark 4:30–32; Luke 13:18–19).",
-        "**Faith saying:** Faith as a mustard seed moving mountains (Matthew 17:20; Luke 17:6)—proverbial smallness.",
-        "**Classical diet & medicine:** Seeds as pungent condiment; plasters and poultices as rubefacients in Greco-Roman and later European practice.",
-        "**Culinary:** Whole seeds in pickling; ground mustard pastes with must/vinegar; young greens as potherbs.",
-        "**Folk respiratory tradition:** Warm mustard footbaths or chest plasters—historical, easy to overdo.",
+        "**Kingdom parable:** Seed sown in field or garden, growing greater than the garden herbs, birds in the branches (Matthew 13:31–32 and parallels).",
+        "**Faith proverb:** Faith like a mustard grain (Matthew 17:20; Luke 17:6).",
+        "**Galilean kitchen:** Leaves as a pot herb; seed as pungent seasoning—ordinary food of the land.",
+        "**Classical condiment:** Greeks and Romans mixed crushed seed with must (unfermented grape) or vinegar—the ancestor of table mustard.",
+        "**Folk plasters (later):** Warming mustard poultices in European folk practice for chests and aches—**historical, irritating, and not recommended here as treatment.**",
       ],
       modernResearch: [
-        "Culinary mustard is mainly studied as a **food spice**; glucosinolates attract cancer-prevention research in the broader brassica family—**diet pattern evidence must not be overstated as a mustard-seed cure**.",
-        "Traditional rubefacient (skin-reddening) effect is pharmacologically real via irritant isothiocyanates—**this is also the burn mechanism**.",
-        "Limited clinical support for many folk internal “medicinal” mustard uses; food use remains primary.",
-        "Allyl isothiocyanate and related compounds are well-characterized pungent principals.",
+        "Mustard seed and greens are **foods**; glucosinolates and isothiocyanates are well-described plant chemicals, not proven anti-cancer drugs in kitchen amounts.",
+        "Condiment mustard is generally recognized as safe as food; **medicinal** claims for cholesterol, immunity, or respiratory disease lack strong clinical backing.",
+        "Mustard oil sold in some countries as a cooking fat is a different, region-specific product and is **not** interchangeable with table mustard or with essential oil.",
+        "Allyl isothiocyanate (in “mustard oil” essential oil / concentrated distillates) is a **potent irritant**—not a homemade medicine.",
+        "Do not read the parable as agronomic or medical instruction.",
       ],
       sideEffects:
-        "Culinary amounts are usually safe. Large medicinal doses can irritate mouth, throat, and gut, and may cause breathing difficulty in sensitive people. **Mustard plasters / essential oil of mustard can blister and burn skin**—limit contact time, use cloth barriers, never on broken skin, children, or faces. Allergy (including cross-reactivity with other brassicas) occurs. **Glucosinolates** may affect iodine use/thyroid in theory with very high brassica intakes—relevant mainly in iodine deficiency. **Pregnancy & breastfeeding:** food mustard is generally fine; medicinal plasters and concentrated oils—avoid. **Mustard essential oil is hazardous—do not ingest; avoid casual topical use.**",
+        "Food amounts of prepared mustard and cooked greens are generally tolerated; the bite can inflame mouth, stomach, or reflux. **Mustard plasters and essential oil can blister skin and airways**—do not apply concentrated mustard to skin or chest from this site. Allergy to mustard is recognized and can be serious (it is a priority allergen in some labeling rules). **Never ingest mustard essential oil.** Infants and young children should not be given strong mustard preparations. Educational use only.",
       partsUsed:
-        "Seeds (black, brown, white/yellow mustard species); leaves/greens; prepared mustard pastes; seed oil (fatty) vs. essential oil (irritant—different products).",
+        "Ripe seeds; young leaves and flowering shoots as greens. Expressed or distilled mustard oils are concentrated industrial or traditional fats/irritants, not the parable’s “grain.”",
       preparations: [
-        "**Culinary seeds & prepared mustard:** Condiment with meals; whole seeds tempered in oil for cooking.",
-        "**Greens:** Cook young leaves like other mustard greens.",
-        "**Traditional plaster (education only):** Historical chest plaster—high burn risk; **prefer not to DIY**; modern heating pads are safer for comfort care.",
-        "**Fatty mustard oil (culinary grades in some cultures):** Cooking oil—do not confuse with essential oil.",
-        "**Storage:** Seeds airtight, cool, and dry.",
+        "**Condiment:** Grind or soak seeds with vinegar or water (and optional salt/honey) for table mustard; prepared mustard from a jar is the everyday form.",
+        "**Greens:** Cook young leaves as a bitter vegetable; start small if you are unused to them.",
+        "**Pickling:** Whole seeds in brines and spice mixes.",
+        "**Storage:** Whole seed airtight, cool, and dry; prepared mustard refrigerated after opening.",
+        "**Plasters / essential oil:** **Do not** use as home therapy.",
       ],
       dosage: [
-        "Educational ranges (adults):",
-        "**Food:** ¼–1 teaspoon (about 0.5–2 g) ground mustard or equivalent seed as condiment per meal as desired.",
-        "**Plasters / essential oil:** **Not recommended for home medicinal improvisation** due to blister risk; no safe casual “dose.”",
-        "**Essential oil:** **Do not ingest; do not apply undiluted.**",
-        "Let the parable teach faith; let the spice stay mostly on the plate.",
+        "**Culinary condiment:** **½–1 teaspoon** prepared mustard with a meal is a typical adult food amount.",
+        "**Greens:** A cooked side-dish serving as you would other bitter vegetables.",
+        "**Essential oil / plasters:** **Not for home dosing.**",
+        "Do not use mustard to treat chest illness, pain, or cancer, and do not read medicinal doses out of Matthew 13.",
       ],
       traditionalUses:
         "Jesus’ parable of the mustard seed highlights faith’s growth from something small. Mustard greens and seeds have long been kitchen staples of the region.",
       prepNote:
-        "Use seeds in pickling and condiments; young greens in salads. Culinary amounts only.",
+        "Use seeds in pickling and condiments; young greens in salads or cooked dishes. Culinary amounts only. No mustard plasters or essential-oil “remedies” from this page.",
       emoji: "🟡",
     },
     {
@@ -801,59 +870,61 @@ const HERBS = {
       verse: "Jeremiah 8:22",
       verseText: "Is there no balm in Gilead; is there no physician there?",
       scientificName:
-        "*Commiphora gileadensis* (L.) C.Chr. (syn. often discussed with *C. opobalsamum* / Judean balsam / Mecca balsam)—a relative of myrrh. Identity of biblical *tsori* remains debated.",
+        "Uncertain aromatic resin — candidates include *Pistacia atlantica* Desf. (Atlantic terebinth of the Gilead highlands), *Commiphora gileadensis* (L.) C.Chr. (Mecca / Arabian balsam, later famed as Judean balsam), and other storax- or mastic-type gums of trade.",
       scientificNote:
-        "Hebrew *tsori* (“balm”) associated with Gilead (Jeremiah 8:22; 46:11; 51:8; cf. Genesis 37:25; Ezekiel 27:17). The leading historical candidate is the aromatic resin of *Commiphora gileadensis*. Scholars have also proposed other resins (e.g., *Pistacia* terebinth/mastic-type balms, or related Burseraceae exudates). North American “Balm of Gilead” from *Populus* buds is a **different plant** and not the biblical *tsori*.",
+        "Hebrew *tsori* (also spelled *zori*) is the “balm” tied to Gilead in Genesis 37:25; 43:11; Jeremiah 8:22; 46:11; 51:8; and Ezekiel 27:17. Ancient readers knew a valued medicinal resin of that region; **modern botanists do not agree on one tree.** North American **poplar buds** (*Populus balsamifera* / *P. × jackii*), sold today as “Balm of Gilead,” are **not** Jeremiah’s plant. Judean balsam of Roman writers is a related historical luxury, possibly a *Commiphora*, cultivated near the Dead Sea—again, not a bottle on a supermarket herb rack.",
       commonName:
-        "Balm of Gilead; balsam of Judea / Jericho; Mecca balsam; (candidate) *Commiphora gileadensis* resin",
+        "Balm of Gilead; tsori (Hebrew); balsam of Gilead; (later) Judean balsam / opobalsamum — names that have been applied to more than one resin",
       benefits:
-        "“Is there no balm in Gilead?” — precious healing resin of prophetic lament",
+        "Resin of a prophet’s cry — traditional image of healing hope, not a identified drugstore balsam",
       botanicalSummary:
-        "*Commiphora gileadensis* is a drought-tolerant shrub/small tree of the myrrh family (Burseraceae) yielding a fragrant oleo-gum-resin historically celebrated as Judean balsam—costly, perfumed, and traded. Fresh exudate is aromatic and balsamic; dried resin is used in perfume and folk medicine. Constituents include monoterpenes and sesquiterpenes typical of *Commiphora* resins. Whatever the exact ancient species, Scripture’s *tsori* was a known medicinal trade good from the Gilead / Transjordan sphere.",
+        "Whatever tree yielded biblical *tsori*, the product was a fragrant, sticky oleoresin gathered from wounded bark or fruit, traded east of the Jordan and down to Egypt. Terebinth pistacios still grow in highland Gilead and bleed a pale resin. *Commiphora* balsams are desert shrubs of Arabia and the Horn of Africa, later farmed as a royal crop. Storax and mastic are still other fragrant gums of the wider Levant. The honest botanical summary is a **cluster of possibilities**, not a single leaf to pick.",
       intro:
-        "Jeremiah’s cry—“Is there no balm in Gilead? Is there no physician there?” (Jeremiah 8:22)—uses a real pharmaceutical treasure to expose Judah’s spiritual sickness. The balm was famous enough to appear in trade lists (Genesis 37:25; Ezekiel 27:17) and in calls to seek healing (Jeremiah 46:11; 51:8). God allowed a renowned resin in Israel’s neighborhood as a sign of available remedy—and still the people’s deeper wound went unhealed. Study the plant with prophetic seriousness: gratitude for soothing gifts, honesty about uncertainty, and no pretend that resin replaces repentance or medical care.",
+        "“Is there no balm in Gilead? is there no physician there?” (Jeremiah 8:22). The prophet is not writing a recipe. He is grieving a people who will not be healed, though the land even had a famous salve. Later the same image became a Christian hymn of hope: there *is* a balm in Gilead. Genesis already lists Gilead’s balm among goods on the caravan that carried Joseph (Genesis 37:25). God allowed a costly gum to grow in the hills—and used it as a mirror for spiritual sickness. Study the history. Do not buy “Balm of Gilead oil” as a cure, and do not confuse American poplar salve with Jeremiah’s *tsori*.",
       region:
-        "*C. gileadensis* grows in arid zones of Arabia, the Horn of Africa, and historically around the Dead Sea / Jericho balsam gardens celebrated by classical authors (Josephus, Pliny). Biblical Gilead lies east of the Jordan—linked by trade to the balm’s reputation.",
+        "Gilead: the highlands east of the Jordan (modern Jordan). Trade moved the resin toward Egypt and the coast (Genesis 37:25; Ezekiel 27:17). Later “Judean balsam” was associated with oasis cultivation near Jericho and the Dead Sea. True source plants, depending on the identification, range from Levantine terebinth woodland to Arabian *Commiphora* scrub.",
       identityNotes: [
-        "**Leading candidate:** *Commiphora gileadensis* (Judean balsam / Mecca balsam), a myrrh-family resin.",
-        "**Uncertainty remains:** Other resins (*Pistacia* terebinth/mastic-type balms or related Burseraceae exudates) have been proposed.",
-        "**Not this plant:** North American “Balm of Gilead” salves from *Populus* buds are a later namesake—not Jeremiah’s *tsori*.",
+        "**Hebrew tsori:** Six Old Testament texts; medicinal and trade resin of Gilead, identity debated.",
+        "**Leading proposals:** *Pistacia atlantica* resin (local to Gilead); *Commiphora gileadensis* / related balsam (Mecca balsam; later Judean opobalsamum); storax-type gums in some older handbooks.",
+        "**Not North American poplar:** *Populus* “Balm of Gilead” buds are a different continent and species, named by later settlers.",
+        "**Hymn & hope:** The spiritual “There Is a Balm in Gilead” reads Jeremiah through the gospel—theology, not a botanical ID.",
       ],
       ancientUses: [
-        "**Prophetic metaphor:** Jeremiah 8:22; 46:11; 51:8—balm as expected medicine that cannot, by itself, cure covenant unfaithfulness.",
-        "**Trade:** Ishmaelite caravan carrying balm (Genesis 37:25); balm in Tyre’s trade list (Ezekiel 27:17).",
-        "**Classical fame:** Judean balsam praised by Greek and Roman writers as elite perfume and wound balm; royal and temple economies reportedly tended balsam groves near Jericho/En-Gedi in some historical reconstructions.",
-        "**Folk vulnerary:** Traditional application of *Commiphora* balsams to wounds, ulcers, and skin complaints; perfume and incense use.",
-        "**Note:** Poplar-bud “Balm of Gilead” salves in North American herbalism are a later namesake—not Jeremiah’s resin.",
+        "**Joseph’s caravan:** Ishmaelites carrying spicery, balm, and myrrh from Gilead toward Egypt (Genesis 37:25).",
+        "**Gift to Egypt:** Balm among the choice products Jacob’s sons took to Joseph (Genesis 43:11).",
+        "**Jeremiah’s lament:** Balm and physician as the healing Israel would not receive (Jeremiah 8:22; cf. 46:11; 51:8).",
+        "**Tyre’s trade:** Judah and Israel trading wheat, honey, oil, and balm (Ezekiel 27:17).",
+        "**Classical luxury:** Greek and Roman writers praise a rare balsam of Judea/Arabia for perfume and folk salves—expensive, often adulterated, not a village weed.",
+        "**Metaphor of restoration:** The land’s famous medicine became language for the wound only God can bind.",
       ],
       modernResearch: [
-        "Contemporary studies on *C. gileadensis* explore **antimicrobial and wound-healing** themes in laboratory and animal models—early-stage evidence.",
-        "Related *Commiphora* resins (e.g., myrrh) have more developed traditional monographs; **do not assume identical dosing or safety**.",
-        "Perfume-chemistry analyses characterize essential-oil enantiomers and monoterpenes—useful for identity, not clinical proof.",
-        "Overall: strong historical reputation; **modern clinical evidence in people remains limited**. Identity uncertainty further counsels humility.",
+        "There is **no single standardized “Balm of Gilead” extract** that corresponds securely to *tsori*, so clinical claims cannot be honest.",
+        "Resins from *Pistacia* and *Commiphora* species have laboratory anti-inflammatory or antimicrobial papers—**species, dose, and product vary**; none is Jeremiah’s proven formula.",
+        "Commercial “Balm of Gilead” oils are frequently **poplar-bud** macerates or generic fragrance blends.",
+        "Judean balsam’s exact chemistry is a matter of archaeology and botany still in discussion (including rare germinated *Commiphora* material in recent reports)—interesting history, not a supplement aisle.",
+        "Do not treat spiritual or medical illness with an unidentified gum.",
       ],
       sideEffects:
-        "True Judean balsam products are uncommon and variable in commerce—**adulteration risk is high**. Resins and essential oils may cause **contact dermatitis, allergy, or mucous-membrane irritation**. By analogy with related *Commiphora* (myrrh), avoid medicinal amounts in **pregnancy and breastfeeding**. **Essential oils: not for ingestion.** Do not delay professional care for infected wounds while applying fragrant resins. If using any commercial “balm of Gilead,” read the Latin name—many products are poplar bud, not *Commiphora*.",
+        "Unidentified resins can irritate skin, trigger allergy (especially in people sensitive to pistacia, frankincense/myrrh-family gums, or poplar buds), or be adulterated with unknown solvents. **Do not ingest “balsam” essential oils.** Pregnancy: avoid concentrated balsam products. If a labeled poplar-bud salve is used at all, patch-test and keep away from broken skin unless a clinician agrees. This monograph is about Scripture’s image and the limits of identification—not a treatment.",
       partsUsed:
-        "Oleo-gum-resin / balsam exudate; distilled oil from resin or stems (research contexts); historically bark/wood chips for scent.",
+        "Historically: oleoresin / gum from bark or fruit of the (debated) source tree. Modern labeled products may instead use poplar buds, mixed essential oils, or perfume bases.",
       preparations: [
-        "**Historical balm / ointment:** Resin compounded in oil or fat for perfume and external folk care—educational reconstruction only with verified material.",
-        "**Incense / perfume:** Tiny amounts for fragrance (ventilate).",
-        "**Modern analogs:** Quality myrrh or other *Commiphora* resins are sometimes used instructively when true Judean balsam is unavailable—label honestly.",
-        "**Poplar-bud salves:** Different herb; useful in Western folk tradition but **not biblical *tsori***.",
-        "**Storage:** Resins airtight, cool, and dry; oils in dark glass.",
+        "**Historical trade resin:** Collected tears or scrapings, sometimes boiled into a thicker “balm”—described by travelers, not reconstructed here as a recipe.",
+        "**Perfume & incense:** Costly balsams compounded with other aromatics in antiquity.",
+        "**Hymn & study:** The primary “use” this site recommends is reading Jeremiah and the gospel hope the hymn draws from it.",
+        "**If exploring aroma:** Only a clearly labeled, legally sourced product; dilute any essential oil in a carrier; **never swallow.**",
+        "**Stewardship:** Do not harvest wild desert *Commiphora* or rare trees for curiosity.",
       ],
       dosage: [
-        "Educational caution (adults):",
-        "**External fragrance / diluted balm:** minute amounts of verified resin in carrier oil—patch-test first.",
-        "**Internal use:** **not recommended** as DIY practice given identity uncertainty and limited safety data.",
+        "**Scripture’s balm:** not a milligram dose—Jeremiah asks a rhetorical, spiritual question.",
+        "**Commercial oils / salves:** follow the actual plant on the label (often poplar, not *tsori*) and a clinician; there is **no authentic biblical dose.**",
         "**Essential oil:** **Do not ingest.**",
-        "Let Jeremiah’s question lead to spiritual and medical honesty rather than resin self-prescription.",
+        "Do not use any balsam to replace medical or pastoral care for body or soul.",
       ],
       traditionalUses:
         "A fragrant resinous balm from the region of Gilead, evoked by Jeremiah as a metaphor for restoration. Later Christian hymnody kept the image of healing hope alive.",
       prepNote:
-        "Historical balsams vary by species. Seek reputable botanical sources if exploring aromatic resins; educational context only.",
+        "Historical balsams vary by species and are often confused with North American poplar bud salve. Educational and devotional context only—not a cure in a bottle.",
       emoji: "🧴",
     },
     {
@@ -863,51 +934,59 @@ const HERBS = {
       verseText: "The righteous shall flourish like the palm tree: he shall grow like a cedar in Lebanon.",
       scientificName: "*Cedrus libani* A.Rich. (Pinaceae)",
       scientificNote:
-        "Many “cedar” products in commerce are actually *Juniperus* (“cedarwood”)—not true *Cedrus libani*.",
-      commonName: "Cedar of Lebanon; Lebanese cedar; (Hebrew) *erez*",
+        "Hebrew *erez* in contexts of Lebanon is the true cedar *Cedrus libani*—not North American “red cedar” (*Juniperus virginiana*) and not every tree later called cedar. Solomon imported this timber for the temple (1 Kings 5–6). Remaining wild groves are conservation treasures.",
+      commonName:
+        "Cedar of Lebanon; Lebanon cedar; erez (Hebrew); (not) Eastern red cedar",
       benefits:
-        "Righteous like the cedar — temple timber, fragrance, and enduring strength",
+        "Tree of strength & temple timber — traditional aromatic wood of worship, not a tea herb",
       botanicalSummary:
-        "A majestic evergreen conifer with tiered, level branches, needle-like leaves in clusters, and upright barrel-shaped cones. The heartwood is aromatic, durable, and naturally resistant to insects and decay—qualities that made it the premier monumental timber of the ancient Near East. Essential oil and wood tar contain sesquiterpenes (e.g., himachalenes in *Cedrus* oils) responsible for the characteristic scent.",
+        "A massive evergreen conifer of mountain slopes, with tiered, spreading crown in age, clusters of needle-like leaves, and barrel-shaped upright cones. Heartwood is fragrant, durable, and historically prized. Distilled wood and cone oils contain **himachalenes**, **himachalol**, and related sesquiterpenes. The living tree is the biblical subject; a bottle of “cedarwood oil” is often a different species entirely.",
       intro:
-        "Psalm 92:12 declares, “The righteous shall flourish like the palm tree: he shall grow like a cedar in Lebanon.” Solomon partnered with Hiram of Tyre to float Lebanon’s cedars to Jerusalem for the Temple and royal buildings (1 Kings 5; 2 Chronicles 2). Prophets used cedar for pride and for verdant blessing. God raised forests that could roof His house and still preach steadfastness to the faithful—approach the tree as timber, poetry, and cautious aroma, not as an oral “cedar cure.”",
+        "“The righteous shall flourish like the palm tree: he shall grow like a cedar in Lebanon” (Psalm 92:12). Scripture uses this mountain giant for stature, durability, and sometimes for pride brought low (Isaiah 2:13). Hiram of Tyre floated cedar to Solomon for the Lord’s house (1 Kings 5:6–10; 6:9–10, 15–18). Cedar also appears with hyssop in purification rites (Leviticus 14:4–6, 49–52; Numbers 19:6). God made a forest that could roof a temple. That is a call to reverence and conservation, not to drink essential oil or to strip remaining groves for souvenirs.",
       region:
-        "Mountains of Lebanon, Syria, and south-central Turkey (Taurus); widely planted as an ornamental in parks worldwide. Ancient logging depleted Levantine stands; conservation and reforestation remain important in Lebanon.",
+        "Mountains of Lebanon, Syria, and south-central Turkey (Taurus), generally at elevation with winter snow and dry summers. Ancient range was wider before millennia of felling for ships, palaces, and temples. Protected remnants (including famous Lebanese cedar reserves) are the rightful focus today.",
+      identityNotes: [
+        "**Hebrew erez / Lebanon:** *Cedrus libani* in temple, palace, and psalm imagery.",
+        "**Not juniper “cedar”:** American red cedar and many “cedarwood oils” are *Juniperus* or other genera.",
+        "**Temple wood:** 1 Kings 5–7; 2 Chronicles 2—imported, costly, worked by Tyrian craftsmen.",
+        "**Conservation:** Centuries of cutting left fragments of the old forest; admire, do not wild-harvest.",
+      ],
       ancientUses: [
-        "**Temple & palace timber:** Cedars of Lebanon procured for Solomon’s Temple and house (1 Kings 5:6–10; 6:9–10, 15–18; 2 Chronicles 2:8–9)—beams, paneling, and carved work.",
-        "**Psalm & prophecy:** Flourishing righteousness (Psalm 92:12); God’s planting (Psalm 104:16); judgment on proud cedars (Isaiah 2:13; Ezekiel 31) and imagery of restoration.",
-        "**Second Temple / later building:** Continued prestige of Lebanese cedar in Near Eastern monumental architecture.",
-        "**Classical uses:** Shipbuilding, coffins, and temple construction; resin/tar for preservative and aromatic purposes; embalming-related aromatics in the wider cedar/juniper trade.",
-        "**Folk medicine (limited):** Traditional use of wood/resin aromatics for respiratory comfort, skin applications, and insect-repellent chests—much of it overlapping with related conifers.",
+        "**Temple & palace:** Cedar beams, paneling, and furnishings for Solomon’s temple and royal buildings (1 Kings 5–7).",
+        "**Psalm of flourishing:** The righteous compared to Lebanon’s cedar (Psalm 92:12; cf. Psalm 104:16; Hosea 14:5–6).",
+        "**Purification rites:** Cedar wood with hyssop and scarlet yarn in cleansing of skin affliction and house (Leviticus 14) and in Numbers 19:6.",
+        "**Phoenician ships & trade:** Durable, fragrant timber of Tyre’s fleets and exports—the economic backdrop of Solomon’s contract with Hiram.",
+        "**Egypt:** Imported cedar for boats, coffins, and resinous preparations in the wider ancient world.",
+        "**Poetry of pride:** Prophets fell the cedar as an image of arrogance laid low (e.g., Isaiah 2:13; Ezekiel 31).",
       ],
       modernResearch: [
-        "Phytochemical studies of *Cedrus libani* report essential-oil constituents with **antimicrobial and anti-inflammatory laboratory activity**—preclinical.",
-        "Human clinical evidence specifically for *C. libani* as herbal medicine is **sparse**; do not invent trial claims.",
-        "Wood science confirms durability and aromatic extractives that explain ancient preference for temple beams.",
-        "Conservation biology and cultural heritage research often outweigh medical literature for this species.",
+        "Wood and cone essential oils have laboratory papers on antimicrobial or antiviral activity—**in vitro is not a treatment** for infection.",
+        "There is **no** high-quality clinical tradition of drinking *Cedrus libani* as an herbal tea for disease.",
+        "Commercial “cedarwood oil” is frequently *Juniperus virginiana* or *Cedrus atlantica*, not verified Lebanese temple cedar.",
+        "The living conservation story (reforestation, reserves, climate and grazing pressure) is the modern research most relevant to this tree’s future.",
+        "Do not turn Psalm 92 into a supplement claim.",
       ],
       sideEffects:
-        "True cedar essential oils can cause **skin irritation, sensitization, or respiratory irritation** from vapors—dilute well, ventilate, discontinue if wheezing or rash appears. **Do not ingest wood, tar, or essential oil.** Allergy to colophony/pine-family resins may cross-react in sensitive people. Pregnancy: avoid medicinal essential-oil use; appreciation of wood aroma in open air is different from concentrated oil. Keep oils away from children and pets. Sawdust can irritate airways—use dust protection when working wood.",
+        "Handling wood is usually well tolerated; sawdust and oils may irritate skin or airways in sensitive people. **Cedar essential oil is not for ingestion** and can irritate skin undiluted. Keep oils away from children and pets. Pregnancy: avoid concentrated cedar oils. Do not burn large amounts of resinous wood in unventilated space. Buying rare wild-harvested Lebanese cedar products can harm remaining groves. Educational and historical only.",
       partsUsed:
-        "Heartwood (timber, lignum); sawdust/shavings for scent chests; resin/tar historically; essential oil distilled from wood (aromatic).",
+        "Heartwood timber (historical construction and craft); sawdust or wood for distilled oil in modern trade; cones in some oil studies. Not a culinary leaf or fruit.",
       preparations: [
-        "**Timber / craft:** Historical and modern woodworking (respect protected and sustainably sourced wood).",
-        "**Aromatic wood chips / sachets:** Closets and storage chests (traditional moth-discouraging scent).",
-        "**Incense / wood diffusion:** Small heated chips—ventilate; not for asthma-prone enclosed spaces.",
-        "**Essential oil:** Heavily diluted topical or diffuser use only if labeled *Cedrus* and well tolerated—**never oral**.",
-        "**Storage:** Oils in dark glass; wood cool and dry.",
+        "**Scripture & woodland:** The primary “use” is to read the psalms and to value living trees in their mountains.",
+        "**Craft wood:** Historically worked into beams, chests, and ships—durable and insect-resistant in ancient testimony.",
+        "**Incense / aroma:** Small amounts of authentic wood aroma in a ventilated space if a legal craft source exists.",
+        "**Diluted oil (if used at all):** **1 drop in a teaspoon of carrier oil** for adult external scent only, and only if the label names the species honestly; patch-test.",
+        "**Storage of oils:** Dark glass, tightly capped; **never** a beverage.",
       ],
       dosage: [
-        "Educational aromatic ranges (adults):",
-        "**Diffusion:** 1–2 drops true cedar oil in a diffuser with airflow—or prefer raw wood aroma without oil.",
-        "**Topical:** ≤1% dilution in carrier for adult scent trials after patch-test—if used at all.",
-        "**Oral:** **None. Do not ingest.**",
-        "Flourish like the cedar by rooted faith; let the timber remain mostly architecture and poetry.",
+        "**Timber / symbol:** not a dose.",
+        "**Essential oil:** **Do not ingest. Do not use undiluted on skin.** Fragrance-level dilution only, if at all.",
+        "There is **no** traditional internal “cup of cedar” recommended on this site.",
+        "Do not use cedar oil to treat infection, skin disease, or spiritual struggle, and do not harvest from protected groves.",
       ],
       traditionalUses:
         "Towering cedars supplied temple timber and symbolized strength and flourishing. Aromatic wood and oils have been used historically for fragrance and craft.",
       prepNote:
-        "Appreciate as Scripture’s tree of strength. Essential oils, if used, only heavily diluted for scent—never ingest.",
+        "Appreciate as Scripture’s tree of strength. Essential oils, if used, only heavily diluted for scent—never ingest. Prefer not to buy wild-harvested Lebanese cedar.",
       emoji: "🌲",
     },
   ],
@@ -915,7 +994,8 @@ const HERBS = {
 
 function getAllHerbs() {
   const map = new Map();
-  [...HERBS.featured, ...HERBS.catalog].forEach((h) => map.set(h.id, h));
+  // Catalog first, featured last so featured monographs win on duplicate ids.
+  [...HERBS.catalog, ...HERBS.featured].forEach((h) => map.set(h.id, h));
   return [...map.values()];
 }
 
