@@ -311,6 +311,12 @@ a {
   font-weight: 300;
   color: var(--muted);
   max-width: 11rem;
+  line-height: 1.35;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Leaf CTA */
