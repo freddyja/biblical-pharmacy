@@ -22,7 +22,7 @@ const HERBS = {
       region:
         "Native to the region from Iran through the Himalayan foothills; long cultivated across the Mediterranean, Levant, North Africa, and warm-temperate gardens worldwide. Biblical-era orchards of Israel and the wider Near East prized the fruit.",
       identityNotes: [
-        "**Hebrew *rimmon*:** Standard botanical identification is *Punica granatum*—not a later English substitution.",
+        "**Hebrew rimmon:** Standard botanical identification is *Punica granatum*—not a later English substitution.",
         "**Promised Land fruit:** Listed with wheat, barley, vines, figs, olives, and honey in Deuteronomy 8:8.",
         "**Sacred ornament:** Pomegranates of blue, purple, and scarlet decorated the high priest’s robe (Exodus 28:33–34; 39:24–26) and the bronze capitals of Solomon’s temple (1 Kings 7:18–20).",
       ],
@@ -144,7 +144,7 @@ const HERBS = {
       region:
         "Native to the Mediterranean and western Asia; cultivated and sometimes wild in the Levant. Now a temperate garden and pickling herb worldwide. Prefers sun and well-drained soil.",
       identityNotes: [
-        "**Matthew 23:23 *anēthon*:** Best read as dill (*Anethum graveolens*), not sweet anise.",
+        "**Matthew 23:23 anēthon:** Best read as dill (*Anethum graveolens*), not sweet anise.",
         "**KJV “anise”:** Reflects later English spice names; keep cumin and mint as the companion tithed herbs in the same verse.",
         "**Luke 11:42:** A parallel woe lists mint, rue, and garden herbs—same lesson, slightly different kitchen list.",
         "**Isaiah “dill” in some versions:** Hebrew *qetsach* is usually nigella (black cumin), not this plant.",
