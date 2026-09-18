@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -487,6 +491,11 @@ a {
   font-style: italic;
   color: var(--white);
   opacity: 0.85;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Modal */
@@ -521,7 +530,15 @@ a {
   box-shadow: var(--shadow);
   position: relative;
   transform: translateY(10px) scale(0.98);
-  transition: transform 0.25s;
+  transition: transform 0.25s, max-width 0.2s;
+  scrollbar-color: var(--gold-dim) rgba(0, 0, 0, 0.25);
+  scrollbar-width: thin;
+}
+
+.modal.is-monograph {
+  max-width: 720px;
+  max-height: min(92vh, 880px);
+  padding: 1.85rem 1.7rem 1.6rem;
 }
 
 .modal-backdrop.is-open .modal {
@@ -529,16 +546,19 @@ a {
 }
 
 .modal-close {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.85rem;
+  position: sticky;
+  top: 0.35rem;
+  float: right;
+  z-index: 5;
   width: 2.25rem;
   height: 2.25rem;
+  margin: -0.35rem -0.35rem 0 0;
   border-radius: 50%;
   font-size: 1.35rem;
   line-height: 1;
   color: var(--gold);
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(7, 31, 18, 0.78);
+  border: 1px solid rgba(229, 209, 157, 0.28);
   transition: background 0.15s;
 }
 
@@ -568,6 +588,28 @@ a {
   text-transform: uppercase;
 }
 
+.modal-scientific {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--gold-bright);
+  margin: 0.35rem auto 0.15rem;
+  max-width: 38rem;
+  line-height: 1.45;
+}
+
+.modal-scientific em {
+  font-style: italic;
+}
+
+.modal-common {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0.2rem auto 0.15rem;
+  max-width: 36rem;
+}
+
 .modal .verse-ref {
   text-align: center;
   color: var(--gold-bright);
@@ -587,6 +629,39 @@ a {
   opacity: 0.95;
 }
 
+.modal-subtitle {
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-style: italic;
+  color: var(--gold);
+  margin: -0.35rem auto 1.15rem;
+  max-width: 34rem;
+  line-height: 1.4;
+}
+
+.modal-note {
+  font-size: 0.86rem;
+  color: var(--cream);
+  background: rgba(0, 0, 0, 0.22);
+  border-left: 2px solid var(--gold-dim);
+  padding: 0.7rem 0.85rem;
+  border-radius: 0 8px 8px 0;
+  margin: 0 0 1.15rem;
+  line-height: 1.5;
+}
+
+.modal-section {
+  margin: 0 0 1.15rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(229, 209, 157, 0.16);
+}
+
+.modal-section:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
 .modal h3 {
   font-family: var(--sans);
   font-size: 0.72rem;
@@ -596,10 +671,70 @@ a {
   margin: 1rem 0 0.35rem;
 }
 
+.modal-section h3 {
+  margin: 0 0 0.5rem;
+  color: var(--gold);
+  letter-spacing: 0.16em;
+}
+
 .modal p {
   font-size: 0.92rem;
   color: var(--white);
   opacity: 0.9;
+}
+
+.modal-section p,
+.modal-section li {
+  font-size: 0.9rem;
+  color: var(--white);
+  opacity: 0.92;
+  line-height: 1.58;
+}
+
+.modal-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-section li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-bottom: 0.65rem;
+}
+
+.modal-section li:last-child {
+  margin-bottom: 0;
+}
+
+.modal-section li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  box-shadow: 0 0 0 2px rgba(212, 184, 106, 0.18);
+}
+
+.modal-section strong {
+  color: var(--gold-bright);
+  font-weight: 600;
+}
+
+.modal-section em {
+  font-style: italic;
+  color: var(--cream);
+}
+
+.modal-dosage-lead {
+  font-size: 0.8rem !important;
+  font-style: italic;
+  color: var(--muted) !important;
+  margin-bottom: 0.55rem;
+  opacity: 0.85 !important;
 }
 
 .disclaimer {

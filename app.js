@@ -11,6 +11,7 @@
   const featuredEmpty = document.getElementById("featured-empty");
   const catalogEmpty = document.getElementById("catalog-empty");
   const backdrop = document.getElementById("modal-backdrop");
+  const modalEl = document.getElementById("herb-modal");
   const modalClose = document.getElementById("modal-close");
 
   const ICONS = {
@@ -76,8 +77,80 @@
 
   function matchesQuery(herb, q) {
     if (!q) return true;
-    const hay = `${herb.name} ${herb.benefits} ${herb.verse} ${herb.traditionalUses || ""}`.toLowerCase();
+    const extra = [
+      herb.scientificName,
+      herb.commonName,
+      herb.scientificNote,
+      herb.intro,
+      herb.botanicalSummary,
+      herb.region,
+      herb.partsUsed,
+      herb.sideEffects,
+      ...(herb.identityNotes || []),
+      ...(herb.ancientUses || []),
+      ...(herb.modernResearch || []),
+      ...(herb.preparations || []),
+      ...(herb.dosage || []),
+    ]
+      .filter(Boolean)
+      .join(" ");
+    const hay = `${herb.name} ${herb.benefits} ${herb.verse} ${
+      herb.traditionalUses || ""
+    } ${extra}`.toLowerCase();
     return hay.includes(q);
+  }
+
+  function fillRich(el, text) {
+    el.textContent = "";
+    if (!text) return;
+    const tokens = String(text).split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+    tokens.forEach((token) => {
+      if (!token) return;
+      if (token.startsWith("**") && token.endsWith("**") && token.length >= 4) {
+        const strong = document.createElement("strong");
+        strong.textContent = token.slice(2, -2);
+        el.appendChild(strong);
+      } else if (
+        token.startsWith("*") &&
+        token.endsWith("*") &&
+        token.length >= 2
+      ) {
+        const em = document.createElement("em");
+        em.textContent = token.slice(1, -1);
+        el.appendChild(em);
+      } else {
+        el.appendChild(document.createTextNode(token));
+      }
+    });
+  }
+
+  function setTextBlock(el, text) {
+    const has = Boolean(text);
+    el.hidden = !has;
+    if (has) fillRich(el, text);
+    else el.textContent = "";
+    return has;
+  }
+
+  function setSection(section, body, value) {
+    const items = Array.isArray(value)
+      ? value.filter(Boolean)
+      : value
+        ? [value]
+        : [];
+    const has = items.length > 0;
+    section.hidden = !has;
+    body.textContent = "";
+    if (!has) return;
+    if (body.tagName === "UL") {
+      items.forEach((item) => {
+        const li = document.createElement("li");
+        fillRich(li, item);
+        body.appendChild(li);
+      });
+    } else {
+      fillRich(body, items.join(" "));
+    }
   }
 
   function renderFeatured(filter) {
@@ -144,6 +217,76 @@
     document.getElementById("modal-verse-text").textContent = herb.verseText || "";
     document.getElementById("modal-uses").textContent = herb.traditionalUses;
     document.getElementById("modal-prep").textContent = herb.prepNote;
+
+    const isMonograph = Array.isArray(herb.ancientUses) && herb.ancientUses.length > 0;
+    modalEl.classList.toggle("is-monograph", isMonograph);
+    document.getElementById("modal-monograph").hidden = !isMonograph;
+    document.getElementById("modal-short").hidden = isMonograph;
+
+    setTextBlock(document.getElementById("modal-scientific"), herb.scientificName);
+    setTextBlock(document.getElementById("modal-common"), herb.commonName);
+    setTextBlock(
+      document.getElementById("modal-subtitle"),
+      isMonograph ? herb.benefits : ""
+    );
+    setTextBlock(
+      document.getElementById("modal-scientific-note"),
+      isMonograph ? herb.scientificNote : ""
+    );
+
+    if (isMonograph) {
+      setSection(
+        document.getElementById("section-identity"),
+        document.getElementById("modal-identity"),
+        herb.identityNotes
+      );
+      setSection(
+        document.getElementById("section-botanical"),
+        document.getElementById("modal-botanical"),
+        herb.botanicalSummary
+      );
+      setSection(
+        document.getElementById("section-intro"),
+        document.getElementById("modal-intro"),
+        herb.intro
+      );
+      setSection(
+        document.getElementById("section-region"),
+        document.getElementById("modal-region"),
+        herb.region
+      );
+      setSection(
+        document.getElementById("section-ancient"),
+        document.getElementById("modal-ancient"),
+        herb.ancientUses
+      );
+      setSection(
+        document.getElementById("section-research"),
+        document.getElementById("modal-research"),
+        herb.modernResearch
+      );
+      setSection(
+        document.getElementById("section-side-effects"),
+        document.getElementById("modal-side-effects"),
+        herb.sideEffects
+      );
+      setSection(
+        document.getElementById("section-parts"),
+        document.getElementById("modal-parts"),
+        herb.partsUsed
+      );
+      setSection(
+        document.getElementById("section-prep-list"),
+        document.getElementById("modal-preparations"),
+        herb.preparations
+      );
+      setSection(
+        document.getElementById("section-dosage"),
+        document.getElementById("modal-dosage"),
+        herb.dosage
+      );
+    }
+
     const badge = document.getElementById("modal-badge");
     if (herb.icon && ICONS[herb.icon]) {
       badge.innerHTML = wreathHTML(herb.icon);
@@ -153,6 +296,7 @@
     backdrop.hidden = false;
     backdrop.classList.add("is-open");
     document.body.classList.add("modal-open");
+    modalEl.scrollTop = 0;
     modalClose.focus();
   }
 
