@@ -10,6 +10,9 @@
   const searchInput = document.getElementById("search");
   const featuredEmpty = document.getElementById("featured-empty");
   const catalogEmpty = document.getElementById("catalog-empty");
+  const azIndex = document.getElementById("az-index");
+  const azLabel = document.getElementById("az-label");
+  let activeLetter = "all";
   const backdrop = document.getElementById("modal-backdrop");
   const modalEl = document.getElementById("herb-modal");
   const modalClose = document.getElementById("modal-close");
@@ -185,11 +188,73 @@
     featuredEmpty.classList.toggle("is-visible", shown === 0);
   }
 
+
+  function herbLetter(herb) {
+    const ch = (herb.name || "?").trim().charAt(0).toUpperCase();
+    return /[A-Z]/.test(ch) ? ch : "#";
+  }
+
+  function buildAzIndex() {
+    if (!azIndex) return;
+    const counts = {};
+    getAllHerbs().forEach((h) => {
+      const L = herbLetter(h);
+      counts[L] = (counts[L] || 0) + 1;
+    });
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").filter((L) => counts[L]);
+    // Keep All button; rebuild letter buttons
+    azIndex.querySelectorAll(".az-btn[data-letter]:not([data-letter='all'])").forEach((b) => b.remove());
+    letters.forEach((L) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "az-btn";
+      btn.dataset.letter = L;
+      btn.setAttribute("aria-pressed", "false");
+      btn.textContent = L;
+      btn.title = `${counts[L]} plant${counts[L] === 1 ? "" : "s"}`;
+      btn.addEventListener("click", () => setLetterFilter(L));
+      azIndex.appendChild(btn);
+    });
+    const allBtn = azIndex.querySelector("[data-letter='all']");
+    if (allBtn && !allBtn.dataset.bound) {
+      allBtn.dataset.bound = "1";
+      allBtn.addEventListener("click", () => setLetterFilter("all"));
+    }
+  }
+
+  function setLetterFilter(letter) {
+    activeLetter = letter;
+    if (azIndex) {
+      azIndex.querySelectorAll(".az-btn").forEach((btn) => {
+        const on = btn.dataset.letter === letter;
+        btn.classList.toggle("is-active", on);
+        btn.setAttribute("aria-pressed", String(on));
+      });
+    }
+    if (azLabel) {
+      if (letter === "all") {
+        azLabel.hidden = true;
+        azLabel.textContent = "";
+      } else {
+        azLabel.hidden = false;
+        azLabel.textContent = `Showing plants starting with “${letter}”`;
+      }
+    }
+    if (!catalogSection.classList.contains("is-open")) {
+      setCatalogOpen(true);
+    }
+    renderCatalog(searchInput.value);
+  }
+
   function renderCatalog(filter) {
     const q = (filter || "").trim().toLowerCase();
     catalogGrid.innerHTML = "";
     let shown = 0;
-    HERBS.catalog.forEach((herb) => {
+    const list = getAllHerbs()
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
+    list.forEach((herb) => {
+      if (activeLetter !== "all" && herbLetter(herb) !== activeLetter) return;
       if (!matchesQuery(herb, q)) return;
       shown++;
       const li = document.createElement("li");
