@@ -352,4 +352,11 @@
 
   renderFeatured();
   renderCatalog();
+
+  if (location.hash === "#full-catalog") {
+    setCatalogOpen(true);
+    renderCatalog(searchInput.value);
+    catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
 })();
