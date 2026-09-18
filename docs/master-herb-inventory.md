@@ -7,8 +7,22 @@ Status: `done` = full monograph on main | `todo` = needed | `skip-note` = specia
 
 ## Already on main (full monographs)
 - Aloe / Aloes (Aloe vera + biblical aloes notes)
+- Almond
+- Anise
+- Arnica (EXTERNAL ONLY)
+- Ashwagandha
+- Astragalus
 - Balm of Gilead
+- Basil (sweet; holy basil later)
+- Bay Laurel
+- Bilberry
+- Black Cohosh
+- Black Pepper
+- Black Seeds (Nigella)
+- Calendula
 - Cedar of Lebanon
+- Chamomile
+- Cinnamon
 - Coriander
 - Cumin
 - Dill
@@ -24,26 +38,26 @@ Status: `done` = full monograph on main | `todo` = needed | `skip-note` = specia
 - Spikenard
 
 ## From TOC — A–C
-- Almond — todo
+- Almond — done
 - Aloe Vera — done (as Aloes)
-- Anise — todo
+- Anise — done
 - Apple Cider Vinegar — todo (food/ferment)
-- Arnica — todo
+- Arnica — done (EXTERNAL ONLY / toxic if swallowed)
 - Arugula — todo
-- Ashwagandha — todo
+- Ashwagandha — done
 - Asparagus — todo
-- Astragalus — todo
+- Astragalus — done
 - Avocado — todo
 - Balsamic Vinegar — todo
-- Basil — todo
-- Bay Laurel — todo
+- Basil — done (sweet basil; holy basil later)
+- Bay Laurel — done
 - Bee Balm — todo
 - Beet — todo
-- Bilberry — todo
-- Black Cohosh — todo
+- Bilberry — done
+- Black Cohosh — done
 - Black Lentils — todo
-- Black Pepper — todo
-- Black Seeds (Nigella) — todo
+- Black Pepper — done
+- Black Seeds (Nigella) — done
 - Blueberry — todo
 - Boswellia — done (Frankincense)
 - Brazil Nut — todo
@@ -52,7 +66,7 @@ Status: `done` = full monograph on main | `todo` = needed | `skip-note` = specia
 - Butcher's Broom — todo
 - Butterfly Pea — todo
 - Calamus — todo (safety: β-asarone)
-- Calendula — todo
+- Calendula — done
 - Caraway — todo
 - Cardamom — todo
 - Cascara sagrada — todo (stimulant laxative caution)
@@ -60,10 +74,10 @@ Status: `done` = full monograph on main | `todo` = needed | `skip-note` = specia
 - Cauliflower — todo
 - Cayenne pepper — todo
 - Celery seed — todo
-- Chamomile — todo
+- Chamomile — done
 - Cherry — todo
 - Chia Seeds — todo
-- Cinnamon — todo
+- Cinnamon — done
 - Clove — todo
 - Coconut Oil — todo
 - Coffee — todo
@@ -266,5 +280,5 @@ Calcium, CoQ10, Fiber, Glucosamine/Chondroitin, Iron, Magnesium, Melatonin, Omeg
 Historical/traditional recipes (Kyphi, Four Thieves Vinegar, etc.) — separate track after herb monographs unless prioritized.
 
 ## Batch plan
-- Batch 1 (next): Almond, Anise, Arnica, Ashwagandha, Astragalus, Basil, Bay Laurel, Bilberry, Black Cohosh, Black Pepper, Black Seeds, Calendula, Chamomile, Cinnamon
+- Batch 1 — **done:** Almond, Anise, Arnica, Ashwagandha, Astragalus, Basil, Bay Laurel, Bilberry, Black Cohosh, Black Pepper, Black Seeds (Nigella), Calendula, Chamomile, Cinnamon (`docs/batch-01-monographs.md`)
 - Continue alphabetically thereafter; toxic entries get strong educational warnings and no DIY dosing.

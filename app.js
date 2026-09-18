@@ -86,6 +86,7 @@
       herb.region,
       herb.partsUsed,
       herb.sideEffects,
+      herb.verseText,
       ...(herb.identityNotes || []),
       ...(herb.ancientUses || []),
       ...(herb.modernResearch || []),
@@ -199,7 +200,7 @@
       btn.innerHTML = `
         <div class="emoji" aria-hidden="true">${herb.emoji || "🌿"}</div>
         <h3>${herb.name}</h3>
-        <p class="ref">${herb.verse}</p>
+        <p class="ref">${herb.verse || ""}</p>
         <p class="ben">${herb.benefits}</p>
       `;
       btn.addEventListener("click", () => openModal(herb.id));
@@ -213,7 +214,7 @@
     const herb = findHerb(id);
     if (!herb) return;
     document.getElementById("modal-title").textContent = herb.name;
-    document.getElementById("modal-verse").textContent = herb.verse;
+    document.getElementById("modal-verse").textContent = herb.verse || "";
     document.getElementById("modal-verse-text").textContent = herb.verseText || "";
     document.getElementById("modal-uses").textContent = herb.traditionalUses;
     document.getElementById("modal-prep").textContent = herb.prepNote;
@@ -308,14 +309,18 @@
     }, 250);
   }
 
-  function toggleCatalog() {
-    const open = !catalogSection.classList.contains("is-open");
+  function setCatalogOpen(open) {
     catalogSection.classList.toggle("is-open", open);
     catalogSection.hidden = !open;
     revealCta.setAttribute("aria-expanded", String(open));
     revealCta.textContent = open
       ? "Hide the Full Biblical Pharmacy"
       : "Reveal the Full Biblical Pharmacy";
+  }
+
+  function toggleCatalog() {
+    const open = !catalogSection.classList.contains("is-open");
+    setCatalogOpen(open);
     if (open) {
       renderCatalog(searchInput.value);
       catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -333,7 +338,15 @@
 
   searchInput.addEventListener("input", () => {
     const q = searchInput.value;
+    const needle = q.trim().toLowerCase();
     renderFeatured(q);
+    if (
+      needle &&
+      HERBS.catalog.some((h) => matchesQuery(h, needle)) &&
+      !catalogSection.classList.contains("is-open")
+    ) {
+      setCatalogOpen(true);
+    }
     if (catalogSection.classList.contains("is-open")) renderCatalog(q);
   });
 
