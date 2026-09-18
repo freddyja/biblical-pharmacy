@@ -1,60 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Full Library — Biblical Pharmacy</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .lib-wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
-    .lib-wrap h1 { font-family: "Cormorant Garamond", Georgia, serif; color: #2f4a32; margin-bottom: 0.5rem; }
-    .lib-wrap p { color: #2a3328; line-height: 1.55; }
-    .lib-card {
-      background: #fffdf6;
-      border: 1px solid #e4d8b5;
-      border-radius: 16px;
-      padding: 1.1rem 1.25rem;
-      margin: 1rem 0;
-      color: #1e2a1c;
-    }
-    .lib-card h2 { color: #2f4a32; margin: 0 0 0.4rem; font-size: 1.25rem; }
-    .lib-card a { color: #2f4a32; font-weight: 700; text-decoration: underline; }
-    .lib-note {
-      background: #fff8e6;
-      border-left: 4px solid #8a6a1f;
-      padding: 0.85rem 1rem;
-      color: #1e2a1c;
-      border-radius: 0 10px 10px 0;
-    }
-    .lib-note strong { color: #1a1a1a; }
-  </style>
-</head>
-<body>
-  <header class="hero" style="min-height:120px" role="banner"></header>
-  <main class="lib-wrap">
-    <p><a href="index.html">← Back to home</a></p>
-    <h1>Full Biblical Pharmacy Library</h1>
-    <p class="lib-note"><strong>Educational only</strong> — not medical advice, diagnosis, or a prescription. Talk with a licensed clinician about symptoms, pregnancy, medicines, or chronic conditions.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Biblical Pharmacy — vitamins, nutrients, and traditional recipes. Educational only; not medical advice."
+    />
+    <title>Vitamins &amp; Recipes — Biblical Pharmacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .lib-page {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 3rem;
+      }
+      .lib-back {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: var(--gold);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+      .lib-back:hover {
+        color: var(--gold-bright);
+        text-decoration: underline;
+      }
+      .lib-page h1 {
+        font-family: var(--serif);
+        color: var(--gold);
+        font-size: clamp(2rem, 5vw, 2.6rem);
+        margin: 0 0 0.5rem;
+        font-weight: 600;
+      }
+      .lib-lead {
+        color: var(--muted);
+        line-height: 1.55;
+        margin: 0 0 1.25rem;
+      }
+      .lib-note {
+        background: rgba(229, 209, 157, 0.12);
+        border: 1px solid rgba(229, 209, 157, 0.35);
+        border-radius: var(--radius);
+        padding: 0.9rem 1.1rem;
+        color: var(--cream);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
+      .lib-note strong {
+        color: var(--gold-bright);
+      }
+      .lib-card {
+        background: linear-gradient(160deg, #1f5a38 0%, var(--leaf) 40%, #0f3320 100%);
+        border: 1px solid rgba(212, 184, 106, 0.35);
+        border-radius: var(--radius);
+        padding: 1.2rem 1.3rem;
+        margin: 0 0 1rem;
+        box-shadow: var(--shadow);
+      }
+      .lib-card h2 {
+        font-family: var(--serif);
+        color: var(--gold);
+        margin: 0 0 0.45rem;
+        font-size: 1.45rem;
+        font-weight: 600;
+      }
+      .lib-card p {
+        color: var(--cream);
+        line-height: 1.55;
+        margin: 0 0 0.85rem;
+      }
+      .lib-card a.btn {
+        display: inline-block;
+        background: rgba(240, 226, 176, 0.15);
+        color: var(--gold-bright);
+        border: 1px solid var(--gold-dim);
+        border-radius: 999px;
+        padding: 0.55rem 1.1rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.92rem;
+      }
+      .lib-card a.btn:hover {
+        background: rgba(240, 226, 176, 0.28);
+        color: #fff;
+      }
+      .lib-verse {
+        margin-top: 2rem;
+        color: var(--muted);
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: 1.05rem;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero" role="banner" aria-label="Garden of healing herbs" style="min-height: 140px">
+      <span class="visually-hidden">Biblical Pharmacy</span>
+    </header>
 
-    <div class="lib-card">
-      <h2>All plants (A–Z)</h2>
-      <p>Every plant monograph opens in the same full detail view as the original herb cards — scientific name, Scripture notes, ancient uses, modern research context, preparations, and safety notes.</p>
-      <p><a href="index.html#full-catalog">Browse the full plant catalog on the home page →</a></p>
-    </div>
+    <main class="lib-page">
+      <a class="lib-back" href="index.html">← Back to Biblical Pharmacy</a>
+      <h1>Vitamins &amp; Recipes</h1>
+      <p class="lib-lead">
+        Extra reference notes beyond the plant cards on the home page. Educational only — not medical advice.
+      </p>
+      <p class="lib-note">
+        <strong>All 226 plants</strong> live on the home page. Use search or
+        “Reveal the Full Biblical Pharmacy,” then tap any herb for the full detail sheet.
+      </p>
 
-    <div class="lib-card">
-      <h2>Vitamins &amp; nutrients</h2>
-      <p>Calcium through Zinc — traditional food-first notes with a creation framing. (Coming into the same clickable catalog next; reference text remains available meanwhile.)</p>
-      <p><a href="https://github.com/freddyja/biblical-pharmacy/blob/main/docs/biblical-pharmacy-vitamins-nutrients.md">Open vitamins reference on GitHub →</a></p>
-    </div>
+      <article class="lib-card">
+        <h2>Plant catalog</h2>
+        <p>Open every plant monograph in the same full detail view as Hyssop and Frankincense.</p>
+        <a class="btn" href="index.html#full-catalog">Browse plants on the home page</a>
+      </article>
 
-    <div class="lib-card">
-      <h2>Traditional recipes</h2>
-      <p>Kitchen and folk preparations in the same educational spirit — teas, oils, and simple blends.</p>
-      <p><a href="https://github.com/freddyja/biblical-pharmacy/blob/main/docs/biblical-pharmacy-traditional-recipes.md">Open recipes reference on GitHub →</a></p>
-    </div>
+      <article class="lib-card">
+        <h2>Vitamins &amp; nutrients</h2>
+        <p>Calcium through Zinc — food-first notes with a creation framing. Reference text for study.</p>
+        <a class="btn" href="https://github.com/freddyja/biblical-pharmacy/blob/main/docs/biblical-pharmacy-vitamins-nutrients.md" target="_blank" rel="noopener">Open vitamins reference</a>
+      </article>
 
-    <p style="margin-top:2rem;font-size:0.95rem;color:#3d4a3a;">“And the leaves of the tree were for the healing of the nations.” — Ezekiel 47:12 (creation framing for plant gifts; not a clinical claim)</p>
-  </main>
-</body>
+      <article class="lib-card">
+        <h2>Traditional recipes</h2>
+        <p>Kitchen and folk preparations in the same educational spirit — teas, oils, and simple blends.</p>
+        <a class="btn" href="https://github.com/freddyja/biblical-pharmacy/blob/main/docs/biblical-pharmacy-traditional-recipes.md" target="_blank" rel="noopener">Open recipes reference</a>
+      </article>
+
+      <p class="lib-verse">
+        “And the leaves of the tree were for the healing of the nations.” — Ezekiel 47:12
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <strong>Educational resource only.</strong> This site does not diagnose,
+        treat, or prescribe. Never stop or change medicines without a licensed clinician.
+      </p>
+    </footer>
+  </body>
 </html>
