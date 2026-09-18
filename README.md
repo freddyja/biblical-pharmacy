@@ -22,12 +22,16 @@ Then visit `http://localhost:8080`.
 | `herbs.js` | Featured + full catalog data (educational monographs) |
 | `app.js` | Search, detail modal, catalog reveal |
 | `hero.jpg` / `hero-garden.jpg` | Mock asset / cropped garden hero |
-| `docs/four-herb-monographs.md` | Hyssop, frankincense, myrrh, and aloes |
-| `docs/remaining-twelve-monographs.md` | The other twelve catalog / featured plants |
-| `docs/batch-01-monographs.md` | Batch 1 expansion: 14 full educational monographs |
-| `docs/master-herb-inventory.md` | Tracking list for full-catalog expansion |
+| `docs/biblical-pharmacy-AZ-A-M.md` | Complete plant monographs A–M (full depth) |
+| `docs/biblical-pharmacy-AZ-N-Z.md` | Complete plant monographs N–Z (full depth) |
+| `docs/biblical-pharmacy-vitamins-nutrients.md` | Vitamins and nutrients (Calcium–Zinc) |
+| `docs/biblical-pharmacy-traditional-recipes.md` | Traditional preparations primer + recipes |
+| `docs/four-herb-monographs.md` | Early Hyssop / frankincense / myrrh / aloes set |
+| `docs/remaining-twelve-monographs.md` | Early remaining-twelve set |
+| `docs/batch-01-monographs.md` | Batch 1 expansion notes |
+| `docs/master-herb-inventory.md` | Tracking inventory |
 
-Full-catalog expansion is underway per [`docs/master-herb-inventory.md`](docs/master-herb-inventory.md). New entries are **educational only** and original content—not copied from any book.
+**Full educational library (in `docs/`):** plant A–Z (split A–M / N–Z), vitamins & nutrients, and traditional recipes. Content is **educational only** and original—not copied from any book. The live site catalog in `herbs.js` still reflects the earlier web UI set; the markdown docs are the complete reference.
 
 ## Behavior
 
