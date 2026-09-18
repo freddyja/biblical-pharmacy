@@ -87,6 +87,7 @@
       herb.partsUsed,
       herb.sideEffects,
       herb.verseText,
+      herb.cardWarning,
       ...(herb.identityNotes || []),
       ...(herb.ancientUses || []),
       ...(herb.modernResearch || []),
@@ -195,13 +196,19 @@
       const li = document.createElement("li");
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "catalog-card";
+      btn.className = herb.cardWarning
+        ? "catalog-card has-warning"
+        : "catalog-card";
       btn.dataset.id = herb.id;
+      const warning = herb.cardWarning
+        ? `<p class="warn">${herb.cardWarning}</p>`
+        : "";
       btn.innerHTML = `
         <div class="emoji" aria-hidden="true">${herb.emoji || "🌿"}</div>
         <h3>${herb.name}</h3>
         <p class="ref">${herb.verse || ""}</p>
         <p class="ben">${herb.benefits}</p>
+        ${warning}
       `;
       btn.addEventListener("click", () => openModal(herb.id));
       li.appendChild(btn);

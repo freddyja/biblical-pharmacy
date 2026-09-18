@@ -504,6 +504,25 @@ a {
   overflow: hidden;
 }
 
+.catalog-card.has-warning {
+  border-color: rgba(232, 176, 106, 0.55);
+}
+
+.catalog-card .warn {
+  margin-top: 0.55rem;
+  padding: 0.35rem 0.45rem;
+  border-radius: 6px;
+  background: rgba(120, 40, 28, 0.55);
+  border: 1px solid rgba(232, 176, 106, 0.45);
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  color: #f3d7a6;
+  text-transform: uppercase;
+}
+
 /* Modal */
 .modal-backdrop {
   position: fixed;

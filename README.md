@@ -25,6 +25,7 @@ Then visit `http://localhost:8080`.
 | `docs/four-herb-monographs.md` | Hyssop, frankincense, myrrh, and aloes |
 | `docs/remaining-twelve-monographs.md` | The other twelve catalog / featured plants |
 | `docs/batch-01-monographs.md` | Batch 1 expansion: 14 full educational monographs |
+| `docs/batch-02-monographs.md` | Batch 2 expansion: 14 full educational monographs |
 | `docs/master-herb-inventory.md` | Tracking list for full-catalog expansion |
 
 Full-catalog expansion is underway per [`docs/master-herb-inventory.md`](docs/master-herb-inventory.md). New entries are **educational only** and original content—not copied from any book.

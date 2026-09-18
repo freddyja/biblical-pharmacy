@@ -20,12 +20,26 @@ Status: `done` = full monograph on main | `todo` = needed | `skip-note` = specia
 - Black Pepper
 - Black Seeds (Nigella)
 - Calendula
+- Caraway
+- Cardamom
+- Cayenne Pepper (Capsicum)
 - Cedar of Lebanon
+- Celery Seed
 - Chamomile
+- Cherry (sweet vs tart)
+- Chia Seeds
 - Cinnamon
+- Clove
+- Coconut Oil
+- Coffee
+- Comfrey (EXTERNAL ONLY / internal dose ZERO / PA liver warning)
 - Coriander
+- Cranberry
 - Cumin
+- Dandelion
 - Dill
+- Echinacea (species clarified)
+- Elderflower (berry safety separate)
 - Fig
 - Frankincense / Boswellia
 - Garlic
@@ -67,34 +81,34 @@ Status: `done` = full monograph on main | `todo` = needed | `skip-note` = specia
 - Butterfly Pea — todo
 - Calamus — todo (safety: β-asarone)
 - Calendula — done
-- Caraway — todo
-- Cardamom — todo
+- Caraway — done
+- Cardamom — done
 - Cascara sagrada — todo (stimulant laxative caution)
 - Cat's claw — todo
 - Cauliflower — todo
-- Cayenne pepper — todo
-- Celery seed — todo
+- Cayenne pepper — done (Capsicum)
+- Celery seed — done
 - Chamomile — done
-- Cherry — todo
-- Chia Seeds — todo
+- Cherry — done (sweet *P. avium* vs tart *P. cerasus*)
+- Chia Seeds — done
 - Cinnamon — done
-- Clove — todo
-- Coconut Oil — todo
-- Coffee — todo
-- Comfrey — todo (internal use caution / PA toxicity)
+- Clove — done
+- Coconut Oil — done
+- Coffee — done
+- Comfrey — done (EXTERNAL ONLY / internal dose ZERO / PA liver warning)
 - Corn / Yu Mi Shu — todo
 - Cramp bark — todo
-- Cranberry — todo
+- Cranberry — done
 
 ## From TOC — D–G
-- Dandelion — todo
+- Dandelion — done
 - Dark Chocolate — todo
 - Deadly Nightshade — todo (TOXIC — educational/historical only)
 - Devil's Claw — todo
 - Dong Quai — todo
 - Dried Rose / Rose Petals — todo
-- Echinacea — todo
-- Elderflower — todo
+- Echinacea — done (species clarified: *purpurea* / *angustifolia* / *pallida*)
+- Elderflower — done (berry safety notes separate)
 - Elecampane — todo
 - Ephedra / Ma Huang — todo (RESTRICTED / serious safety)
 - Eucalyptus — todo
@@ -281,4 +295,5 @@ Historical/traditional recipes (Kyphi, Four Thieves Vinegar, etc.) — separate 
 
 ## Batch plan
 - Batch 1 — **done:** Almond, Anise, Arnica, Ashwagandha, Astragalus, Basil, Bay Laurel, Bilberry, Black Cohosh, Black Pepper, Black Seeds (Nigella), Calendula, Chamomile, Cinnamon (`docs/batch-01-monographs.md`)
+- Batch 2 — **done:** Caraway, Cardamom, Cayenne, Celery Seed, Cherry, Chia, Clove, Coconut Oil, Coffee, Comfrey, Cranberry, Dandelion, Echinacea, Elderflower (`docs/batch-02-monographs.md`)
 - Continue alphabetically thereafter; toxic entries get strong educational warnings and no DIY dosing.
