@@ -13,12 +13,15 @@
   const azIndex = document.getElementById("az-index");
   const azLabel = document.getElementById("az-label");
   let activeLetter = "all";
-  const getHerbList = () =>
-    typeof getAllHerbs === "function"
-      ? getHerbList()
-      : typeof window !== "undefined" && typeof window.getAllHerbs === "function"
-        ? window.getHerbList()
-        : [];
+  const getHerbList = () => {
+    if (typeof window !== "undefined" && typeof window.getAllHerbs === "function") {
+      return window.getAllHerbs();
+    }
+    if (typeof getAllHerbs === "function") {
+      return getAllHerbs();
+    }
+    return [];
+  };
   const backdrop = document.getElementById("modal-backdrop");
   const modalEl = document.getElementById("herb-modal");
   const modalClose = document.getElementById("modal-close");
