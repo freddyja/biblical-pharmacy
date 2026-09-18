@@ -218,3 +218,5 @@ Educational ranges (adults; not medical advice):
 ## Closing note for Freddy’s Biblical Pharmacy
 
 These four plants—hyssop’s cleansing memory, frankincense’s rising prayer-scent, myrrh’s bitter devotion, and aloe’s layered biblical and garden stories—invite wonder at the Creator’s provision. Study them with Scripture open, labels read carefully, and a humble refusal to turn education into self-prescription. *“And the leaves of the tree were for the healing of the nations”* (Revelation 22:2)—a promise larger than any single herb, and a reminder that healing ultimately rests with God.
+
+See also: [Twelve remaining herb monographs](remaining-twelve-monographs.md).
