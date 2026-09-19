@@ -234,7 +234,7 @@
       btn.hidden = false;
       btn.title = n ? `${n} plant${n === 1 ? "" : "s"}` : "No plants for this letter";
       btn.classList.toggle("is-empty", n === 0);
-      btn.style.opacity = n ? "" : "0.45";
+      if (btn.style) btn.style.opacity = n ? "" : "0.45";
     });
   }
 
@@ -491,6 +491,22 @@
   }
 
 
+
+  // Event delegation for language buttons (always works)
+  const langSwitch = document.getElementById("lang-switch");
+  if (langSwitch && !langSwitch.dataset.delegated) {
+    langSwitch.dataset.delegated = "1";
+    langSwitch.addEventListener("click", (event) => {
+      const btn = event.target.closest("button.lang-btn");
+      if (!btn) return;
+      const lang = btn.getAttribute("data-lang");
+      if (!lang || !window.BP_I18N || !window.BP_I18N[lang]) return;
+      window.bpLang = lang;
+      try { localStorage.setItem("bp-lang", lang); } catch (e) {}
+      applyI18n();
+    });
+  }
+
   // Event delegation for A–Z (reliable even if older cached bind logic fails)
   if (azIndex) {
     azIndex.addEventListener("click", (event) => {
@@ -506,6 +522,7 @@
   renderFeatured();
   renderCatalog();
   setCatalogOpen(true);
+  initLangSwitch();
 
   if (window.location.hash === "#full-catalog") {
     catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
