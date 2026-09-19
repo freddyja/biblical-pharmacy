@@ -26,24 +26,29 @@
 <section class="panel" aria-labelledby="brand-title">
         <div class="panel-inner">
           <h1 id="brand-title" class="brand">Biblical Pharmacy</h1>
-          <p class="tagline">
-            God placed these healing herbs on earth with a purpose.
-          </p>
-          <p class="tagline-accent">The Bible tells us so.</p>
+
+          <div class="lang-switch" id="lang-switch" role="group" aria-label="Choose language">
+            <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+            <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+          </div>
+          <p class="content-lang-note" data-i18n="contentNote"></p>
+          <p class="tagline" data-i18n="tagline">God placed these healing herbs on earth with a purpose.</p>
+          <p class="tagline-accent" data-i18n="taglineAccent">The Bible tells us so.</p>
 
           <div class="search-wrap">
             <span class="search-icon" aria-hidden="true">⌕</span>
-            <label class="visually-hidden" for="search">Search herbs</label>
+            <label class="visually-hidden" for="search" data-i18n="searchLabel">Search herbs</label>
             <input
               id="search"
               type="search"
-              placeholder="Search by name or benefit…"
+              placeholder="Search by name or benefit…" data-i18n-placeholder="searchPlaceholder"
               autocomplete="off"
             />
           </div>
 
-          <ul class="herb-grid" id="featured-grid" aria-label="Featured herbs"></ul>
-          <p class="no-results" id="featured-empty">No featured herbs match your search.</p>
+          <ul class="herb-grid" id="featured-grid" aria-label="Featured herbs" data-i18n-aria="featuredAria"></ul>
+          <p class="no-results" id="featured-empty" data-i18n="featuredEmpty">No featured herbs match your search.</p>
 
           <button
             type="button"
@@ -52,17 +57,17 @@
             aria-expanded="false"
             aria-controls="full-catalog"
           >
-            Reveal the Full Biblical Pharmacy
+            <span data-i18n="revealOpen">Reveal the Full Biblical Pharmacy</span>
           </button>
 
-          <nav class="ref-links" aria-label="More references">
-            <a class="ref-link" href="vitamins.html">Vitamins &amp; nutrients</a>
-            <a class="ref-link" href="recipes.html">Traditional recipes</a>
+          <nav class="ref-links" aria-label="More references" data-i18n-aria="moreRefs">
+            <a class="ref-link" href="vitamins.html" data-i18n="vitamins">Vitamins &amp; nutrients</a>
+            <a class="ref-link" href="recipes.html" data-i18n="recipes">Traditional recipes</a>
           </nav>
 
-          <p class="az-hint">Browse by letter</p>
-          <div class="az-index" id="az-index" role="group" aria-label="Filter plants by letter">
-            <button type="button" class="az-btn is-active" data-letter="all" aria-pressed="true">All</button>
+          <p class="az-hint" data-i18n="azHint">Browse by letter</p>
+          <div class="az-index" id="az-index" role="group" aria-label="Filter plants by letter" data-i18n-aria="azAria">
+            <button type="button" class="az-btn is-active" data-letter="all" aria-pressed="true" data-i18n="azAll">All</button>
             <button type="button" class="az-btn" data-letter="A" aria-pressed="false">A</button>
             <button type="button" class="az-btn" data-letter="B" aria-pressed="false">B</button>
             <button type="button" class="az-btn" data-letter="C" aria-pressed="false">C</button>
@@ -99,23 +104,17 @@
         id="full-catalog"
         aria-labelledby="catalog-title"
       >
-        <h2 id="catalog-title">Full Biblical Pharmacy</h2>
-        <p class="catalog-lead">
-          Tap any plant for the full educational monograph — the same detail sheet as Hyssop and Frankincense. Educational only; not medical advice.
-        </p>
+        <h2 id="catalog-title" data-i18n="catalogTitle">Full Biblical Pharmacy</h2>
+        <p class="catalog-lead" data-i18n="catalogLead">Tap any plant for the full educational monograph — the same detail sheet as Hyssop and Frankincense. Educational only; not medical advice.</p>
         <ul class="catalog-grid" id="catalog-grid"></ul>
-        <p class="no-results" id="catalog-empty">No catalog herbs match your search.</p>
+        <p class="no-results" id="catalog-empty" data-i18n="catalogEmpty">No catalog herbs match your search.</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p><a href="library.html" class="footer-lib-link">Vitamins, nutrients &amp; traditional recipes</a></p>
-      <p>
-        <strong>Educational resource only.</strong> This site does not diagnose,
-        treat, or prescribe. Never stop or change medicines without your
-        clinician.
-      </p>
-      <p>© Biblical Pharmacy — Scripture references for reflection &amp; study.</p>
+      <p><a href="library.html" class="footer-lib-link" data-i18n="footerLib">Vitamins, nutrients &amp; traditional recipes</a></p>
+      <p data-i18n="footerEdu"><strong>Educational resource only.</strong> This site does not diagnose, treat, or prescribe. Never stop or change medicines without your clinician.</p>
+      <p data-i18n="footerCopy">© Biblical Pharmacy — Scripture references for reflection &amp; study.</p>
     </footer>
 
     <!-- Detail modal -->
@@ -132,7 +131,7 @@
         aria-labelledby="modal-title"
         id="herb-modal"
       >
-        <button type="button" class="modal-close" id="modal-close" aria-label="Close">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close" data-i18n-aria="close">
           ×
         </button>
         <div class="modal-badge" id="modal-badge"></div>
@@ -147,75 +146,64 @@
           <p class="modal-note" id="modal-scientific-note" hidden></p>
 
           <section class="modal-section" id="section-identity" hidden>
-            <h3>Biblical identity</h3>
+            <h3 data-i18n="identity">Biblical identity</h3>
             <ul id="modal-identity"></ul>
           </section>
 
           <section class="modal-section" id="section-botanical" hidden>
-            <h3>Botanical summary</h3>
+            <h3 data-i18n="botanical">Botanical summary</h3>
             <p id="modal-botanical"></p>
           </section>
 
           <section class="modal-section" id="section-intro" hidden>
-            <h3>Overview</h3>
+            <h3 data-i18n="overview">Overview</h3>
             <p id="modal-intro"></p>
           </section>
 
           <section class="modal-section" id="section-region" hidden>
-            <h3>Region</h3>
+            <h3 data-i18n="region">Region</h3>
             <p id="modal-region"></p>
           </section>
 
           <section class="modal-section" id="section-ancient" hidden>
-            <h3>Ancient uses</h3>
+            <h3 data-i18n="ancient">Ancient uses</h3>
             <ul id="modal-ancient"></ul>
           </section>
 
           <section class="modal-section" id="section-research" hidden>
-            <h3>Modern research</h3>
+            <h3 data-i18n="research">Modern research</h3>
             <ul id="modal-research"></ul>
           </section>
 
           <section class="modal-section" id="section-side-effects" hidden>
-            <h3>Side effects</h3>
+            <h3 data-i18n="sideEffects">Side effects</h3>
             <p id="modal-side-effects"></p>
           </section>
 
           <section class="modal-section" id="section-parts" hidden>
-            <h3>Parts used</h3>
+            <h3 data-i18n="parts">Parts used</h3>
             <p id="modal-parts"></p>
           </section>
 
           <section class="modal-section" id="section-prep-list" hidden>
-            <h3>Preparations</h3>
+            <h3 data-i18n="preparations">Preparations</h3>
             <ul id="modal-preparations"></ul>
           </section>
 
           <section class="modal-section" id="section-dosage" hidden>
-            <h3>Dosage</h3>
-            <p class="modal-dosage-lead">
-              Educational / traditional ranges for adults—not medical
-              prescriptions. Follow product labels and a qualified clinician.
-            </p>
+            <h3 data-i18n="dosage">Dosage</h3>
+            <p class="modal-dosage-lead" data-i18n="dosageLead">Educational / traditional ranges for adults—not medical prescriptions. Follow product labels and a qualified clinician.</p>
             <ul id="modal-dosage"></ul>
           </section>
         </div>
 
         <div id="modal-short">
-          <h3>Traditional uses</h3>
+          <h3 data-i18n="traditionalUses">Traditional uses</h3>
           <p id="modal-uses"></p>
-          <h3>Preparation note</h3>
+          <h3 data-i18n="prepNote">Preparation note</h3>
           <p id="modal-prep"></p>
         </div>
-        <div class="disclaimer">
-          <strong>Important disclaimer</strong>
-          This information is for educational and historical interest only. It is
-          not medical advice, diagnosis, or treatment. Do not use herbs to replace
-          prescribed care, and do not stop medications because of anything on this
-          site. Consult a qualified health professional before using any plant
-          preparation, especially if you are pregnant, nursing, or have a health
-          condition.
-        </div>
+        <div class="disclaimer"><strong data-i18n="disclaimerTitle">Important disclaimer</strong> <span data-i18n="disclaimerBody">This information is for educational and historical interest only. It is not medical advice, diagnosis, or treatment. Do not use herbs to replace prescribed care, and do not stop medications because of anything on this site. Consult a qualified health professional before using any plant preparation, especially if you are pregnant, nursing, or have a health condition.</span></div>
       </div>
     </div>
 
@@ -233,7 +221,8 @@
       }
     </style>
 
-    <script src="herbs.js?v=20260918b"></script>
-    <script src="app.js?v=20260918b"></script>
+    <script src="herbs.js?v=20260919i18n"></script>
+    <script src="i18n.js?v=20260919i18n"></script>
+    <script src="app.js?v=20260919i18n"></script>
   </body>
 </html>
