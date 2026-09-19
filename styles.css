@@ -881,3 +881,46 @@ a {
 body.modal-open {
   overflow: hidden;
 }
+
+
+/* Language switcher */
+.lang-switch {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  margin: 0.75rem 0 0.35rem;
+}
+.lang-btn {
+  min-width: 2.4rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(229, 209, 157, 0.4);
+  background: rgba(240, 226, 176, 0.08);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.lang-btn:hover,
+.lang-btn:focus-visible {
+  background: rgba(240, 226, 176, 0.22);
+  color: #fff;
+  outline: none;
+}
+.lang-btn.is-active {
+  background: rgba(240, 226, 176, 0.28);
+  border-color: var(--gold);
+  color: #fff;
+}
+.content-lang-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin: 0.25rem 0 0.85rem;
+  line-height: 1.4;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
