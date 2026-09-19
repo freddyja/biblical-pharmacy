@@ -100,7 +100,14 @@
         font-size: 1.05rem;
         line-height: 1.5;
       }
-    </style>
+    
+.lang-switch{display:flex;gap:.4rem;justify-content:center;margin:.75rem 0 .35rem}
+.lang-btn{min-width:2.4rem;height:2rem;border-radius:999px;border:1px solid rgba(229,209,157,.4);background:rgba(240,226,176,.08);color:var(--gold);font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.04em;cursor:pointer}
+.lang-btn:hover,.lang-btn:focus-visible{background:rgba(240,226,176,.22);color:#fff;outline:none}
+.lang-btn.is-active{background:rgba(240,226,176,.28);border-color:var(--gold);color:#fff}
+.content-lang-note{text-align:center;color:var(--muted);font-size:.78rem;margin:.25rem auto .85rem;line-height:1.4;max-width:28rem}
+
+</style>
   </head>
   <body>
     <header class="hero" role="banner" aria-label="Garden of healing herbs" style="min-height: 140px">
@@ -108,44 +115,40 @@
     </header>
 
     <main class="lib-page">
-      <a class="lib-back" href="index.html">← Back to Biblical Pharmacy</a>
-      <h1>Vitamins &amp; Recipes</h1>
-      <p class="lib-lead">
-        Extra reference notes beyond the plant cards on the home page. Educational only — not medical advice.
-      </p>
-      <p class="lib-note">
-        <strong>All 226 plants</strong> live on the home page. Use search or
-        “Reveal the Full Biblical Pharmacy,” then tap any herb for the full detail sheet.
-      </p>
+      <a class="lib-back" href="index.html" data-i18n="backHome">← Back to Biblical Pharmacy</a>
+          <div class="lang-switch" id="lang-switch" role="group" aria-label="Choose language">
+            <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+            <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+          </div>
+          <p class="content-lang-note" data-i18n="contentNote"></p>
+      <h1 data-i18n="libraryTitle">Vitamins &amp; Recipes</h1>
+      <p class="lib-lead" data-i18n="libraryLead">Extra reference notes beyond the plant cards on the home page. Educational only — not medical advice.</p>
+      <p class="lib-note" data-i18n="libraryNote">All 226 plants live on the home page. Use search or “Reveal the Full Biblical Pharmacy,” then tap any herb for the full detail sheet.</p>
 
       <article class="lib-card">
-        <h2>Plant catalog</h2>
-        <p>Open every plant monograph in the same full detail view as Hyssop and Frankincense.</p>
-        <a class="btn" href="index.html#full-catalog">Browse plants on the home page</a>
+        <h2 data-i18n="plantCatalog">Plant catalog</h2>
+        <p data-i18n="plantCatalogDesc">Open every plant monograph in the same full detail view as Hyssop and Frankincense.</p>
+        <a class="btn" href="index.html#full-catalog" data-i18n="browsePlants">Browse plants on the home page</a>
       </article>
 
       <article class="lib-card" id="vitamins">
-        <h2>Vitamins &amp; nutrients</h2>
-        <p>Calcium through Zinc — food-first notes with a creation framing. Reference text for study.</p>
-        <a class="btn" href="vitamins.html">Open vitamins &amp; nutrients</a>
+        <h2 data-i18n="vitCardTitle">Vitamins &amp; nutrients</h2>
+        <p data-i18n="vitCardDesc">Calcium through Zinc — food-first notes with a creation framing. Open any nutrient for the full educational notes on this site.</p>
+        <a class="btn" href="vitamins.html" data-i18n="openVits">Open vitamins &amp; nutrients</a>
       </article>
 
       <article class="lib-card" id="recipes">
-        <h2>Traditional recipes</h2>
-        <p>Kitchen and folk preparations in the same educational spirit — teas, oils, and simple blends.</p>
-        <a class="btn" href="recipes.html">Open traditional recipes</a>
+        <h2 data-i18n="recipeCardTitle">Traditional recipes</h2>
+        <p data-i18n="recipeCardDesc">Kitchen and folk preparations in the same educational spirit — teas, oils, and simple blends.</p>
+        <a class="btn" href="recipes.html" data-i18n="openRecipes">Open traditional recipes</a>
       </article>
 
-      <p class="lib-verse">
-        “And the leaves of the tree were for the healing of the nations.” — Ezekiel 47:12
-      </p>
+      <p class="lib-verse" data-i18n="libVerse">“And the leaves of the tree were for the healing of the nations.” — Ezekiel 47:12</p>
     </main>
 
-    <footer class="site-footer">
-      <p>
-        <strong>Educational resource only.</strong> This site does not diagnose,
-        treat, or prescribe. Never stop or change medicines without a licensed clinician.
-      </p>
-    </footer>
-  </body>
+    <footer class="site-footer"><p data-i18n="footerShort">Educational resource only. This site does not diagnose, treat, or prescribe.</p></footer>
+  
+    <script src="i18n.js?v=20260919pages"></script>
+</body>
 </html>
