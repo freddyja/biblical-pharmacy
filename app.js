@@ -253,7 +253,9 @@
         azLabel.textContent = "";
       } else {
         azLabel.hidden = false;
-        azLabel.textContent = `Showing plants starting with “${letter}”`;
+        azLabel.textContent = window.bpT
+          ? window.bpT("azShowing", { letter })
+          : `Showing plants starting with “${letter}”`;
       }
     }
     if (!catalogSection.classList.contains("is-open")) {
@@ -396,8 +398,8 @@
     catalogSection.hidden = !open;
     revealCta.setAttribute("aria-expanded", String(open));
     revealCta.textContent = open
-      ? "Hide the Full Biblical Pharmacy"
-      : "Reveal the Full Biblical Pharmacy";
+      ? (window.bpT ? window.bpT("revealClose") : "Hide the Full Biblical Pharmacy")
+      : (window.bpT ? window.bpT("revealOpen") : "Reveal the Full Biblical Pharmacy");
   }
 
   function toggleCatalog() {
@@ -431,6 +433,62 @@
     }
     if (catalogSection.classList.contains("is-open")) renderCatalog(q);
   });
+
+
+
+  function applyI18n() {
+    const lang = window.bpLang || localStorage.getItem("bp-lang") || "en";
+    window.bpLang = lang;
+    if (!window.BP_I18N || !window.bpT) return;
+    document.documentElement.lang = window.BP_I18N[lang].htmlLang || lang;
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const val = window.bpT(key);
+      if (el.children.length && el.querySelector("strong") && key === "footerEdu") {
+        el.textContent = val;
+        return;
+      }
+      el.textContent = val;
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+      el.setAttribute("placeholder", window.bpT(el.getAttribute("data-i18n-placeholder")));
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+      el.setAttribute("aria-label", window.bpT(el.getAttribute("data-i18n-aria")));
+    });
+
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      const on = btn.dataset.lang === lang;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-pressed", String(on));
+    });
+
+    // Sync reveal CTA with open state
+    if (typeof setCatalogOpen === "function" && catalogSection) {
+      const open = catalogSection.classList.contains("is-open");
+      revealCta.textContent = open ? window.bpT("revealClose") : window.bpT("revealOpen");
+    }
+
+    // Refresh az label if filtered
+    if (azLabel && activeLetter && activeLetter !== "all") {
+      azLabel.hidden = false;
+      azLabel.textContent = window.bpT("azShowing", { letter: activeLetter });
+    }
+  }
+
+  function initLangSwitch() {
+    const saved = localStorage.getItem("bp-lang") || "en";
+    window.bpLang = ["en", "es", "pt"].includes(saved) ? saved : "en";
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        window.bpLang = btn.dataset.lang;
+        localStorage.setItem("bp-lang", window.bpLang);
+        applyI18n();
+      });
+    });
+    applyI18n();
+  }
 
 
   // Event delegation for A–Z (reliable even if older cached bind logic fails)
