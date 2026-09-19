@@ -1,6 +1,7 @@
 /**
  * Biblical Pharmacy — UI languages: English, Spanish, Portuguese
- * Plant monograph bodies remain in English for now (educational source text).
+ * Plant monograph bodies load from HERB_LOCALES for ES/PT (educational source text).
+ * Vitamins & recipes entry bodies switch with EN/ES/PT via vitamins-locales.js / recipes-locales.js.
  */
 window.BP_I18N = {
   en: {
@@ -29,7 +30,9 @@ window.BP_I18N = {
       "Educational resource only. This site does not diagnose, treat, or prescribe. Never stop or change medicines without your clinician.",
     footerCopy: "© Biblical Pharmacy — Scripture references for reflection & study.",
     close: "Close",
-    contentNote: "Plant details are in English for now. Site menus: English / Español / Português.",
+    contentNote: "Plant details follow the language you choose (English / Español / Português).",
+    contentNoteVitamins: "Nutrient entries below follow the language you choose.",
+    contentNoteRecipes: "Recipe entries below follow the language you choose.",
     identity: "Biblical identity",
     botanical: "Botanical summary",
     overview: "Overview",
@@ -109,7 +112,9 @@ window.BP_I18N = {
       "Solo recurso educativo. Este sitio no diagnostica, trata ni prescribe. Nunca dejes ni cambies medicamentos sin tu médico.",
     footerCopy: "© Biblical Pharmacy — Referencias bíblicas para reflexión y estudio.",
     close: "Cerrar",
-    contentNote: "Los detalles de las plantas están en inglés por ahora. Menús del sitio: English / Español / Português.",
+    contentNote: "Los detalles de las plantas siguen el idioma que elijas (English / Español / Português).",
+    contentNoteVitamins: "Las entradas de nutrientes siguientes siguen el idioma que elijas.",
+    contentNoteRecipes: "Las entradas de recetas siguientes siguen el idioma que elijas.",
     identity: "Identidad bíblica",
     botanical: "Resumen botánico",
     overview: "Descripción general",
@@ -189,7 +194,9 @@ window.BP_I18N = {
       "Apenas recurso educativo. Este site não diagnostica, trata nem prescreve. Nunca pare ou altere medicamentos sem o seu clínico.",
     footerCopy: "© Biblical Pharmacy — Referências bíblicas para reflexão e estudo.",
     close: "Fechar",
-    contentNote: "Os detalhes das plantas estão em inglês por enquanto. Menus do site: English / Español / Português.",
+    contentNote: "Os detalhes das plantas seguem o idioma que você escolher (English / Español / Português).",
+    contentNoteVitamins: "As entradas de nutrientes abaixo seguem o idioma que você escolher.",
+    contentNoteRecipes: "As entradas de receitas abaixo seguem o idioma que você escolher.",
     identity: "Identidade bíblica",
     botanical: "Resumo botânico",
     overview: "Visão geral",
