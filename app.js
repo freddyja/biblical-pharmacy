@@ -170,8 +170,9 @@
     const q = (filter || "").trim().toLowerCase();
     featuredGrid.innerHTML = "";
     let shown = 0;
-    HERBS.featured.forEach((herb) => {
-      if (!matchesQuery(herb, q)) return;
+    HERBS.featured.forEach((raw) => {
+      const herb = window.localizeHerb ? window.localizeHerb(raw) : raw;
+      if (!matchesQuery(raw, q) && !matchesQuery(herb, q)) return;
       shown++;
       const li = document.createElement("li");
       li.className = "herb-card";
@@ -272,17 +273,18 @@
     const list = getHerbList()
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
-    list.forEach((herb) => {
-      if (activeLetter !== "all" && herbLetter(herb) !== activeLetter) return;
-      if (!matchesQuery(herb, q)) return;
+    list.forEach((raw) => {
+      const herb = window.localizeHerb ? window.localizeHerb(raw) : raw;
+      if (activeLetter !== "all" && herbLetter(raw) !== activeLetter) return;
+      if (!matchesQuery(raw, q) && !matchesQuery(herb, q)) return;
       shown++;
       const li = document.createElement("li");
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "catalog-card";
-      btn.dataset.id = herb.id;
+      btn.dataset.id = raw.id;
       btn.innerHTML = `
-        <div class="emoji" aria-hidden="true">${herb.emoji || "🌿"}</div>
+        <div class="emoji" aria-hidden="true">${herb.emoji || raw.emoji || "🌿"}</div>
         <h3>${herb.name}</h3>
         <p class="ref">${herb.verse || ""}</p>
         <p class="ben">${herb.benefits}</p>
@@ -295,7 +297,7 @@
   }
 
   function openModal(id) {
-    const herb = findHerb(id);
+    const herb = window.localizeHerb ? window.localizeHerb(findHerb(id)) : findHerb(id);
     if (!herb) return;
     document.getElementById("modal-title").textContent = herb.name;
     document.getElementById("modal-verse").textContent = herb.verse || "";
@@ -475,6 +477,9 @@
       azLabel.hidden = false;
       azLabel.textContent = window.bpT("azShowing", { letter: activeLetter });
     }
+    // Re-render cards so plant names/benefits follow language
+    if (typeof renderFeatured === "function") renderFeatured(searchInput ? searchInput.value : "");
+    if (typeof renderCatalog === "function") renderCatalog(searchInput ? searchInput.value : "");
   }
 
   function initLangSwitch() {
