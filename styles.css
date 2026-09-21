@@ -924,3 +924,53 @@ body.modal-open {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* Paid library CTA */
+.buy-cta {
+  margin: 1.35rem auto 0.5rem;
+  max-width: 32rem;
+  padding: 1.1rem 1.25rem 1.15rem;
+  text-align: center;
+  border-radius: var(--radius, 14px);
+  border: 1px solid rgba(212, 184, 106, 0.45);
+  background: linear-gradient(160deg, rgba(31, 90, 56, 0.95) 0%, rgba(15, 51, 32, 0.98) 100%);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+.buy-cta-lead {
+  margin: 0 0 0.85rem;
+  color: var(--cream, #f5f0e6);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.buy-cta-btn {
+  display: inline-block;
+  padding: 0.7rem 1.35rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #c9a227, #f0e2b0);
+  color: #0f3320;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.buy-cta-btn:hover,
+.buy-cta-btn:focus-visible {
+  filter: brightness(1.06);
+  outline: 2px solid var(--gold-bright, #f0e2b0);
+  outline-offset: 2px;
+}
+.buy-cta-note {
+  margin: 0.65rem 0 0;
+  color: var(--muted, #b8c9bc);
+  font-size: 0.75rem;
+}
+.footer-buy-link {
+  color: var(--gold-bright, #f0e2b0);
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer-buy-link:hover {
+  text-decoration: underline;
+}
