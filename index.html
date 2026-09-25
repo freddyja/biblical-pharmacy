@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Biblical Pharmacy — an educational look at healing herbs and plants mentioned in Scripture. Not medical advice."
+      content="Biblical Pharmacy — free educational samples of Scripture-linked plants. Full EN/ES/PT library on Etsy. Not medical advice."
     />
     <title>Biblical Pharmacy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,18 +47,21 @@
             />
           </div>
 
-          <ul class="herb-grid" id="featured-grid" aria-label="Featured herbs" data-i18n-aria="featuredAria"></ul>
-          <p class="no-results" id="featured-empty" data-i18n="featuredEmpty">No featured herbs match your search.</p>
+          <ul class="herb-grid" id="featured-grid" aria-label="Sample herbs" data-i18n-aria="featuredAria"></ul>
+          <p class="no-results" id="featured-empty" data-i18n="featuredEmpty">No sample herbs match your search.</p>
 
           <button
             type="button"
             class="cta-leaf"
             id="reveal-cta"
+            hidden
+            aria-hidden="true"
             aria-expanded="false"
             aria-controls="full-catalog"
           >
-            <span data-i18n="revealOpen">Reveal the Full Biblical Pharmacy</span>
+            <span data-i18n="revealOpen">Sample plants only — full library on Etsy</span>
           </button>
+          <p class="sample-badge" data-i18n="sampleOnlyBadge">Free sample site</p>
 
           <nav class="ref-links" aria-label="More references" data-i18n-aria="moreRefs">
             <a class="ref-link" href="vitamins.html" data-i18n="vitamins">Vitamins &amp; nutrients</a>
@@ -71,8 +74,8 @@
             <p class="buy-cta-note" data-i18n="buyNote">Educational only · Secure checkout on Etsy</p>
           </aside>
 
-          <p class="az-hint" data-i18n="azHint">Browse by letter</p>
-          <div class="az-index" id="az-index" role="group" aria-label="Filter plants by letter" data-i18n-aria="azAria">
+          <p class="az-hint" data-i18n="azHint" hidden>Sample plants</p>
+          <div class="az-index" id="az-index" role="group" aria-label="Filter plants by letter" data-i18n-aria="azAria" hidden>
             <button type="button" class="az-btn is-active" data-letter="all" aria-pressed="true" data-i18n="azAll">All</button>
             <button type="button" class="az-btn" data-letter="A" aria-pressed="false">A</button>
             <button type="button" class="az-btn" data-letter="B" aria-pressed="false">B</button>
@@ -110,8 +113,8 @@
         id="full-catalog"
         aria-labelledby="catalog-title"
       >
-        <h2 id="catalog-title" data-i18n="catalogTitle">Full Biblical Pharmacy</h2>
-        <p class="catalog-lead" data-i18n="catalogLead">Tap any plant for the full educational monograph — the same detail sheet as Hyssop and Frankincense. Educational only; not medical advice.</p>
+        <h2 id="catalog-title" data-i18n="catalogTitle">Sample Biblical Pharmacy</h2>
+        <p class="catalog-lead" data-i18n="catalogLead">Tap a sample plant for its educational monograph. The complete A–Z library (226 plants), vitamins, and recipes unlock with the Etsy download — EN/ES/PT. Educational only; not medical advice.</p>
         <ul class="catalog-grid" id="catalog-grid"></ul>
         <p class="no-results" id="catalog-empty" data-i18n="catalogEmpty">No catalog herbs match your search.</p>
       </section>
@@ -228,17 +231,17 @@
       }
     </style>
 
-    <script src="herbs.js?v=20260921buy"></script>
-    <script src="herb-locales.js?v=20260921buy"></script>
-    <script src="herb-locales-es-01-04.js?v=20260921buy"></script>
-    <script src="herb-locales-es-05-08.js?v=20260921buy"></script>
-    <script src="herb-locales-es-09-12.js?v=20260921buy"></script>
-    <script src="herb-locales-es-13-16.js?v=20260921buy"></script>
-    <script src="herb-locales-pt-01-04.js?v=20260921buy"></script>
-    <script src="herb-locales-pt-05-08.js?v=20260921buy"></script>
-    <script src="herb-locales-pt-09-12.js?v=20260921buy"></script>
-    <script src="herb-locales-pt-13-16.js?v=20260921buy"></script>
-    <script src="i18n.js?v=20260921buy"></script>
-    <script src="app.js?v=20260921buy"></script>
+    <script src="herbs.js?v=20260925sample"></script>
+    <script src="herb-locales.js?v=20260925sample"></script>
+    <script src="herb-locales-es-01-04.js?v=20260925sample"></script>
+    <script src="herb-locales-es-05-08.js?v=20260925sample"></script>
+    <script src="herb-locales-es-09-12.js?v=20260925sample"></script>
+    <script src="herb-locales-es-13-16.js?v=20260925sample"></script>
+    <script src="herb-locales-pt-01-04.js?v=20260925sample"></script>
+    <script src="herb-locales-pt-05-08.js?v=20260925sample"></script>
+    <script src="herb-locales-pt-09-12.js?v=20260925sample"></script>
+    <script src="herb-locales-pt-13-16.js?v=20260925sample"></script>
+    <script src="i18n.js?v=20260925sample"></script>
+    <script src="app.js?v=20260925sample"></script>
   </body>
 </html>
