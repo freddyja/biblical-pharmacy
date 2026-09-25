@@ -3,6 +3,43 @@
  * Educational only. Never diagnoses or advises stopping medications.
  */
 (function () {
+  /** Free-site allowlist: only these plants render + open in detail modals. Full library is on Etsy. */
+  const SAMPLE_SLUGS = [
+    "hyssop",
+    "frankincense",
+    "myrrh",
+    "aloe",
+    "olive",
+    "pomegranate",
+    "cinnamon",
+    "spikenard",
+  ];
+  window.BP_SAMPLE_SLUGS = SAMPLE_SLUGS;
+  function isSampleHerb(herbOrId) {
+    const id = typeof herbOrId === "string" ? herbOrId : herbOrId && herbOrId.id;
+    return Boolean(id && SAMPLE_SLUGS.includes(id));
+  }
+  function resolveSampleHerbs() {
+    const byId = {};
+    try {
+      const rawList =
+        typeof window.getAllHerbs === "function"
+          ? window.getAllHerbs()
+          : typeof getAllHerbs === "function"
+            ? getAllHerbs()
+            : [
+                ...(((typeof HERBS !== "undefined" && HERBS.featured) || [])),
+                ...(((typeof HERBS !== "undefined" && HERBS.catalog) || [])),
+              ];
+      rawList.forEach((h) => {
+        if (h && h.id) byId[h.id] = h;
+      });
+    } catch (err) {
+      console.error("Biblical Pharmacy: sample herb resolve failed", err);
+    }
+    return SAMPLE_SLUGS.map((id) => byId[id]).filter(Boolean);
+  }
+
   const featuredGrid = document.getElementById("featured-grid");
   const catalogGrid = document.getElementById("catalog-grid");
   const catalogSection = document.getElementById("full-catalog");
@@ -14,13 +51,7 @@
   const azLabel = document.getElementById("az-label");
   let activeLetter = "all";
   const getHerbList = () => {
-    if (typeof window !== "undefined" && typeof window.getAllHerbs === "function") {
-      return window.getAllHerbs();
-    }
-    if (typeof getAllHerbs === "function") {
-      return getAllHerbs();
-    }
-    return [];
+    return resolveSampleHerbs();
   };
   const backdrop = document.getElementById("modal-backdrop");
   const modalEl = document.getElementById("herb-modal");
@@ -167,10 +198,11 @@
   }
 
   function renderFeatured(filter) {
+    if (!featuredGrid) return;
     const q = (filter || "").trim().toLowerCase();
     featuredGrid.innerHTML = "";
     let shown = 0;
-    HERBS.featured.forEach((raw) => {
+    resolveSampleHerbs().forEach((raw) => {
       const herb = window.localizeHerb ? window.localizeHerb(raw) : raw;
       if (!matchesQuery(raw, q) && !matchesQuery(herb, q)) return;
       shown++;
@@ -180,11 +212,14 @@
       li.setAttribute("role", "button");
       li.setAttribute("aria-label", `${herb.name}: ${herb.benefits}. Open details.`);
       li.dataset.id = herb.id;
+      const iconHtml = herb.icon && ICONS[herb.icon]
+        ? wreathHTML(herb.icon)
+        : `<div class="wreath"><div class="wreath-inner" style="font-size:2rem">${herb.emoji || "🌿"}</div></div>`;
       li.innerHTML = `
-        ${wreathHTML(herb.icon)}
+        ${iconHtml}
         <span class="herb-name">${herb.name}</span>
-        <span class="herb-verse">${herb.verse}</span>
-        <span class="herb-benefits">${herb.benefits}</span>
+        <span class="herb-verse">${herb.verse || ""}</span>
+        <span class="herb-benefits">${herb.benefits || ""}</span>
       `;
       li.addEventListener("click", () => openModal(herb.id));
       li.addEventListener("keydown", (e) => {
@@ -195,7 +230,7 @@
       });
       featuredGrid.appendChild(li);
     });
-    featuredEmpty.classList.toggle("is-visible", shown === 0);
+    if (featuredEmpty) featuredEmpty.classList.toggle("is-visible", shown === 0);
   }
 
 
@@ -297,6 +332,7 @@
   }
 
   function openModal(id) {
+    if (!isSampleHerb(id)) return;
     const herb = window.localizeHerb ? window.localizeHerb(findHerb(id)) : findHerb(id);
     if (!herb) return;
     document.getElementById("modal-title").textContent = herb.name;
@@ -396,24 +432,22 @@
   }
 
   function setCatalogOpen(open) {
-    catalogSection.classList.toggle("is-open", open);
-    catalogSection.hidden = !open;
-    revealCta.setAttribute("aria-expanded", String(open));
-    revealCta.textContent = open
-      ? (window.bpT ? window.bpT("revealClose") : "Hide the Full Biblical Pharmacy")
-      : (window.bpT ? window.bpT("revealOpen") : "Reveal the Full Biblical Pharmacy");
-  }
-
-  function toggleCatalog() {
-    const open = !catalogSection.classList.contains("is-open");
-    setCatalogOpen(open);
-    if (open) {
-      renderCatalog(searchInput.value);
-      catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (!catalogSection) return;
+    // Free site: sample catalog stays visible; full A–Z reveal is retired.
+    catalogSection.classList.add("is-open");
+    catalogSection.hidden = false;
+    if (revealCta) {
+      revealCta.hidden = true;
+      revealCta.setAttribute("aria-expanded", "true");
+      revealCta.setAttribute("aria-hidden", "true");
     }
   }
 
-  revealCta.addEventListener("click", toggleCatalog);
+  function toggleCatalog() {
+    /* no-op: full-catalog reveal removed on free site */
+  }
+
+  if (revealCta) revealCta.addEventListener("click", (e) => { e.preventDefault(); });
   modalClose.addEventListener("click", closeModal);
   backdrop.addEventListener("click", (e) => {
     if (e.target === backdrop) closeModal();
@@ -422,19 +456,13 @@
     if (e.key === "Escape" && backdrop.classList.contains("is-open")) closeModal();
   });
 
-  searchInput.addEventListener("input", () => {
-    const q = searchInput.value;
-    const needle = q.trim().toLowerCase();
-    renderFeatured(q);
-    if (
-      needle &&
-      HERBS.catalog.some((h) => matchesQuery(h, needle)) &&
-      !catalogSection.classList.contains("is-open")
-    ) {
-      setCatalogOpen(true);
-    }
-    if (catalogSection.classList.contains("is-open")) renderCatalog(q);
-  });
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value;
+      renderFeatured(q);
+      if (catalogSection) renderCatalog(q);
+    });
+  }
 
 
 
@@ -523,14 +551,24 @@
     });
   }
 
+  // Hide free full-catalog A–Z chrome
+  document.querySelectorAll(".az-hint, #az-index, #az-label").forEach((el) => {
+    el.hidden = true;
+    el.setAttribute("aria-hidden", "true");
+  });
+  if (revealCta) {
+    revealCta.hidden = true;
+    revealCta.setAttribute("aria-hidden", "true");
+  }
+
   buildAzIndex();
   renderFeatured();
   renderCatalog();
   setCatalogOpen(true);
   initLangSwitch();
 
-  if (window.location.hash === "#full-catalog") {
-    catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (window.location.hash === "#full-catalog" || window.location.hash === "#samples") {
+    if (catalogSection) catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
 })();
