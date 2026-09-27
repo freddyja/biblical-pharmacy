@@ -3,6 +3,65 @@
  * Educational only. Never diagnoses or advises stopping medications.
  */
 (function () {
+  /** Free-site allowlist when locked. Full library after unlock code. */
+  const SAMPLE_SLUGS = [
+    "hyssop",
+    "frankincense",
+    "myrrh",
+    "aloe",
+    "olive",
+    "pomegranate",
+    "cinnamon",
+    "spikenard",
+  ];
+  window.BP_SAMPLE_SLUGS = SAMPLE_SLUGS;
+
+  function isUnlocked() {
+    if (typeof window.bpIsUnlocked === "function") {
+      try {
+        return !!window.bpIsUnlocked();
+      } catch (e) {}
+    }
+    try {
+      return (
+        localStorage.getItem("bp-library-unlocked") === "1" ||
+        localStorage.getItem("bp-offline-unlocked") === "1"
+      );
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function isSampleHerb(herbOrId) {
+    const id = typeof herbOrId === "string" ? herbOrId : herbOrId && herbOrId.id;
+    return Boolean(id && SAMPLE_SLUGS.includes(id));
+  }
+
+  function resolveAllHerbsRaw() {
+    if (typeof window !== "undefined" && typeof window.getAllHerbs === "function") {
+      return window.getAllHerbs();
+    }
+    if (typeof getAllHerbs === "function") {
+      return getAllHerbs();
+    }
+    try {
+      return [
+        ...(((typeof HERBS !== "undefined" && HERBS.featured) || [])),
+        ...(((typeof HERBS !== "undefined" && HERBS.catalog) || [])),
+      ];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function resolveSampleHerbs() {
+    const byId = {};
+    resolveAllHerbsRaw().forEach((h) => {
+      if (h && h.id) byId[h.id] = h;
+    });
+    return SAMPLE_SLUGS.map((id) => byId[id]).filter(Boolean);
+  }
+
   const featuredGrid = document.getElementById("featured-grid");
   const catalogGrid = document.getElementById("catalog-grid");
   const catalogSection = document.getElementById("full-catalog");
@@ -14,13 +73,8 @@
   const azLabel = document.getElementById("az-label");
   let activeLetter = "all";
   const getHerbList = () => {
-    if (typeof window !== "undefined" && typeof window.getAllHerbs === "function") {
-      return window.getAllHerbs();
-    }
-    if (typeof getAllHerbs === "function") {
-      return getAllHerbs();
-    }
-    return [];
+    if (isUnlocked()) return resolveAllHerbsRaw();
+    return resolveSampleHerbs();
   };
   const backdrop = document.getElementById("modal-backdrop");
   const modalEl = document.getElementById("herb-modal");
@@ -170,7 +224,15 @@
     const q = (filter || "").trim().toLowerCase();
     featuredGrid.innerHTML = "";
     let shown = 0;
-    HERBS.featured.forEach((raw) => {
+    const featuredSource = isUnlocked()
+      ? HERBS.featured
+      : HERBS.featured.filter((h) => isSampleHerb(h));
+    // If featured list has no samples, fall back to sample allowlist cards
+    const list =
+      !isUnlocked() && featuredSource.length === 0
+        ? resolveSampleHerbs()
+        : featuredSource;
+    list.forEach((raw) => {
       const herb = window.localizeHerb ? window.localizeHerb(raw) : raw;
       if (!matchesQuery(raw, q) && !matchesQuery(herb, q)) return;
       shown++;
@@ -297,6 +359,7 @@
   }
 
   function openModal(id) {
+    if (!isUnlocked() && !isSampleHerb(id)) return;
     const herb = window.localizeHerb ? window.localizeHerb(findHerb(id)) : findHerb(id);
     if (!herb) return;
     document.getElementById("modal-title").textContent = herb.name;
@@ -396,12 +459,15 @@
   }
 
   function setCatalogOpen(open) {
+    if (!catalogSection) return;
     catalogSection.classList.toggle("is-open", open);
     catalogSection.hidden = !open;
-    revealCta.setAttribute("aria-expanded", String(open));
-    revealCta.textContent = open
-      ? (window.bpT ? window.bpT("revealClose") : "Hide the Full Biblical Pharmacy")
-      : (window.bpT ? window.bpT("revealOpen") : "Reveal the Full Biblical Pharmacy");
+    if (revealCta) {
+      revealCta.setAttribute("aria-expanded", String(open));
+      revealCta.textContent = open
+        ? (window.bpT ? window.bpT("revealClose") : "Hide the Full Biblical Pharmacy")
+        : (window.bpT ? window.bpT("revealOpen") : "Reveal the Full Biblical Pharmacy");
+    }
   }
 
   function toggleCatalog() {
@@ -413,7 +479,7 @@
     }
   }
 
-  revealCta.addEventListener("click", toggleCatalog);
+  if (revealCta) revealCta.addEventListener("click", toggleCatalog);
   modalClose.addEventListener("click", closeModal);
   backdrop.addEventListener("click", (e) => {
     if (e.target === backdrop) closeModal();
@@ -422,19 +488,22 @@
     if (e.key === "Escape" && backdrop.classList.contains("is-open")) closeModal();
   });
 
+  if (searchInput) {
   searchInput.addEventListener("input", () => {
     const q = searchInput.value;
     const needle = q.trim().toLowerCase();
     renderFeatured(q);
     if (
+      isUnlocked() &&
       needle &&
       HERBS.catalog.some((h) => matchesQuery(h, needle)) &&
       !catalogSection.classList.contains("is-open")
     ) {
       setCatalogOpen(true);
     }
-    if (catalogSection.classList.contains("is-open")) renderCatalog(q);
+    if (catalogSection && catalogSection.classList.contains("is-open")) renderCatalog(q);
   });
+  }
 
 
 
@@ -467,7 +536,7 @@
     });
 
     // Sync reveal CTA with open state
-    if (typeof setCatalogOpen === "function" && catalogSection) {
+    if (typeof setCatalogOpen === "function" && catalogSection && revealCta) {
       const open = catalogSection.classList.contains("is-open");
       revealCta.textContent = open ? window.bpT("revealClose") : window.bpT("revealOpen");
     }
@@ -523,14 +592,64 @@
     });
   }
 
+  function applyLockChrome() {
+    const unlocked = isUnlocked();
+    document.documentElement.classList.toggle("bp-unlocked", unlocked);
+    document.documentElement.classList.toggle("bp-locked", !unlocked);
+
+    document.querySelectorAll(".sample-badge").forEach((el) => {
+      el.hidden = unlocked;
+    });
+
+    if (revealCta) {
+      revealCta.hidden = !unlocked;
+      revealCta.setAttribute("aria-hidden", unlocked ? "false" : "true");
+    }
+    document.querySelectorAll(".az-hint, #az-index").forEach((el) => {
+      el.hidden = !unlocked;
+      el.setAttribute("aria-hidden", unlocked ? "false" : "true");
+    });
+
+    const title = document.getElementById("catalog-title");
+    if (title) {
+      title.setAttribute("data-i18n", unlocked ? "catalogTitleUnlocked" : "catalogTitle");
+    }
+    const lead = document.querySelector("#full-catalog .catalog-lead");
+    if (lead) {
+      lead.setAttribute("data-i18n", unlocked ? "catalogLeadUnlocked" : "catalogLead");
+    }
+
+    // Sample catalog stays open; full A–Z available when unlocked
+    if (catalogSection) {
+      catalogSection.classList.add("is-open");
+      catalogSection.hidden = false;
+    }
+  }
+
+  function refreshLibraryView() {
+    applyLockChrome();
+    activeLetter = "all";
+    buildAzIndex();
+    renderFeatured(searchInput ? searchInput.value : "");
+    renderCatalog(searchInput ? searchInput.value : "");
+    if (typeof applyI18n === "function") applyI18n();
+    else if (typeof window.bpApplyPageI18n === "function") window.bpApplyPageI18n();
+  }
+
+  windowLockChrome();
   buildAzIndex();
   renderFeatured();
   renderCatalog();
   setCatalogOpen(true);
   initLangSwitch();
+  applyLockChrome();
 
-  if (window.location.hash === "#full-catalog") {
-    catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.addEventListener("bp-unlock-changed", function () {
+    refreshLibraryView();
+  });
+
+  if (window.location.hash === "#full-catalog" || window.location.hash === "#samples") {
+    if (catalogSection) catalogSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
 })();
