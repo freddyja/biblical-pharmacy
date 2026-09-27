@@ -1,5 +1,5 @@
 /* Biblical Pharmacy — service worker (works under /biblical-pharmacy/ on GitHub Pages) */
-const CACHE_NAME = "bp-pwa-v20260927unlock";
+const CACHE_NAME = "bp-pwa-v20260927ui";
 
 function basePath() {
   return self.location.pathname.replace(/sw\.js$/i, "");
