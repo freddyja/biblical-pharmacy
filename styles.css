@@ -974,3 +974,63 @@ body.modal-open {
 .footer-buy-link:hover {
   text-decoration: underline;
 }
+
+
+/* PWA install tip */
+.pwa-tip {
+  max-width: 32rem;
+  margin: 0.85rem auto 1.25rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius, 16px);
+  border: 1px solid rgba(229, 209, 157, 0.35);
+  background: rgba(7, 31, 18, 0.55);
+  color: var(--muted, rgba(245, 245, 240, 0.72));
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+.pwa-tip-text {
+  margin: 0 0 0.65rem;
+}
+.pwa-tip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.pwa-tip-dismiss,
+.pwa-install-btn {
+  appearance: none;
+  border-radius: 999px;
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  padding: 0.4rem 0.9rem;
+}
+.pwa-tip-dismiss {
+  border: 1px solid rgba(229, 209, 157, 0.35);
+  background: transparent;
+  color: var(--gold, #e5d19d);
+}
+.pwa-tip-dismiss:hover,
+.pwa-tip-dismiss:focus-visible {
+  background: rgba(240, 226, 176, 0.12);
+  color: #fff;
+  outline: none;
+}
+.pwa-install-btn {
+  border: 1px solid var(--gold-dim, #c4ad6e);
+  background: linear-gradient(90deg, #c9a227, #f0e2b0);
+  color: #0b2b1a;
+}
+.pwa-install-btn:hover,
+.pwa-install-btn:focus-visible {
+  filter: brightness(1.05);
+  outline: none;
+}
+.pwa-install-btn[hidden] {
+  display: none !important;
+}
