@@ -1,26 +1,26 @@
 /**
  * Biblical Pharmacy — library unlock (client-side redeem codes)
- * FREE: sample herbs only. PAID: Etsy purchase → unlock code → full library in PWA.
+ * FREE: sample herbs only. PAID: Etsy purchase → personal unlock code → full library.
  * No server-side Etsy receipt verification.
+ *
+ * Admin hash always unlocks and is never one-time (plaintext kept private).
+ * Buyer codes: SHA-256 hashes in unlock-codes-data.js; on redeem, hash is stored in
+ * localStorage "bp-used-codes" (same-browser only). Without a server, codes can still
+ * be shared across devices until Freddy rotates the batch / removes hashes.
  */
 (function () {
   "use strict";
 
   var STORAGE_KEY = "bp-library-unlocked";
-  // Also honor older offline key if present
   var LEGACY_KEY = "bp-offline-unlocked";
+  var USED_CODES_KEY = "bp-used-codes";
 
-  // SHA-256 hex digests of uppercase redeem codes (plaintext only in private workspace report)
-  var CODE_HASHES = {
-    "df39c5565b3399e1caa9005bbb844f3e6700169d95c514808760124f4968942d": 1,
-    "aba94201c759dd5b562257b7476c4fb5f7b028a612b0272293b6d4e94b3814b6": 1,
-    "9a9164fe5bcb7bd29fe474ed706f5f92699e85bfa3e6f89a4aa39f3773fe19b6": 1,
-    "9894d57efae954690c5918ecc46da019d3b7849519b8aab64ebf456e32d52033": 1,
-    "d94bc45dad2266d69f3acc3852e799756d694a1cbf03604cfa589586d8aca62f": 1,
-    "ffc3564950fd2faed91672cfd6be1b6f71d3101ad53a1e0de92973e580b2ceb5": 1,
-    "bc7f753aedf3a5c00a21d1386a5acef5f18d5fc22c6fa761437596c7ef29d360": 1,
-    "af8ecdd27272dc90672e729d5d8c15d241a2e26cf10b5688676f056e84e6d025": 1
-  };
+  function adminHashes() {
+    return (typeof window !== "undefined" && window.BP_UNLOCK_ADMIN_HASHES) || {};
+  }
+  function buyerHashes() {
+    return (typeof window !== "undefined" && window.BP_UNLOCK_BUYER_HASHES) || {};
+  }
 
   var ETSY_LISTING =
     "https://www.etsy.com/listing/4582102485/biblical-pharmacy-educational-herb";
@@ -80,6 +80,31 @@
     } catch (e) {}
   }
 
+  function readUsedHashes() {
+    try {
+      var raw = localStorage.getItem(USED_CODES_KEY);
+      if (!raw) return [];
+      var parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function markHashUsed(hex) {
+    try {
+      var list = readUsedHashes();
+      if (list.indexOf(hex) === -1) {
+        list.push(hex);
+        localStorage.setItem(USED_CODES_KEY, JSON.stringify(list));
+      }
+    } catch (e) {}
+  }
+
+  function isHashUsed(hex) {
+    return readUsedHashes().indexOf(hex) !== -1;
+  }
+
   window.bpIsUnlocked = function bpIsUnlocked() {
     return readUnlocked();
   };
@@ -103,9 +128,23 @@
     }
     return sha256hex(code)
       .then(function (hex) {
-        if (CODE_HASHES[hex]) {
+        if (adminHashes()[hex]) {
+          // Permanent admin — never mark one-time used
           window.bpSetUnlocked(true);
-          return { ok: true };
+          return { ok: true, kind: "admin" };
+        }
+        if (buyerHashes()[hex]) {
+          if (isHashUsed(hex) && readUnlocked()) {
+            return { ok: true, kind: "buyer", already: true };
+          }
+          if (isHashUsed(hex) && !readUnlocked()) {
+            // Same-device recovery after clearing unlock flag
+            window.bpSetUnlocked(true);
+            return { ok: true, kind: "buyer", recovered: true };
+          }
+          markHashUsed(hex);
+          window.bpSetUnlocked(true);
+          return { ok: true, kind: "buyer" };
         }
         return { ok: false, reason: "invalid" };
       })
@@ -124,7 +163,7 @@
     panel.innerHTML =
       '<div class="unlock-locked">' +
       '<p class="unlock-title" data-i18n="unlockTitle">Unlock the full library</p>' +
-      '<p class="unlock-lead" data-i18n="unlockLead">Buy on Etsy ($9.99), then enter the unlock code from your download.</p>' +
+      '<p class="unlock-lead" data-i18n="unlockLead">After purchase, enter the personal unlock code sent in your Etsy message.</p>' +
       '<div class="unlock-actions">' +
       '<a class="buy-cta-btn unlock-buy" href="' +
       ETSY_LISTING +
@@ -132,7 +171,7 @@
       "</div>" +
       '<label class="unlock-label" for="bp-unlock-code" data-i18n="unlockCodeLabel">I have a code</label>' +
       '<div class="unlock-redeem-row">' +
-      '<input id="bp-unlock-code" class="unlock-input" type="text" autocomplete="off" spellcheck="false" placeholder="BP-OLIVE-XXXX" data-i18n-placeholder="unlockCodePlaceholder" />' +
+      '<input id="bp-unlock-code" class="unlock-input" type="text" autocomplete="off" spellcheck="false" placeholder="BP-XXXX-XXXX" data-i18n-placeholder="unlockCodePlaceholder" />' +
       '<button type="button" class="unlock-redeem-btn" data-i18n="unlockRedeem">Unlock</button>' +
       "</div>" +
       '<p class="unlock-msg" hidden></p>' +
@@ -145,7 +184,6 @@
       '" target="_blank" rel="noopener noreferrer" data-i18n="unlockEtsyDownloads">Re-download ZIP from Etsy Purchases</a>' +
       "</div>";
 
-    // Prefer inserting after buy button / note
     aside.appendChild(panel);
     return panel;
   }
@@ -183,7 +221,7 @@
             if (msg) {
               msg.hidden = false;
               msg.className = "unlock-msg is-ok";
-              msg.textContent = t("unlockSuccess", "Unlocked — enjoy the full library.");
+              msg.textContent = t("unlockSuccess", "Full library unlocked.");
             }
             input.value = "";
           } else {
@@ -192,7 +230,7 @@
               msg.className = "unlock-msg is-err";
               msg.textContent = t(
                 "unlockInvalid",
-                "That code didn’t work. Check your Etsy download and try again."
+                "That code didn’t work. Check your Etsy message and try again."
               );
             }
           }
@@ -225,7 +263,6 @@
       el.hidden = !!unlocked;
     });
 
-    // Index: reveal + A–Z only when unlocked
     var reveal = document.getElementById("reveal-cta");
     if (reveal) {
       reveal.hidden = !unlocked;
@@ -241,7 +278,6 @@
       }
     });
 
-    // Catalog title/lead keys swap via data attributes if present
     var title = document.getElementById("catalog-title");
     if (title) {
       title.setAttribute("data-i18n", unlocked ? "catalogTitleUnlocked" : "catalogTitle");
@@ -251,7 +287,6 @@
       lead.setAttribute("data-i18n", unlocked ? "catalogLeadUnlocked" : "catalogLead");
     }
 
-    // Vitamins / recipes full entries
     var entries = document.querySelectorAll("details.ref-entry");
     var paywall = document.getElementById("bp-ref-paywall");
     if (entries.length) {
@@ -267,7 +302,6 @@
 
   function ensureRefPaywall() {
     if (!document.querySelector("details.ref-entry")) return;
-    // Existing #buy-cta already hosts the unlock panel — don't add a second pitch
     if (document.querySelector(".buy-cta")) return;
     if (document.getElementById("bp-ref-paywall")) return;
     var main = document.querySelector("main") || document.body;
@@ -277,7 +311,6 @@
     box.setAttribute("aria-label", "Unlock full library");
     box.innerHTML =
       '<p class="buy-cta-lead" data-i18n="paywallLead">Full vitamins &amp; recipes unlock with your Etsy code — same purchase as the plant library.</p>';
-    // insert near top of main after lead/note if possible
     var anchor =
       main.querySelector(".ref-note") ||
       main.querySelector("h1") ||
@@ -296,7 +329,6 @@
       var panel = ensurePanel(aside);
       bindPanel(panel);
       syncPanelState(panel, unlocked);
-      // Soft-hide primary buy lead duplication when unlocked
       var lead = aside.querySelector(".buy-cta-lead");
       var btn = aside.querySelector(":scope > .buy-cta-btn");
       var note = aside.querySelector(":scope > .buy-cta-note");
@@ -320,7 +352,6 @@
     }
   }
 
-  // Wrap i18n apply so unlock strings stay fresh
   function wrapI18n() {
     if (typeof window.bpApplyPageI18n !== "function") return;
     if (window.bpApplyPageI18n._bpUnlockWrapped) return;
@@ -344,7 +375,6 @@
     boot();
   }
 
-  // Late i18n wrap
   setTimeout(wrapI18n, 0);
   setTimeout(wrapI18n, 500);
 })();
