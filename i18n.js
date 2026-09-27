@@ -88,6 +88,9 @@ window.BP_I18N = {
     storage: "Storage",
     cautions: "Cautions",
     nameForms: "Name / common forms:",
+    pwaTip: "Add to Home Screen for quick access: on iPhone use Share → Add to Home Screen; on Android use the Chrome menu → Install / Add to Home screen. Browse the full free catalog anytime after the first visit.",
+    pwaTipDismiss: "Got it",
+    pwaInstall: "Install app",
   },
   es: {
     htmlLang: "es",
@@ -173,6 +176,9 @@ window.BP_I18N = {
     storage: "Conservación",
     cautions: "Precauciones",
     nameForms: "Nombre / formas comunes:",
+    pwaTip: "Añade a la pantalla de inicio para acceso rápido: en iPhone usa Compartir → Añadir a pantalla de inicio; en Android usa el menú de Chrome → Instalar / Añadir a la pantalla de inicio. Tras la primera visita puedes explorar el catálogo gratis completo.",
+    pwaTipDismiss: "Entendido",
+    pwaInstall: "Instalar app",
   },
   pt: {
     htmlLang: "pt",
@@ -258,6 +264,9 @@ window.BP_I18N = {
     storage: "Armazenamento",
     cautions: "Cuidados",
     nameForms: "Nome / formas comuns:",
+    pwaTip: "Adicione à Tela de Início para acesso rápido: no iPhone use Compartilhar → Adicionar à Tela de Início; no Android use o menu do Chrome → Instalar / Adicionar à tela inicial. Após a primeira visita, explore o catálogo completo grátis.",
+    pwaTipDismiss: "Entendi",
+    pwaInstall: "Instalar app",
   },
 };
 
