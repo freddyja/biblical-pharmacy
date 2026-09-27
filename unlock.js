@@ -267,6 +267,8 @@
 
   function ensureRefPaywall() {
     if (!document.querySelector("details.ref-entry")) return;
+    // Existing #buy-cta already hosts the unlock panel — don't add a second pitch
+    if (document.querySelector(".buy-cta")) return;
     if (document.getElementById("bp-ref-paywall")) return;
     var main = document.querySelector("main") || document.body;
     var box = document.createElement("aside");
