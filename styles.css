@@ -1034,3 +1034,127 @@ body.modal-open {
 .pwa-install-btn[hidden] {
   display: none !important;
 }
+
+
+/* Sample badge */
+.sample-badge {
+  text-align: center;
+  color: var(--gold-bright, #f0e2b0);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0.35rem 0 1rem;
+}
+.sample-badge[hidden] { display: none !important; }
+
+/* Unlock panel (inside buy-cta) */
+.unlock-panel {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(212, 184, 106, 0.35);
+  text-align: center;
+}
+.unlock-title {
+  margin: 0 0 0.35rem;
+  color: var(--gold-bright, #f0e2b0);
+  font-family: var(--serif, "Cormorant Garamond", serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.unlock-lead,
+.unlock-unlocked-lead {
+  margin: 0 0 0.75rem;
+  color: var(--cream, #f5f0e6);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+.unlock-actions { margin-bottom: 0.75rem; }
+.unlock-buy { margin: 0.25rem 0; }
+.unlock-label {
+  display: block;
+  margin: 0.5rem 0 0.35rem;
+  color: var(--gold, #e5d19d);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.unlock-redeem-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  align-items: center;
+}
+.unlock-input {
+  min-width: 11rem;
+  flex: 1 1 10rem;
+  max-width: 16rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(229, 209, 157, 0.45);
+  background: rgba(7, 31, 18, 0.55);
+  color: var(--cream, #f5f0e6);
+  font-family: var(--sans, system-ui, sans-serif);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.unlock-input:focus {
+  outline: 2px solid var(--gold-bright, #f0e2b0);
+  outline-offset: 1px;
+}
+.unlock-redeem-btn {
+  appearance: none;
+  border: 1px solid var(--gold-dim, #c4ad6e);
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(90deg, #c9a227, #f0e2b0);
+  color: #0f3320;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  font-family: var(--sans, system-ui, sans-serif);
+}
+.unlock-redeem-btn:hover,
+.unlock-redeem-btn:focus-visible {
+  filter: brightness(1.05);
+  outline: none;
+}
+.unlock-redeem-btn:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.unlock-msg {
+  margin: 0.55rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.unlock-msg.is-ok { color: #b7e4c0; }
+.unlock-msg.is-err { color: #f5c2c2; }
+.unlock-badge {
+  display: inline-block;
+  margin: 0 0 0.55rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 184, 106, 0.55);
+  background: rgba(240, 226, 176, 0.16);
+  color: var(--gold-bright, #f0e2b0);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.unlock-etsy-dl {
+  display: inline-block;
+  color: var(--gold-bright, #f0e2b0);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: underline;
+}
+.unlock-etsy-dl:hover { color: #fff; }
+.bp-ref-paywall { margin: 1.25rem auto; }
+html.bp-locked details.ref-entry[hidden],
+details.ref-entry[hidden] {
+  display: none !important;
+}
